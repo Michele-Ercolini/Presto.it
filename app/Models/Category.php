@@ -12,6 +12,6 @@ class Category extends Model
     protected $fillable = ['name'];
 
     public function announcements(){
-        return $this->hasMany(Annuouncement::class);
+        return $this->hasMany(Announcement::class);
     }
 }
