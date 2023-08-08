@@ -10,10 +10,10 @@
 </head>
 <body class="bg-info">
     
-
-
-    {{$slot}}
-
+    
+  
+        
+        {{$slot}}
     
     <x-footer/>
     @livewireScripts
