@@ -1,5 +1,5 @@
 <x-layout>
-<x-header />
+
 
 
     

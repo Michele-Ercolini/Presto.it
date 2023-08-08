@@ -4,9 +4,10 @@
     <div style="margin-bottom: 50px"></div>
 
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
+    <div class="containerlogin">
+        <div class="row justify-content-center mt-5">
             <div class="col col-md-8">
+                <h1>Registrati</h1>
 
                 {{-- inizio form --}}
                 <form method="POST" action="{{route('register')}}">
@@ -27,7 +28,7 @@
                         <label for="userPassword" class="form-label">Conferma Password</label>
                         <input type="password" class="form-control" id="userPassword" name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-primary">Registrati</button>
+                    <button type="submit" class="btn btn-dark">Registrati</button>
                 </form>
                 {{-- fine form --}}
 
