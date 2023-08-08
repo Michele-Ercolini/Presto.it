@@ -10,12 +10,12 @@
 </head>
 <body class="bg-info">
     
+<x-navbar />
 
-
+   
     {{$slot}}
-
     
-    <x-footer/>
+<x-footer />
     @livewireScripts
     @vite('resources/js/app.js')
 </body>
