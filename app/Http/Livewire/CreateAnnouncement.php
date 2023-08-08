@@ -14,7 +14,7 @@ class CreateAnnouncement extends Component
     
     protected $rules = [
         'title' => 'required|min:3',
-        'price' => 'required|max_digits:8',
+        'price' => 'required|numeric',
         'category' => 'required',
         'body' => 'required|min:10',
     ];
@@ -30,13 +30,12 @@ class CreateAnnouncement extends Component
             'price' => $this->price,
             'body' => $this->body
         ]);
-        
         session()->flash('status', 'Annuncio correttamente salvato');
         $this->reset();
     }
 
     public function update($propertyName){
-        $this->validate();
+        $this->validateOnly($propertyName);
     }
 
     public function render()

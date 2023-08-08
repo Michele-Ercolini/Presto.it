@@ -20,6 +20,7 @@
     {{$slot}}
     
     <x-footer />
+    <script src="https://kit.fontawesome.com/0f3153532c.js" crossorigin="anonymous"></script>
     @livewireScripts
     @vite('resources/js/app.js')
 </body>

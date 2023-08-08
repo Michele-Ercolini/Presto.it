@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[PublicController::class, 'home'])->name('homepage');
 
 //Rotta create announcement
-Route::get('/announcement/create', [AnnouncementController::class, 'create'])->name('announcement_create');
+Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
