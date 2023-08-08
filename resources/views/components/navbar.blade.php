@@ -1,9 +1,7 @@
     <!-- Inizio Navbar -->
     <nav id="navId" class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid d-flex  navcustom">
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="./Media/logoNero.png" alt="">
-          </a>
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,11 +45,11 @@
               <!--Inizio Utente NON Autenticato-->
               @else
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
                       Ciao Utente
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu dropdown-content">
                       <li>
                           <a href="{{route('register')}}" class="dropdown-item">
                               Iscriviti
