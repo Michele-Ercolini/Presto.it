@@ -1,38 +1,38 @@
 <x-layout>
-    <div class="class wrapper d-flex justify-content-center align-items-center">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type=" text " placeholder="username" name="userName" required>
+    
+    {{-- div per dare un pò di margine --}}
+    <div style="margin-bottom: 50px"></div>
+
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col col-md-8">
+
+                {{-- inizio form --}}
+                <form method="POST" action="{{route('register')}}">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Nome Utente</label>
+                        <input type="text" class="form-control" id="userName" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="userEmail" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="userPassword" name="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userPassword" class="form-label">Conferma Password</label>
+                        <input type="password" class="form-control" id="userPassword" name="password_confirmation">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrati</button>
+                </form>
+                {{-- fine form --}}
+
             </div>
-            <box-icon type='solid' name='user'></box-icon>
-            <div class="input-box">
-                <input type="email" name="email" placeholder="userEmail" id="userEmail" required>
-            </div>
-            <div class="input-box">
-                <input type=" passowrd" name="password" placeholder="userPassword" id="userPassword" required>
-            </div>
-            <box-icon name='lock-alt' type='solid' ></box-icon>
-            <div class="input-box">
-                <input type=" passowrd_confirmation" name="password_confirmation" placeholder="" id="user_confirmation" required>
-            </div>
-            <div class="remember-forgot">
-              <label>  <input type="checkbox">Rememeber me</label>
-              <button type="submit" class="btn">Login</button>
-            </div>
-            <div class="register-link">
-                <p>Don't have an account<a href="">Register</a></p>
-            </div>
-            
-        </form>
+        </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </x-layout>
+
+</x-layout>

@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class FormLogIn extends Component
+class CreateAnnouncement extends Component
 {
     public function render()
     {
-        return view('livewire.form-log-in');
+        return view('livewire.create-announcement');
     }
 }
