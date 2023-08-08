@@ -39,6 +39,15 @@ body{
 .nav-link:hover{
     color: var(--nuovo);
 }
+.dropdown-menu{
+    background-color: #393e46;
+}
+.dropdown-item{
+    color:black;
+}
+.dropdown-item:hover{
+    background-color:#393e46;
+}
 
 /* Header */
 .bgimg{
