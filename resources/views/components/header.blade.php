@@ -5,3 +5,5 @@
         </div>
     </div>
 </div>
+
+<hr class="bold-5">
