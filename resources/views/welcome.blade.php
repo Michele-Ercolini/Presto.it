@@ -1,4 +1,6 @@
 <x-layout>
+<x-header />
+
 
     
 
