@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar{
-    position: fixed;
+    position: sticky;
     width: 100%;
     transition: 0.3s;
     z-index: 2;
