@@ -1,0 +1,33 @@
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 2;
+}
+.navcustom{
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    width: 70%;
+    box-shadow: 4px 4px 5px;
+    transition: 0.3s;
+}
+
+.logo{
+    
+    width: 50px;
+}
+
+.nav-link{
+    font-size: 25px;
+    
+}
+.nav-link:hover{
+    color: var(--nuovo);
+}

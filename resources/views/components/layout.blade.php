@@ -8,12 +8,14 @@
     @livewireStyles
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="bg-info">
     
 
 
     {{$slot}}
+
     
+    <x-footer/>
     @livewireScripts
     @vite('resources/js/app.js')
 </body>
