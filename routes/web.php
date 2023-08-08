@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\PublicController;
 use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
@@ -18,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[PublicController::class, 'home'])->name('homepage');
 
 //Rotta create announcement
-Route::get('/announcement/create', [Announcement::class, 'create'])->name('announcement_create');
+Route::get('/announcement/create', [AnnouncementController::class, 'create'])->name('announcement_create');
