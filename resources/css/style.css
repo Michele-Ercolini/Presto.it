@@ -1,7 +1,14 @@
+/* body */
+body{
+    background-color:  #393e46;
+}
+
+*{
+    font-family: 'Orbitron', sans-serif;
+}
+
 /* Navbar */
 .navbar{
-    position: sticky;
-    width: 100%;
     transition: 0.3s;
     z-index: 2;
 }
@@ -27,7 +34,10 @@
 .nav-link{
     font-size: 25px;
     
+    
 }
 .nav-link:hover{
     color: var(--nuovo);
 }
+
+
