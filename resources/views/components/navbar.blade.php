@@ -1,5 +1,5 @@
     <!-- Inizio Navbar -->
-    <nav id="navId" class="navbar sticky-top navbar-expand-lg">
+    <nav id="navId" class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid d-flex  navcustom">
           <a class="navbar-brand" href="#">
             <img class="logo" src="./Media/logoNero.png" alt="">
