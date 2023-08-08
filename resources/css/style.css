@@ -40,13 +40,14 @@ body{
     color: var(--nuovo);
 }
 .dropdown-menu{
-    background-color: #393e46;
+    background-color: transparent;
+    
 }
 .dropdown-item{
     color:black;
 }
 .dropdown-item:hover{
-    background-color:#393e46;
+    background-color:var(--nuovo);
 }
 
 /* Header */
