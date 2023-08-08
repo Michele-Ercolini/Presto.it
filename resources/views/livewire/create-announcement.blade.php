@@ -14,7 +14,7 @@
     </div>
     <div class="mb-3">
         <label for="announcementNumber" class="form-label">Prezzo</label>
-        <input type="number" class="form-control @error('price') is-invalid @enderror" id="announcementNumber"
+        <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="announcementNumber"
             wire:model="price">
         @error('price')
             <p class="text-danger">{{ $message }}</p>

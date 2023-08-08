@@ -13,15 +13,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="./annunci.html">Annunci</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ChiSiamo.html">Chi Siamo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-
               <!--Utente Autenticato-->
               @auth
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('announcement_create')}}">Crea Annuncio</a>
+              </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
