@@ -1,0 +1,44 @@
+/* Inizio Carousel */
+
+.backcont{
+    background-color: var(--grigio-chiaro);
+    padding: 150px;
+    background-image: url(./Media/img_repeat.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 15%;
+    box-shadow:20px 20px 50px rgba(0,0,0,0.5); 
+}
+
+
+    /* border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden; */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  @media screen and (max-width:800px){
+    .backcont{
+        padding: 30px;
+    }
+  }
+
+.immaginiCarousel{
+     height: 100%;
+}
+
