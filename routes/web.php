@@ -17,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[PublicController::class, 'home'])->name('homepage');
 
+// Rotta per il profilo
+Route::get('/user/profile', [PublicController::class, 'profile'])->name('user_profile');
+
+// Rotta per la vista di ogni categoria
+Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
+
 // Rotta create announcement
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
 
@@ -25,6 +31,3 @@ Route::get('/announcement/index', [AnnouncementController::class, 'index'])->nam
 
 // Rotta show announcement
 Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_detail');
-
-// Rotta per la vista di ogni categoria
-Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');

@@ -38,17 +38,13 @@
                       Ciao {{Auth::user()->name}}
                   </a>
                   <ul class="dropdown-menu">
-                      <li class="nav-item">
-                          <form action="{{route('logout')}}" method="POST">
-                              @csrf
-                              <li>
-                                  <button style="background: transparent" class="dropdwon-item">
-                                    <i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i>
-                                  </button>
-                              </li>
-                          </form>
-                      </li>
+                    <li><a href="{{route('user_profile')}}" class="dropdown-item">Profilo</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i></a></li>
                   </ul>
+                  <form id="form-logout" action="{{route('logout')}}" method="POST">
+                      @csrf
+                  </form>
               </li>
               <!--Fine Utente Autenticato-->
               
@@ -73,9 +69,9 @@
                   </ul>
               </li>
               @endauth
-              <!--Fine Utente NON Autenticato-->
-
             </ul>
+            <!--Fine Utente NON Autenticato-->
+
             <div class="logo"></div>
           </div>
         </div>
