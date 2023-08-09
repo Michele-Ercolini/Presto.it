@@ -11,7 +11,7 @@
                 <a class="nav-link display-8" aria-current="page" href="{{route('homepage')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./annunci.html">Annunci</a>
+                <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
               </li>
               <!--Utente Autenticato-->
               @auth

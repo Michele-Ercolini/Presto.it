@@ -20,3 +20,9 @@ Route::get('/',[PublicController::class, 'home'])->name('homepage');
 
 //Rotta create announcement
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
+
+// rotta index announcement
+Route::get('/announcement/index', [AnnouncementController::class, 'index'])->name('announcement_index')
+
+// Rotta show announcement
+Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_detail');
