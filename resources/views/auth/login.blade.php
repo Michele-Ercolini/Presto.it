@@ -1,13 +1,12 @@
-<x-layout>
+<x-layout titolo='LOGIN'>
     
     {{-- div per dare un pò di margine --}}
     <div style=" margin-top:50px;" ></div>
 
 
-    <div class="containerlogin my-5">
+    <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col col-md-8">
-                <h1>LOGIN</h1>
 
                 {{-- inizio form --}}
                 <form method="POST" action="{{route('login')}}">
@@ -20,10 +19,10 @@
                         <label for="userPassword" class="form-label">Password</label>
                         <input type="password" class="form-control" id="userPassword" name="password">
                     </div>
-                    <button type="submit" class="btn btn-dark">Login</button>
+                    <button type="submit" class="btn btn-dark mb-3">Login</button>
                     
                     <div class="mb-3">
-                      <p>Non sei ancora loggato?   <a href="{{route('register')}}">Che aspetti!</a></p>
+                        <p>Non sei ancora loggato?   <a href="{{route('register')}}">Che aspetti!</a></p>
                     </div>
 
                 </form>
