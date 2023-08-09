@@ -147,8 +147,8 @@ h1,h2,h3{
 
 .containerx .card{
     position: relative;
-    width: 280px;
-    height: 400px;
+    width: 320px;
+    height: 450px;
     margin: 30px;
     box-shadow:20px 20px 50px rgba(0,0,0,0.5); 
     border-radius: 15px;
