@@ -22,7 +22,7 @@
                             <h2>{{$announcement->title}}</h2>
                             <h3>Categoria: {{$announcement->category->name}}</h3>
                             <p class="text-truncate">{{$announcement->body}}</p>
-                            <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                            <a style="margin-bottom:60px;" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
                     </div>
                 </div>
