@@ -13,6 +13,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categorie
+                </a>
+                <ul class="dropdown-menu">
+                    @foreach ($categories as $category)
+                        <li><a class="dropdown-item" href="#">{{$category->name}}</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    @endforeach
+                </ul>
+            </li>
               <!--Utente Autenticato-->
               @auth
               <li class="nav-item">
