@@ -18,7 +18,7 @@
                         <div class="content">
                             <img src="https://picsum.photos/250" height="200px" width="200px">
                             <h2>{{$announcement->title}}</h2>
-                            <h3>Categoria:{{$announcement->category->name}}</h3>
+                            <h3>Categoria: {{$announcement->category->name}}</h3>
                             <p class="text-truncate">{{$announcement->body}}</p>
                             <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
