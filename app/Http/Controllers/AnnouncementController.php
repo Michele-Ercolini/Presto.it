@@ -29,7 +29,7 @@ class AnnouncementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //-+
     }
 
     /**
