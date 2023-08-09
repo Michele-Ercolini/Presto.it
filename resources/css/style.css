@@ -122,12 +122,8 @@ body{
 .containerx .card .content{
   padding:20px;
   text-align:center;
-  transform:translateY(100px) ;
-  opacity:0;
+  
   transition:0.5;  
-}
-.container .card:hover .conent{
-transform:translateY(0px); opacity:1;
 }
 
 .containerx .card .content h2{
