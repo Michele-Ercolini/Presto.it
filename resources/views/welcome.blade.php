@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid paragraph-container my-5">
+    <div class="container-fluid paragraph-container my-2">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p style="display/4" class="text-center paragrafo">Benvenuti nel nostro elegante negozio online di moda!</p>
