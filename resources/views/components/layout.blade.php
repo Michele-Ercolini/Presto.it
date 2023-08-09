@@ -21,7 +21,7 @@
 <body>
     
     <x-navbar />
-    <x-header />
+    <x-header  titoloHeader="{{$titolo}}"/>
     
     {{$slot}}
     

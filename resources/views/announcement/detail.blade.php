@@ -1,12 +1,5 @@
-<x-layout>
+<x-layout titolo='DETTAGLIO: {{ $announcement->title }}'>
     
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12-col-md-3">
-                <h1>DETTAGLIO: {{ $announcement->title }}</h1>
-            </div>
-        </div>
-    </div>
     
     <section class="container">
         <div class="row justify-content-center">

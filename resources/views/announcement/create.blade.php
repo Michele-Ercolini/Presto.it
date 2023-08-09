@@ -1,7 +1,5 @@
-<x-layout>
+<x-layout titolo='Carica Annuncio'>
 
-<h1>Carica Annuncio</h1>
-    
 <section class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8">
