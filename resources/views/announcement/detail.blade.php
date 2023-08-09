@@ -1,6 +1,6 @@
 <x-layout>
     
-    <div class="containerlogin ">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-12-col-md-3">
                 <h1>DETTAGLIO: {{ $announcement->title }}</h1>
