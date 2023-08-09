@@ -10,22 +10,22 @@
               <li class="nav-item">
                 <a class="nav-link display-8" aria-current="page" href="{{route('homepage')}}">Home</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorie
+              </a>
+              <ul class="dropdown-menu">
+                @foreach ($categories as $category)
+                <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                @endforeach
+              </ul>
               <li class="nav-item">
                 <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Categorie
-                </a>
-                <ul class="dropdown-menu">
-                    @foreach ($categories as $category)
-                        <li><a class="dropdown-item" href="#">{{$category->name}}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                    @endforeach
-                </ul>
             </li>
               <!--Utente Autenticato-->
               @auth
@@ -42,15 +42,9 @@
                           <form action="{{route('logout')}}" method="POST">
                               @csrf
                               <li>
-<<<<<<< HEAD
-                                  
-                                   <a href="{{route('logout')}}"> <img class="btn1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvt17tKxEAUxvHfgvgGFr6ClSCC2Hh7Bzs7sfZRhC1sfAIrL/V6AbG22m7fRU6hhJDMZibBWOS0mcz/nPOdbzKZGSlmI3GlwEc46ZnYK96b9kiBFzjtCX7BWS74DVF1n4hqjydwdCCl8dTqkiErGq7wYONE4hMrXKzJJuRqPAtSGqfAPxteYY7NlgSKKk4NV3XDAzxhqwFeBL7BbkslX7iuPNvGI/Zr64vAucMU7b6r6f4n4A3c4rKScRE4p9Wh7wMOh2h11+HawzNC53oUVdwFHD4OXQe1U8rHH1gifJyKogNk+kjk+jrWDz5cXZOYwL+d+pdXn3PsdBWzZV14/T73etuTmX59tH+nb7OaRB99F06ZAAAAAElFTkSuQmCC"/></a>
-                                  
-=======
                                   <button style="background: transparent" class="dropdwon-item">
                                     <i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i>
                                   </button>
->>>>>>> 50a0b0ab2ebd037f3cb8efe7d9aa52b51c49fceb
                               </li>
                           </form>
                       </li>
