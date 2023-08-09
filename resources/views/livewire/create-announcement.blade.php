@@ -1,7 +1,7 @@
 <form wire:submit.prevent="announcementStore">
-    @if (session('status'))
+    @if (session('message'))
         <div class="alert alert-success">
-            {{ session('status') }}
+            {{ session('message') }}
         </div>
     @endif
     <div class="mb-3">
@@ -27,6 +27,15 @@
         @error('body')
             <p class="text-danger">{{ $message }}</p>
         @enderror
-        <button type="submit" class="btn btn-primary">Carica</button>
     </div>
+    <div class="mb-3">
+        <label for="category">Categoria</label>
+        <select wire:model.defer="category" id="category" class="form-control">
+            <option value="">Scegli la Categoria</option>
+            @foreach ($categories as $category)
+                <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Carica</button>
 </form>
