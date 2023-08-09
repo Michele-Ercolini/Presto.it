@@ -28,8 +28,8 @@
                           <form action="{{route('logout')}}" method="POST">
                               @csrf
                               <li>
-                                  <button class="dropdwon-item">
-                                      Esci
+                                  <button style="background: transparent" class="dropdwon-item">
+                                    <i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i>
                                   </button>
                               </li>
                           </form>
