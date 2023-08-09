@@ -47,7 +47,7 @@
                                 <h2 class="text-center">Titolo: {{ $announcement->title }}</h2>
                                 <h3 class="text-center">Categoria: {{ $announcement->category->name }}</h3>
                                 <p class="lead text-center">Prezzo: {{ $announcement->price }}€</p>
-                                <p class="text-truncate text-center">Descrizione: {{ $announcement->body }}</p>
+                                <p class="text-center">Descrizione: {{ $announcement->body }}</p>
                                 <address class="text-center">Pubblicato da: {{$announcement->user->name}}</address>
                                 <a class="text-center btn1 btn btn-outline-dark" href="{{ route('announcement_index') }}">Torna Indietro</a>
                         </div>
