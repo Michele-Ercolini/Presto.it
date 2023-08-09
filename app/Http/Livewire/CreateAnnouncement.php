@@ -30,13 +30,14 @@ class CreateAnnouncement extends Component
             'price' => $this->price,
             'body' => $this->body
         ]);
-        session()->flash('status', 'Annuncio correttamente salvato');
+        session()->flash('message', 'Annuncio correttamente salvato');
         $this->reset();
     }
 
-    public function update($propertyName){
+    public function updated($propertyName){
         $this->validateOnly($propertyName);
     }
+
 
     public function render()
     {

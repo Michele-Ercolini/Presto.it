@@ -1,7 +1,7 @@
 <form wire:submit.prevent="announcementStore">
-    @if (session('status'))
+    @if (session('message'))
         <div class="alert alert-success">
-            {{ session('status') }}
+            {{ session('message') }}
         </div>
     @endif
     <div class="mb-3">
