@@ -13,7 +13,7 @@ class AnnouncementController extends Controller
      */
     public function index()
     {
-        //
+        return view('announcement.index');    
     }
 
     /**
@@ -37,7 +37,7 @@ class AnnouncementController extends Controller
      */
     public function show(Announcement $announcement)
     {
-        //
+        return view('announcement.detail');
     }
 
     /**
