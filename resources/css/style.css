@@ -8,8 +8,11 @@ body{
     background-color:  var(--grigio-chiaro);
 }
 
-*{
+p{
     font-family: 'Kanit', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Navbar */
@@ -262,7 +265,7 @@ body{
     top: 0px;
     right:30px;
     font-size:2em;
-    color:rgba(255, 255, 255, 0.5);
+    color:#000;
     pointer-events: none;
 }
 .containerx .card .content h3{
@@ -288,6 +291,9 @@ body{
     font-weight:500 ;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.5);
 
+}
+.img{
+border-radius: 50%;
 }
 
 
