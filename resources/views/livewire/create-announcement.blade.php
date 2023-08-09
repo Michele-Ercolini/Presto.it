@@ -31,11 +31,11 @@
     <div class="mb-3">
         <label for="category">Categoria</label>
         <select wire:model.defer="category" id="category" class="form-control">
-            <option style="background-color:  #9b9b9c" value="">Scegli la Categoria</option>
+            <option style="background-color: #9b9b9c" value="">Scegli la Categoria</option>
             @foreach ($categories as $category)
-                <option style="background-color:  #9b9b9c" value="{{$category->id}}">{{$category->name}}</option>
+                <option style="background-color: #9b9b9c" value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select>
     </div>
-    <button type="submit" class="btn btn-dark mb-5">Carica</button>
+    <button type="submit" class="btn btn-dark">Carica</button>
 </form>

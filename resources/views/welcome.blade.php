@@ -2,10 +2,10 @@
     <div class="container-fluid paragraph-container my-2">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <p style="display/4" class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</p>
-                <p style="display/6"> Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
-                <p style="display/8" class="text-center paragrafo">Siamo qui per offrirti un'esperienza di shopping unica.</p>
-                <p style="display/10">Trova prodotti di tendenza e gli accessori più alla moda, tutto comodamente a portata di clic.</p>
+                <p class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</p>
+                <p > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
+                <p  class="text-center paragrafo">Siamo qui per offrirti un'esperienza di shopping unica.</p>
+                <p >Trova prodotti di tendenza e gli accessori più alla moda, tutto comodamente a portata di clic.</p>
             </div>
         </div>
     </div>
