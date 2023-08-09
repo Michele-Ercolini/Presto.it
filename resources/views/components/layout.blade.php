@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
     {{-- iconbox  --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
     @livewireStyles
     @vite('resources/css/app.css')
@@ -22,6 +23,10 @@
     {{$slot}}
     
     <x-footer />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     <script src="https://kit.fontawesome.com/0f3153532c.js" crossorigin="anonymous"></script>
     @livewireScripts
     @vite('resources/js/app.js')
