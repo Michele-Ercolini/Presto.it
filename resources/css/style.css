@@ -171,7 +171,7 @@ h1,h2,h3{
 }
 
 .containerx .card .content h2{
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
     right:30px;
     font-size:2em;
