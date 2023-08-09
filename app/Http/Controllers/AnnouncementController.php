@@ -30,7 +30,7 @@ class AnnouncementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //-+
     }
 
     /**
@@ -39,7 +39,7 @@ class AnnouncementController extends Controller
     public function show(Announcement $announcement)
     {
         
-        return view('announcement.detail',);
+        return view('announcement.detail', compact('announcement'));
     }
 
     /**

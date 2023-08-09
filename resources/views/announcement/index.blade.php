@@ -28,13 +28,13 @@
             
             @foreach($announcements as $announcement)
             <div class="col col-md-4">
-                <div class="containerx d-flex justify-content-center">
+                <div class="">
                     <div class="card">
                         <div class="content">
                             <h2>Titolo: {{$announcement->title}}</h2>
                             <h3>Categoria:{{$announcement->category->name}}</h3>
                             <p class="text-truncate">{{$announcement->body}}</p>
-                            <a href="">Read more</a>
+                            <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
                     </div>
                 </div>
