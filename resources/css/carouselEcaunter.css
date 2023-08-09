@@ -45,3 +45,20 @@
 .section{
   margin-bottom:50px;
 }
+
+
+/* section numeri casuali*/
+.spazio{
+    
+    margin-top: 1px;
+    background-image: url(./Media/bilanciere_forma.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 110vh;
+}
+.immaginitonde{
+    height: 200px;
+    width: 200px;
+
+}

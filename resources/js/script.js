@@ -52,3 +52,50 @@ const swiper = new Swiper('.mySwiper', {
   
    
   });
+
+
+
+
+  
+// Section 1 numeri
+
+let primoNumero = document.querySelector('#primoNumero')
+let secondoNumero = document.querySelector('#secondoNumero')
+
+
+function createInterval(total,element,timing) {
+    
+
+let counter = 0
+let interval = setInterval(()=>{
+    if (counter < total) {
+        counter++
+        element.innerHTML = counter
+        
+        
+    } else{
+        clearInterval(interval)
+    }
+    console.log(counter);
+    
+}, timing)
+}
+
+let check = true
+
+let observer = new IntersectionObserver((entries) =>{
+    entries.forEach(entry =>{
+        if (entry.isIntersecting && check) {
+            createInterval(1500, primoNumero, 10)
+            createInterval(5000, secondoNumero, 1)
+            
+            check = false
+            // setTimeout(() => {
+            //     check = true
+            // }, 17000);
+        }
+    })
+})
+
+observer.observe(primoNumero)
+// Section numeri casuali Fine

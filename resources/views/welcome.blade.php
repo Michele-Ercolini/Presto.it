@@ -15,7 +15,7 @@
             
             @foreach($announcements as $announcement)
             <div class="col col-md-4">
-                <div data-aos="zoom-in-down">
+                <div data-aos="zoom-in-down" data-aos-duration="3000">
                 <div class="containerx">
                     <div class="card">
                         <div class="content">
@@ -74,8 +74,25 @@
 </section>
 
 
+<hr class="border border-dark border-3 opacity-80">
 
-
+ <!-- Inizio section1 numeri Casuali -->
+ <div class="container-fluid spazio mt-5">
+    <div class="row text-center">
+      <div class="col-12 col-md-6">
+        <h2 class="my-5">Vendite giornaliere</h2>
+        <p class="fs-1 text-bold ff-title" id="primoNumero" >0</p>
+        <img class="rounded-circle immaginitonde my-5  border border-4 p-2 border-dark" src="https://picsum.photos/352" alt="">
+      </div>
+      <div class="col-12 col-md-6 ff-title">
+          <img class="rounded-circle immaginitonde my-5 border border-4 p-2 border-dark" src="https://picsum.photos/352" alt="">
+          <h2 class="my-5">Visite odierne</h2>
+          <p class="fs-1 text-bold" id="secondoNumero">0</p>
+        
+      </div>
+    </div>
+  </div>
+  <!-- Fine section1 numeri Casuali -->
 
 
 
