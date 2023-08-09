@@ -28,9 +28,9 @@
                           <form action="{{route('logout')}}" method="POST">
                               @csrf
                               <li>
-                                  <button class="dropdwon-item">
-                                      Esci
-                                  </button>
+                                  
+                                   <a href="{{route('logout')}}"> <img class="btn1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvt17tKxEAUxvHfgvgGFr6ClSCC2Hh7Bzs7sfZRhC1sfAIrL/V6AbG22m7fRU6hhJDMZibBWOS0mcz/nPOdbzKZGSlmI3GlwEc46ZnYK96b9kiBFzjtCX7BWS74DVF1n4hqjydwdCCl8dTqkiErGq7wYONE4hMrXKzJJuRqPAtSGqfAPxteYY7NlgSKKk4NV3XDAzxhqwFeBL7BbkslX7iuPNvGI/Zr64vAucMU7b6r6f4n4A3c4rKScRE4p9Wh7wMOh2h11+HawzNC53oUVdwFHD4OXQe1U8rHH1gifJyKogNk+kjk+jrWDz5cXZOYwL+d+pdXn3PsdBWzZV14/T73etuTmX59tH+nb7OaRB99F06ZAAAAAElFTkSuQmCC"/></a>
+                                  
                               </li>
                           </form>
                       </li>
