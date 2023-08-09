@@ -35,19 +35,14 @@
             <form action="">
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <p class="pt-2">
-                            <strong></strong>
-                        </p>
-                    </div>
-                    <div class="col-auto">
                         <!-- Email input -->
                         <div class="form-outline form-white my-3">
-                            <input type="email" id="form5Example21" class="form-control" />
+                            <input type="email" id="form5Example21" class="form-control text-center" placeholder="email address"/>
                             <label class="form-label mt-3" for="form5Example21">Sign up for our newsletter</label>
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-outline-light mb-4">
-                                invia
+                                Invia
                             </button>
                         </div>                    
                     </div>
@@ -72,7 +67,7 @@
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">CyborTech</h5>
+                    <h5 class="text-uppercase">CyborgTech</h5>
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
