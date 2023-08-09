@@ -212,5 +212,14 @@ border-radius: 15%;
     margin-left:210px;
 }
 
+@media screen and (max-width:600px){
+    .form-label{
+        width: 200px;
+    }
+    .form-control{
+        width: 250px;
+    }
+}
+
 
 
