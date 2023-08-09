@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\PublicController;
-use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
 /*
