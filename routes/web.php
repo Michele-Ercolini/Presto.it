@@ -17,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[PublicController::class, 'home'])->name('homepage');
 
-//Rotta create announcement
+// Rotta create announcement
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
 
-// rotta index announcement
+// Rotta index announcement
 Route::get('/announcement/index', [AnnouncementController::class, 'index'])->name('announcement_index');
 
 // Rotta show announcement
 Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_detail');
+
+// Rotta per la vista di ogni categoria
+Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
