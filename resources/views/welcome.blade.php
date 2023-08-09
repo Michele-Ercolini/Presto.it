@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout titolo='Presto.it'>
     <div class="container-fluid paragraph-container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">

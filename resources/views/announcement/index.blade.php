@@ -1,12 +1,5 @@
-<x-layout>
+<x-layout titolo='I NOSTRI ANNUNCI'>
     
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12-col-md-3">
-                <h1>I NOSTRI ANNUNCI</h1>
-            </div>
-        </div>
-    </div>
     
     <div class="container">
         <div class="row">
