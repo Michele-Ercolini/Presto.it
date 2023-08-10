@@ -28,7 +28,7 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12 col-md-3">
-                <h1 class="mt-5 text-white text-center" style="font-size: 80px"></h1>
+                <h1 class="mt-5 text-white text-center" style="font-size: 80px">Login</h1> 
              
                 <div class="container ">
                     <div class="row justify-content-center">
@@ -62,7 +62,7 @@
                     </script>
 
                 </form>
-﻿
+
 
                 {{-- fine form --}}
 
