@@ -29,6 +29,9 @@
                     <div class="btnprofile card-body d-flex justify-content-evenly">
                         <a style="color:black" href="#" class="mt-3 btn btn-outline-danger card-link text-decoration-none">GitHub</a>
                         <a style="color:black" href="#" class="mt-3 btn btn-outline-primary card-link text-decoration-none">LinkedIn</a>
+
+                        
+
                     </div>
                        
                     </div>
@@ -58,6 +61,13 @@
                 <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
                 <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
                 <hr>
+                <!--Zona Revisore da customizzare-->
+                @if (Auth::user()->is_revisor)
+                <a style="color:black" href="{{route('revisor_index')}}" class="mt-3 btn btn-outline-danger card-link text-decoration-none position-relative">Zona Revisore
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span>
+                </a>
+                @endif
+                <!--Fine Zona Revisore da customizzare-->
                 <section class="container">
                     <div class="row">
                         @foreach ($announcements as $announcement)

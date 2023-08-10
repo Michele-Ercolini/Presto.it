@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,15 @@ Route::get('/announcement/index', [AnnouncementController::class, 'index'])->nam
 
 // Rotta show announcement
 Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_detail');
+
+//Rotta Revisione
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+
+//Rotta Accetta annuncio
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor_accept_announcement');
+
+//Rotta Rifiuta annuncio
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor_reject_announcement');
+
+
+
