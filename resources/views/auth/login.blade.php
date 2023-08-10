@@ -1,15 +1,15 @@
 <x-layout titolo='LOGIN'>
-   
+    
     
     {{-- div per dare un pò di margine --}}
     <div style=" margin-top:50px;" ></div>
-
+    
     {{-- <div style="height: 10px"></div> --}}
-
+    
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col col-md-8">
-
+                
                 {{-- inizio form --}}
                 <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}">
                     @csrf
@@ -27,13 +27,23 @@
                     <div class="mb-3">
                         <p>Non sei ancora loggato?   <br><a href="{{route('register')}}">Che aspetti!</a></p></br>
                     </div>
-
+                    
+                    <script>
+                        let track=document.querySelector('#track')
+                        let buttonLogin=document.querySelector('#buttonLogin')
+                        console.dir(track);
+                        
+                        buttonLogin.addEventListener('click', ()=>{
+                            track.play()
+                        })
+                    </script>
+                    
                 </form>
                 {{-- fine form --}}
                 
-
+                
             </div>
         </div>
     </div>
-
+    
 </x-layout>
