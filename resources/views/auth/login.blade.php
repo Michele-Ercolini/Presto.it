@@ -33,7 +33,7 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-3 ">
                 {{-- inizio form --}}
-                <form class="custom-form" method="POST" action="{{route('register')}}">
+                <form class="custom-form" method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="mb-3">
                         <label class="formLabel" for="userEmail" class="form-label">Email</label>
