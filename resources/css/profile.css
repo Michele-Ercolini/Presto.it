@@ -93,6 +93,7 @@ transition: 0.5s;
     border: 1px solid rgba(255, 255, 255, 0.48);
     box-shadow: 4px 4px 5px;
     width: 380px;
+    height: 35px;
 }
 
 .search-button{
