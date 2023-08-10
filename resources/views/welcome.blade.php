@@ -15,7 +15,7 @@
             
             @foreach($announcements as $announcement)
             <div class="col col-md-4">
-                <div data-aos="zoom-in-down" data-aos-duration="3000">
+                <div data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="containerx">
                     <div class="card">
                         <div class="content">
