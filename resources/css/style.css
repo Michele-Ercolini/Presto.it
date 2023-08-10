@@ -76,7 +76,7 @@ h1,h2,h3{
 .form-control{
     width: 500px;
     background: rgba(255, 255, 255, 0.19);
-    border-radius: 16px;
+    border-radius: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -85,6 +85,7 @@ h1,h2,h3{
     border: 1px solid rgba(255, 255, 255, 0.48);
     box-shadow: 4px 4px 5px;
     transition: 0.3s;
+    
 }
 
 .marginSection{
