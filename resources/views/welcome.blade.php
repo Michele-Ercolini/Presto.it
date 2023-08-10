@@ -29,7 +29,7 @@
                 <h1 class="text-white" style="font-size: 80px">Presto.it</h1>
                 <form class="search-form" action="/search" method="GET">
                     <input type="text" name="q" class="text-center search-input" placeholder="Cerca prodotti...">
-                    <button type="submit" class="btn1  btn-outline-dark search-button">Cerca</button>
+                    <br><span><button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button></span>
                 </form>
             </div>
         </div>

@@ -95,6 +95,15 @@ transition: 0.5s;
     width: 380px;
 }
 
+.search-button{
+   height: 30px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 15px;
+   margin-left:150px;
+   color:white;
+}
+
 
 
 

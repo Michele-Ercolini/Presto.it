@@ -19,7 +19,11 @@
                 </div>
             </div>
             @endforeach
-            
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2">
+                {{$announcements->links()}}
+            </div>
         </div>
     </div>
     
