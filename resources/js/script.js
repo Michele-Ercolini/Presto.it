@@ -6,6 +6,7 @@ let navCustom = document.querySelector('.navcustom')
 
 
 
+
 // evento navbar
 window.addEventListener('scroll', ()=>{
     let scrolled = window.scrollY;
@@ -99,3 +100,11 @@ let observer = new IntersectionObserver((entries) =>{
 
 observer.observe(primoNumero)
 // Section numeri casuali Fine
+
+let track=document.querySelector('#track')
+let buttonLogin=document.querySelector('#buttonLogin')
+console.dir(track);
+
+buttonLogin.addEventListener('click', ()=>{
+    track.play()
+})
