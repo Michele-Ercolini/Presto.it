@@ -4,13 +4,6 @@ let navbarTrasformation = document.querySelector('#navId')
 
 let navCustom = document.querySelector('.navcustom')
 
-let track=document.querySelector('#track')
-let buttonLogin=document.querySelector('#buttonLogin')
-console.dir(track);
-
-buttonLogin.addEventListener('click', ()=>{
-    track.play()
-})
 
 
 
@@ -108,3 +101,10 @@ let observer = new IntersectionObserver((entries) =>{
 observer.observe(primoNumero)
 // Section numeri casuali Fine
 
+let track=document.querySelector('#track')
+let buttonLogin=document.querySelector('#buttonLogin')
+console.dir(track);
+
+buttonLogin.addEventListener('click', ()=>{
+    track.play()
+})
