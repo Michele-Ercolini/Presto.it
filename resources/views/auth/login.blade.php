@@ -9,20 +9,20 @@
             <div class="col col-md-8">
 
                 {{-- inizio form --}}
-                <form method="POST" action="{{route('login')}}">
+                <form class="custom-form" method="POST" action="{{route('login')}}">
                     @csrf
                     <div class="mb-3">
-                        <label for="userEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="userEmail" name="email">
+                        <label class="formLabel" for="userEmail" class="form-label">Email address</label>
+                        <input class="formInput text-white" type="email" class="form-control" id="userEmail" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="userPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="userPassword" name="password">
+                        <label class="formLabel" for="userPassword" class="form-label">Password</label>
+                        <input class="formInput text-white" type="password" class="form-control" id="userPassword" name="password">
                     </div>
-                    <button type="submit" class="btn btn-dark mb-3">Login</button>
+                    <button type="submit" class="btn btn1 btn-dark mb-3">Login</button>
                     
                     <div class="mb-3">
-                        <p>Non sei ancora loggato?   <a href="{{route('register')}}">Che aspetti!</a></p>
+                        <p>Non sei ancora loggato?   <br><a href="{{route('register')}}">Che aspetti!</a></p></br>
                     </div>
 
                 </form>

@@ -9,25 +9,25 @@
             <div class="col col-md-8">
 
                 {{-- inizio form --}}
-                <form method="POST" action="{{route('register')}}">
+                <form class="custom-form" method="POST" action="{{route('register')}}">
                     @csrf
                     <div class="mb-3">
-                        <label for="userName" class="form-label">Nome Utente</label>
-                        <input type="text" class="form-control" id="userName" name="name">
+                        <label class="formLabel" for="userName" class="form-label">Nome Utente</label>
+                        <input class="formInput text-white" type="text" class="form-control" id="userName" name="name">
                     </div>
                     <div class="mb-3">
-                        <label for="userEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="userEmail" name="email">
+                        <label class="formLabel" for="userEmail" class="form-label">Email</label>
+                        <input class="formInput text-white" type="email" class="form-control" id="userEmail" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="userPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="userPassword" name="password">
+                        <label class="formLabel" for="userPassword" class="form-label">Password</label>
+                        <input class="formInput text-white" type="password" class="form-control" id="userPassword" name="password">
                     </div>
                     <div class="mb-3">
-                        <label for="userPassword" class="form-label">Conferma Password</label>
-                        <input type="password" class="form-control" id="userPassword" name="password_confirmation">
+                        <label class="formLabel" for="userPassword" class="form-label">Conferma Password</label>
+                        <input class="formInput text-white" type="password" class="form-control" id="userPassword" name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-dark mb-3">Registrati</button>
+                    <button type="submit" class="btn btn1 btn-dark mb-3">Registrati</button>
                 </form>
                 {{-- fine form --}}
 
