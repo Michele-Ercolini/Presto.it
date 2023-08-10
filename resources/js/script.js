@@ -10,7 +10,7 @@ let navCustom = document.querySelector('.navcustom')
 window.addEventListener('scroll', ()=>{
     let scrolled = window.scrollY;
 
-    if(scrolled > 650){
+    if(scrolled > 250){
         navbarTrasformation.classList.add('p-0');
         navCustom.classList.add('w-100')
         
