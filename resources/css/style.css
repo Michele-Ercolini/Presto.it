@@ -73,7 +73,7 @@ h1,h2,h3{
     min-height: 100vh;
     margin-top: 100px;
 }
-/* .form-control{
+.form-control{
     width: 500px;
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
@@ -85,7 +85,7 @@ h1,h2,h3{
     border: 1px solid rgba(255, 255, 255, 0.48);
     box-shadow: 4px 4px 5px;
     transition: 0.3s;
-} */
+}
 
 .marginSection{
     margin-top: 100px;
