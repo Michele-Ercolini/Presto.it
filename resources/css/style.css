@@ -44,7 +44,7 @@ h1,h2,h3{
     color: var(--white-smoke);
 }
 .dropdown-menu{
-    background-color: transparent;
+    background-color: var(--grigio-chiaro);
     
 }
 .dropdown-item{
@@ -219,6 +219,9 @@ border-radius: 15%;
     .form-control{
         width: 250px;
     }
+}
+.dropdown-menu{
+    background-color: ;
 }
 
 
