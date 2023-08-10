@@ -58,5 +58,21 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form action="{{route('revisor_accept_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
+                @csrf
+                @method('PATCH')
+                    <button type="submit" class="btn btn1 btn-outline-success">Accetta</button>
+            </form>
+        </div>
+        <div class="col-12 col-md-6 text-end">
+            <form action="{{route('revisor_reject_announcement', ['announcement'=>$announcement_to_check])}}" method="POST">
+                @csrf
+                @method('PATCH')
+                    <button type="submit" class="btn btn1 btn-outline-danger">Rifiuta</button>
+            </form>
+        </div>
+    </div>
 </section>
 </x-layout>

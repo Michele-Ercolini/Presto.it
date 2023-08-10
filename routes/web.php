@@ -24,6 +24,10 @@ Route::get('/user/profile', [PublicController::class, 'profile'])->name('user_pr
 // Rotta per la vista di ogni categoria
 Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
 
+
+
+/* ROTTA ANNOUNCEMENT */
+
 // Rotta create announcement
 Route::get('/announcement/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
 
@@ -32,6 +36,10 @@ Route::get('/announcement/index', [AnnouncementController::class, 'index'])->nam
 
 // Rotta show announcement
 Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 'show'])->name('announcement_detail');
+
+
+
+/* ROTTA REVISOR */
 
 //Rotta Revisione
 Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');

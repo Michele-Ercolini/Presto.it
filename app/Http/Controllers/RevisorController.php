@@ -15,11 +15,11 @@ class RevisorController extends Controller
     public function acceptAnnouncement(Announcement $announcement){
 
         $announcement->setAccepted(true);
-        return redirect()->back()->with('status', 'Hai accettato l\'annuncio');
+        return redirect()->back()->with('message', 'Hai accettato l\'annuncio');
     }
 
     public function rejectAnnouncement(Announcement $announcement){
         $announcement->setAccepted(false);
-        return redirect()->back()->with('status', 'Hai rifiutato l\'annuncio');
+        return redirect()->back()->with('message', 'Hai rifiutato l\'annuncio');
     }
 }
