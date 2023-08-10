@@ -103,7 +103,7 @@ observer.observe(primoNumero)
 
 let track=document.querySelector('#track')
 let buttonLogin=document.querySelector('#buttonLogin')
-console.dir(track);
+
 
 buttonLogin.addEventListener('click', ()=>{
     track.play()
