@@ -24,7 +24,7 @@
 <body>
     
     <x-navbar />
-    <x-header  titoloHeader="{{$titolo}}"/>
+    
     
     {{$slot}}
     

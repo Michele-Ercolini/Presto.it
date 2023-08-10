@@ -1,5 +1,5 @@
 <x-layout titolo="">
-
+    <x-header titoloHeader="Revisor"/>
     @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
@@ -9,7 +9,7 @@
     <section class="section container">
         <div class="row justify-content-center">
             <div class="col col-md-8">
-                <h1 class="display-2">{{$announcement_to_check ? 'Ecco l\'annuncio da revisionare' : 'Non ci sono annunci da revisionare'}}</h1>
+                <h1 class="display-2 text-center">{{$announcement_to_check ? 'Ecco l\'annuncio da revisionare' : 'Non ci sono annunci da revisionare'}}</h1>
                 <div class="">
                     <div class="card">
                         <div class="content">

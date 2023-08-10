@@ -1,5 +1,6 @@
 <x-layout titolo='I NOSTRI ANNUNCI'>
     
+    <x-header titoloHeader="Tutti gli Annunci"/>
     
     <div class="container">
         <div class="row">
