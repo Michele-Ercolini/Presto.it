@@ -221,8 +221,13 @@ border-radius: 15%;
     }
 }
 .dropdown-menu{
-    background-color: ;
+    background-color:var(--grigio-chiaro) ;
 }
 
+a.nav-link.dropdown-toggle.show::after{
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+    
+}
 
 
