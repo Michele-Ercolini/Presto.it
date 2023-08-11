@@ -32,7 +32,7 @@
         <div class="row">
             
             @foreach($announcements as $announcement)
-            <div class="col col-md-6 col-lg-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-3">
                 <div data-aos="zoom-in-down" data-aos-duration="2000">
                     <div class="containerx">
                         <div class="card">
