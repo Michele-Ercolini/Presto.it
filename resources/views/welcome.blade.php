@@ -3,24 +3,26 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-white" style="font-size: 80px">Presto.it</h1>
+                <h1 class="text-white display-1">Presto.it</h1>
                 <form class="search-form" action="/search" method="GET">
                     <input type="text" name="q" class="text-center search-input" placeholder="Cerca prodotti...">
-                    <br><span><button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button></span>
+                    <br>
+                    <span>
+                        <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>
+                    </span>
                 </form>
             </div>
         </div>
     </header>
     
     
-    <hr class="border border-dark border-3 opacity-80">
-    <div class="container-fluid paragraph-container my-2">
+    <hr class="border border-dark border-3 opacity-80 m-0">
+    <div class="container-fluid paragraph-container my-3">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <p class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</p>
-                <p > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
-                <p  class="text-center paragrafo">Siamo qui per offrirti un'esperienza di shopping unica.</p>
-                <p >Trova prodotti di tendenza e gli accessori più alla moda, tutto comodamente a portata di clic.</p>
+                <h3 class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</h3>
+                <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
+                <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
             </div>
         </div>
     </div>
@@ -29,16 +31,16 @@
         <div class="row">
             
             @foreach($announcements as $announcement)
-            <div class="col col-md-4">
+            <div class="col col-md-4 my-3">
                 <div data-aos="zoom-in-down" data-aos-duration="2000">
                     <div class="containerx">
                         <div class="card">
                             <div class="content">
-                                <img class="imgSection" src="https://picsum.photos/250" height="200px" width="200px">
-                                <h2>{{$announcement->title}}</h2>
-                                <h3>Categoria: {{$announcement->category->name}}</h3>
+                                <h3 class="my-2">{{$announcement->title}}</h3>
+                                <img class="imgSection" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+                                <h5 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h5>
                                 <p class="text-truncate">{{$announcement->body}}</p>
-                                <a style="margin-bottom:60px;" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                             </div>
                         </div>
                     </div>
