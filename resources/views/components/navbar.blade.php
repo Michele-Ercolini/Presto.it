@@ -39,8 +39,15 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="{{route('user_profile')}}" class="dropdown-item">Profilo</a></li>
+
                     @if(Auth::user()->is_revisor)
-                    <li><a href="{{route('revisor_index')}}" class="dropdown-item">Revisor</a></li>
+                      <li>
+                        <a href="{{route('revisor_index')}}" class="dropdown-item position-relative">
+                          Revisor
+                          <span class="position-absolute top-50 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
+                          </span>
+                        </a>
+                      </li>
                     @endif
                     <li><hr class="dropdown-divider"></li>
                     <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i></a></li>

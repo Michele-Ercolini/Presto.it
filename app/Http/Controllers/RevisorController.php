@@ -21,4 +21,8 @@ class RevisorController extends Controller
         $announcement->setAccepted(false);
         return redirect()->back()->with('message', 'Hai rifiutato l\'annuncio');
     }
+
+    public function toBeRevisionedCount(){
+        return Announcement::where('is_accepted', null)->count();
+    }
 }
