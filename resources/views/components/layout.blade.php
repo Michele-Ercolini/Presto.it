@@ -25,7 +25,6 @@
     
     <x-navbar />
     
-    
     {{$slot}}
     
     
