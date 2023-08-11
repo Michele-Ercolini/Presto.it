@@ -1,9 +1,5 @@
 <form class="custom-form2" wire:submit.prevent="announcementStore">
-    @if (session('message'))
-        <div class="alert alert-success">
-            {{ session('message') }}
-        </div>
-    @endif
+    
     <div class="mb-3">
         <label for="announcementTitle" class="form-label">Titolo Annuncio</label>
         <input type="text" class="form-control @error('title') is-invalid @enderror" id="announcementTitle"
@@ -38,4 +34,9 @@
         </select>
     </div>
     <button type="submit" class="btn btn-dark mb-3">Carica</button>
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
 </form>
