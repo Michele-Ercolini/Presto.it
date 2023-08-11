@@ -2,7 +2,7 @@
 
 .backcont{
     background-color: var(--grigio-chiaro);
-    padding: 150px;
+    padding: 50px;
     background-image: url(./Media/img_repeat.png);
     background-repeat: repeat-x;
     background-position: bottom;
