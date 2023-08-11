@@ -32,9 +32,9 @@
         <div class="row">
             
             @foreach($announcements as $announcement)
-            <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-5">
                 <div data-aos="zoom-in-down" data-aos-duration="2000">
-                    <div class="containerx">
+                    <div class="containerx d-flex justify-content-center">
                         <div class="card">
                             <div class="content">
                                 <h3 class="my-2">{{$announcement->title}}</h3>

@@ -50,7 +50,7 @@
                       </li>
                     @endif
                     <li><hr class="dropdown-divider"></li>
-                    <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"></i></a></li>
+                    <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"> Esci</i></a></li>
                   </ul>
                   <form id="form-logout" action="{{route('logout')}}" method="POST">
                       @csrf

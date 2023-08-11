@@ -3,12 +3,12 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12 col-md-3">
-                <h1 class="mt-5 text-white text-center" style="font-size: 80px">Register</h1>   
-                <div class="container ">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-3 ">
+                
                 {{-- inizio form --}}
-                <form class="custom-form" method="POST" action="{{route('register')}}">
+                <form class="custom-form my-5" method="POST" action="{{route('register')}}" style="padding-top: 0px; padding-bottom: 0px ">
+                    <div>
+                        <p class=" text-white text-center" style="font-size: 50px">Register</p>  
+                    </div>  
                     @csrf
                     <div class="mb-3">
                         <label class="formLabel" for="userName" class="form-label">Nome Utente</label>

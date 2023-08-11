@@ -3,13 +3,11 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12 col-md-3">
-                <h1 class="mt-5 text-white text-center" style="font-size: 80px">Login</h1> 
-             
-                <div class="container ">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-3 ">
+                
+                
                 {{-- inizio form --}}
-                <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}">
+                <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}" style="padding-top: 0px; padding-bottom: 0px ">
+                    <p class="mt-5 text-white text-center" style="font-size: 50px">Login</p>
                     @csrf
                     <div class="mb-3">
                         <label class="formLabel" for="userEmail" class="form-label">Email address</label>
