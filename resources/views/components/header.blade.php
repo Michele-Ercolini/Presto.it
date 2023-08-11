@@ -6,7 +6,7 @@
     </div>
 </header>
 
-<hr class="border border-dark border-3 opacity-80">
+<hr class="border border-dark border-3 opacity-80 m-0">
 
 
 

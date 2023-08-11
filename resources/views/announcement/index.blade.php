@@ -2,19 +2,19 @@
     
     <x-header titoloHeader="Tutti gli Annunci"/>
     
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             
             @foreach($announcements as $announcement)
-            <div class="col col-md-4">
+            <div class="col col-md-4 my-3">
                 <div class="containerx">
                     <div class="card">
                         <div class="content">
-                            <img class="img my-2" src="https://picsum.photos/250" height="200px" width="200px">
-                            <h2>{{$announcement->title}}</h2>
-                            {{-- <h3>Categoria: {{$announcement->category->name}}</h3> --}}
+                            <h3 class="my-2">{{$announcement->title}}</h3>
+                            <img class="imgSection" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+                            <h5 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h5>
                             <p class="text-truncate">{{$announcement->body}}</p>
-                            <a class="btn1" style="margin-bottom:50px" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                            <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -39,5 +39,5 @@
     
     
     
-    
+    <hr class="border border-dark border-3 opacity-80 m-0">
 </x-layout>
