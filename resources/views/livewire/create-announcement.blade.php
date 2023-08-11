@@ -1,4 +1,4 @@
-<form wire:submit.prevent="announcementStore">
+<form class="custom-form2" wire:submit.prevent="announcementStore">
     @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
