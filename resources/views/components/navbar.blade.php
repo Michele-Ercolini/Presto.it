@@ -81,9 +81,7 @@
               @endauth
             </ul>
             <!--Fine Utente NON Autenticato-->
-           <div class="lang-menu">
-            <div class="selected-lang">
-              
+          
             </div>
             
            </div>
