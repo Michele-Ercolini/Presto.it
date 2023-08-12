@@ -338,7 +338,7 @@ h1,h2,h3{
     }
   }
 .button{
-    margin-left:210px;
+    margin-left:310px;
 }
 
 @media screen and (max-width:600px){
@@ -357,6 +357,10 @@ a.nav-link.dropdown-toggle.show::after{
     transform: rotate(180deg);
     transition: transform 0.5s ease-in-out;
     
+}
+.register{
+    height: 50px;
+    background-color: grey;
 }
 
 

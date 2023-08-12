@@ -1,4 +1,5 @@
 <x-layout>
+    <div class="register">
 
     <header style="padding-top: 6%;" class="container-fluid bgimg d-flex align-items-center justify-content-center mb-5 mt-5">
         <div class="row justify-content-center">
