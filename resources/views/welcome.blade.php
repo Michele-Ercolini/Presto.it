@@ -52,6 +52,7 @@
         </div>
     </div>
     {{-- Fine Cards Annunci --}}
+    <hr class="border border-dark border-3 opacity-80 m-0">
 
 
     <section class="container-fluid marginSection">
