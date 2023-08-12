@@ -96,6 +96,12 @@
     height: 35px;
 }
 
+@media (max-width: 400px) {
+    .search-form .search-input{
+        width: 280px;
+    }
+  }
+
 .search-button{
     justify-content: center;
     align-items: center;
