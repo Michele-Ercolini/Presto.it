@@ -6,13 +6,13 @@
         <div class="row">
             
             @foreach($announcements as $announcement)
-            <div class="col col-md-4 my-3">
-                <div class="containerx">
+            <div class="col-12 col-md-6 col-lg-4 my-3">
+                <div class="containerx d-flex justify-content-center">
                     <div class="card">
                         <div class="content">
-                            <h3 class="my-2">{{$announcement->title}}</h3>
-                            <img class="imgSection" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
-                            <h5 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h5>
+                            <h2 class="my-2">{{$announcement->title}}</h2>
+                            <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+                            <h3 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h3>
                             <p class="text-truncate">{{$announcement->body}}</p>
                             <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
