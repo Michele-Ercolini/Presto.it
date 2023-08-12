@@ -37,9 +37,9 @@
                     <div class="containerx d-flex justify-content-center">
                         <div class="card">
                             <div class="content">
-                                <h3 class="my-2">{{$announcement->title}}</h3>
+                                <h2 class="my-2">{{$announcement->title}}</h2>
                                 <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
-                                <h5 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h5>
+                                <h3 class="paragrafo my-3">Categoria: {{$announcement->category->name}}</h3>
                                 <p class="text-truncate">{{$announcement->body}}</p>
                                 <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                             </div>
