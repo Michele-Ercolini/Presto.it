@@ -32,7 +32,7 @@
                             <!-- Slider main container -->
                             @if($announcement_to_check)
                             <div class="container-fluid backcont position-relative">
-                                <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
+                                <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill btn1 bg-dark">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
                                 </span>
                                 <h1 class="text-center">{{ $announcement_to_check->title }}</h1>
                                 <div class="row">

@@ -44,7 +44,7 @@
                       <li>
                         <a href="{{route('revisor_index')}}" class="dropdown-item position-relative">
                           Revisor
-                          <span class="position-absolute top-50 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
+                          <span class="revisor  start-100 translate-middle badge btn1 bg-dark rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
                           </span>
                         </a>
                       </li>
@@ -81,8 +81,13 @@
               @endauth
             </ul>
             <!--Fine Utente NON Autenticato-->
-
-            <div class="logo"></div>
+           <div class="lang-menu">
+            <div class="selected-lang">
+              
+            </div>
+            
+           </div>
+            
           </div>
         </div>
       </nav>
