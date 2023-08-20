@@ -24,7 +24,7 @@
                                         @endforeach
                                         
                                         @for ($i = 0; $i < 3 - $announcements->count(); $i++) 
-                                        <li class="list-group-item lead">empty</li>
+                                            <li class="list-group-item lead">empty</li>
                                         @endfor
                                         
                                         <div class="btnprofile card-body d-flex justify-content-evenly">

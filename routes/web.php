@@ -42,13 +42,13 @@ Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 
 /* ROTTA REVISOR */
 
 //Rotta Revisore
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor_index');
 
 //Rotta Accetta annuncio
-Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor_accept_announcement');
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor_accept_announcement');
 
 //Rotta Rifiuta annuncio
-Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor_reject_announcement');
+Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
 
 
 

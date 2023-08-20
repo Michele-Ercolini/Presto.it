@@ -1,6 +1,6 @@
 <x-layout>
 
-    <header class="container-fluid bgimg d-flex align-items-center justify-content-center mt-5">
+    <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12 col-md-3">
                 

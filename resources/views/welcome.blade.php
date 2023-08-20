@@ -11,12 +11,16 @@
                         <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>
                     </span>
                 </form>
+                @if (session('access.denied'))
+                    <div class="alert alert-danger">
+                        {{ session('access.denied') }}
+                    </div>
+                @endif
             </div>
         </div>
     </header>
-    
-    
     <hr class="border border-dark border-3 opacity-80 m-0">
+
     <div class="container-fluid paragraph-container my-3">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
