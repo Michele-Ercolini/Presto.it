@@ -24,6 +24,9 @@ Route::get('/user/profile', [PublicController::class, 'profile'])->name('user_pr
 // Rotta per la vista di ogni categoria
 Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
 
+// Rotta Lavora con noi
+Route::get('/user/Lavora-con-noi', [PublicController::class, 'lavora'])->middleware('auth')->name('user_lavora');
+
 
 
 /* ROTTA ANNOUNCEMENT */
@@ -49,6 +52,12 @@ Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acc
 
 //Rotta Rifiuta annuncio
 Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
+
+//Rotta Richiedi di diventare revisore
+Route::get('richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
+
+//Rotta utente revisore
+Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->middleware('auth')->name('make_revisor');
 
 
 
