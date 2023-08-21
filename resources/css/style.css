@@ -494,3 +494,14 @@ a.nav-link.dropdown-toggle.show::after{
 
 }
 
+.aFooter{
+    text-decoration: none;
+    color: #fff;
+}
+
+.aFooter:hover{
+    color: red;
+}
+
+
+
