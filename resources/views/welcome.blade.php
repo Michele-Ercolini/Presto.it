@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="text-white display-1">Presto.it</h1>
-                <form class="search-form" action="/search" method="GET">
-                    <input type="text" name="q" class="text-center search-input" placeholder="Cerca prodotti...">
+                <form class="search-form" action="{{route('announcements.search')}}" method="GET">
+                    <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
                     <span>
                         <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>

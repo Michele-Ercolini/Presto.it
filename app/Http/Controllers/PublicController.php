@@ -30,4 +30,10 @@ class PublicController extends Controller
     public function lavora(){
         return view ('user.lavora');
     }
+
+    public function searchAnnouncements(Request $request)
+    {
+        $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(9);
+        return view('announcement.index', compact('announcements'));
+    }
 }
