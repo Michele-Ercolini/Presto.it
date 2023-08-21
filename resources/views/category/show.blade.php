@@ -2,7 +2,9 @@
 
     <div class="container my-5">
         <div class="row">
-            
+            <div class="col-12 my-5">
+                <h1 class="text-white display-1 text-center">Categoria {{$category->name}}</h1>
+            </div>
             @forelse($category->announcements as $announcement)
             @if($announcement->is_accepted)
                 <div class="col col-md-4">

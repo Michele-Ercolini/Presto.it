@@ -5,7 +5,7 @@
     <div class="container my-5">
         <div class="row">
             
-            @foreach($announcements as $announcement)
+            @forelse($announcements as $announcement)
             <div class="col-12 col-md-6 col-lg-4 my-3">
                 <div class="containerx d-flex justify-content-center">
                     <div class="card">
@@ -19,14 +19,29 @@
                     </div>
                 </div>
             </div>
-            @endforeach
+            @empty
+            <div class="col-12">
+                <div class="alert alert-warning py-3 shadow">
+                    <p class="lead">Non ci sono annunci per questa ricerca</p>
+                </div>
+            </div>
+            @endforelse
         </div>
         <div class="row justify-content-center">
-            <div class="col-2">
+            <div class="menu col-2">
                 {{$announcements->links()}}
             </div>
         </div>
     </div>
+
+    {{-- <div class="row justify-content-center">
+        <div class="col-2">
+            
+        </div>
+    </div>
+</div> --}}
+
+
     
     
     

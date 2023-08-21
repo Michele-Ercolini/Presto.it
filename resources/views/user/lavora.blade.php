@@ -14,6 +14,7 @@
                         <h1 class="text-white display-1 text-center">Lavora con noi</h1>
                         <h3 class="text-center">Vuoi diventare un nostro Revisore?</h3>
                         <a class="btn1 btn btn-outline-dark" href="{{route('become_revisor')}}">Clicca qui</a>
+                        {{-- al click dovrebbe sparire il bottone per evitare 300 email --}}
                     </div>                
                 @endif
                     
