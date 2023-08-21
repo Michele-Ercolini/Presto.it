@@ -6,7 +6,7 @@
         <div class="row">
             
             @forelse($announcements as $announcement)
-            <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="col-12 col-md-6 col-lg-4 my-5">
                 <div class="containerx d-flex justify-content-center">
                     <div class="card">
                         <div class="content">
