@@ -494,6 +494,14 @@ a.nav-link.dropdown-toggle.show::after{
 
 }
 
-.profile{
-    background-attachment:fixed;
+.aFooter{
+    text-decoration: none;
+    color: #fff;
 }
+
+.aFooter:hover{
+    color: red;
+}
+
+
+
