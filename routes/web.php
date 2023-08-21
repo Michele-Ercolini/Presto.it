@@ -59,5 +59,6 @@ Route::get('richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->m
 //Rotta utente revisore
 Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->middleware('auth')->name('make_revisor');
 
-
+//Rotta Search
+Route::get('/ricerca/annuncio', [PublicController::class, 'searchAnnouncements'])->name('announcements.search');
 
