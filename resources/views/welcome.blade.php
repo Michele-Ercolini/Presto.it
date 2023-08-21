@@ -30,7 +30,12 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <h3 class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</h3>
+<<<<<<< HEAD
+                <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
+                
+=======
                 <p class="text-center"> Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
+>>>>>>> 6bc419d4a1abcc597fc32275d52efd78e82bf3e9
                 <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
             </div>
         </div>

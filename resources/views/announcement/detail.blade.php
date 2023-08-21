@@ -15,7 +15,7 @@
                             
                             
                             <!-- Slider main container -->
-                            <div class="container-fluid backcont">
+                            <div class="container-fluid backcont mt-2">
                                 <h1 class="text-center">{{ $announcement->title }}</h1>
                                 <div class="row">
                                     <div class="col-12">
