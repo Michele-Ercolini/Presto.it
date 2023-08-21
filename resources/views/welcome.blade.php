@@ -42,7 +42,7 @@
     
     {{-- Cards Annunci --}}
     <div class="container">
-        <h3 class="text-center paragrafo display-3 my-5">I nostri Annunci più recenti</h3>
+        <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
         <div class="row">
             
             @foreach($announcements as $announcement)
