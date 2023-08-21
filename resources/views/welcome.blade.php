@@ -31,6 +31,9 @@
             <div class="col-12 col-md-6">
                 <h3 class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</h3>
                 <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
+                <video loop autoplay muted width="100%" height="360">
+                    <source src="/media/Vecchietta.mp4" type="video/mp4">
+                </video>
                 <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
             </div>
         </div>
