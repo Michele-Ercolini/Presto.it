@@ -22,11 +22,20 @@
             @endforeach
         </div>
         <div class="row justify-content-center">
-            <div class="col-2">
+            <div class="menu col-2">
                 {{$announcements->links()}}
             </div>
         </div>
     </div>
+
+    {{-- <div class="row justify-content-center">
+        <div class="col-2">
+            
+        </div>
+    </div>
+</div> --}}
+
+
     
     
     
