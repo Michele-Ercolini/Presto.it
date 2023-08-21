@@ -10,11 +10,11 @@
                 <div class="containerx d-flex justify-content-center">
                     <div class="card">
                         <div class="content">
-                            <h2 class="text-capitalize my-2">{{$announcement->title}}</h2>
+                            <h2 class="mb-3">{{$announcement->title}}</h2>
                             <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
-                            <h3 class="text-capitalize paragrafo my-3"> {{$announcement->category->name}}</h3>
-                            <p class="text-capitalize text-truncate">{{$announcement->body}}</p>
-                            <a href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                            <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
+                            <p class="text-truncate">{{$announcement->body}}</p>
+                            <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                         </div>
                     </div>
                 </div>
