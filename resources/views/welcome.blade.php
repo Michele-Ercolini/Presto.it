@@ -2,14 +2,14 @@
     
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
-            <div class="col-12 justify-content-center">
-                <h1 class="text-center text-white display-1">Presto.it</h1>
+            <div class="col-12">
+                <h1 class="text-white display-1">Presto.it</h1>
                 <form class="search-form" action="{{route('announcements.search')}}" method="GET">
                     <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
-                    <div class="text-center my-4">
-                        <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">Cerca</button>
-                    </div>
+                    <span>
+                        <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>
+                    </span>
                 </form>
                 @if (session('access.denied'))
                     <div class="alert alert-danger">
@@ -31,13 +31,13 @@
             <div class="col-12 col-md-6">
                 <h3 class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</h3>
                 <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
-                <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
             </div>
         </div>
     </div>
     
     {{-- Cards Annunci --}}
     <div class="container">
+        <h3 class="text-center paragrafo display-3">I nostri Annunci più recenti</h3>
         <div class="row">
             
             @foreach($announcements as $announcement)
