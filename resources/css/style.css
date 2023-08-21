@@ -494,3 +494,6 @@ a.nav-link.dropdown-toggle.show::after{
 
 }
 
+.profile{
+    background-attachment:fixed;
+}
