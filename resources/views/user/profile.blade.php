@@ -1,8 +1,8 @@
 <x-layout>
         
-        <section class="container-fluid">
+        <section class="container-fluid my-5">
             <div class="row">
-                <aside class="col-12 col-md-3">
+                <aside class="col-12 col-md-3 my-5">
                     
                     <div class="cardP ">
                         <div class="imgprofile">
