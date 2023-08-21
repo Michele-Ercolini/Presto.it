@@ -5,9 +5,9 @@
             
 
                 @if(Auth::user()->is_revisor)
-                    <div class="col-12">
+                    <div class="col-12 mb-5">
                         <h1 class="text-white display-1 text-center">Ciao {{Auth::user()->name}}</h1>
-                        <h3 class="text-center">Sei già un nostro Revisore</h3>
+                        <h3 class="text-center mb-5">Sei già un nostro Revisore</h3>
                     </div>
                 @else
                     <div class="col-12">
