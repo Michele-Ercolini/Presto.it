@@ -3,12 +3,12 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-white display-1">Presto.it</h1>
+                <h1 class="paragrafo2 display-1">Presto.it</h1>
                 <form class="search-form" action="/search" method="GET">
                     <input type="text" name="q" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
                     <span>
-                        <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>
+                        <button type="submit" class="btn1 paragrafo2 btn search-button btn-outline-dark ">Cerca</button>
                     </span>
                 </form>
                 @if (session('access.denied'))
