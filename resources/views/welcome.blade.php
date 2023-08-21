@@ -2,8 +2,8 @@
     
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-white display-1">Presto.it</h1>
+            <div class="col-12 justify-content-center">
+                <h1 class="title-shadow paragrafo2 text-center text-white display-1">Presto.it</h1>
                 <form class="search-form" action="{{route('announcements.search')}}" method="GET">
                     <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
