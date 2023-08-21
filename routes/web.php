@@ -61,4 +61,3 @@ Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->
 
 //Rotta Search
 Route::get('/ricerca/annuncio', [PublicController::class, 'searchAnnouncements'])->name('announcements.search');
-
