@@ -2,14 +2,14 @@
     
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row">
-            <div class="col-12">
-                <h1 class="paragrafo2 display-1">Presto.it</h1>
+            <div class="col-12 justify-content-center">
+                <h1 class="text-center text-white display-1">Presto.it</h1>
                 <form class="search-form" action="{{route('announcements.search')}}" method="GET">
                     <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
-                    <span>
-                        <button type="submit" class="btn1 paragrafo2 btn search-button btn-outline-dark ">Cerca</button>
-                    </span>
+                    <div class="text-center my-4">
+                        <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">Cerca</button>
+                    </div>
                 </form>
                 @if (session('access.denied'))
                     <div class="alert alert-danger">
