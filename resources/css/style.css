@@ -384,14 +384,14 @@ h1,h2,h3{
     transition:0.5;  
 }
 
-/* .containerx .card .content h2{
-    position: absolute; 
+.containerx .card .content h2{
+    /* position: absolute; 
     top: 0px;
-    right:30px;
-    font-size:2em;
+    right:30px; */
+    font-size:1.3em;
     color:#000;
     pointer-events: none;
-} */
+} 
 
 .containerx .card .content h3{
     font-size:1.8em;
