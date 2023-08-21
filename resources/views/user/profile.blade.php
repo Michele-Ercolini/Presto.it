@@ -27,8 +27,8 @@
                                         @endfor
                                         
                                         <div class="btnprofile card-body d-flex justify-content-evenly">
-                                            <a style="color:black" href="#" class="mt-3 btn btn-outline-danger card-link text-decoration-none">GitHub</a>
-                                            <a style="color:black" href="#" class="mt-3 btn btn-outline-primary card-link text-decoration-none">LinkedIn</a>
+                                            <a style="color:black" href="https://github.com/Hackademy-83/Presto_gruppo_03_CyborgTech" target="blank" class="mt-3 btn btn-outline-danger card-link text-decoration-none">GitHub</a>
+                                            <a style="color:black" href="https://linkedin.com" target="blank" class="mt-3 btn btn-outline-primary card-link text-decoration-none">LinkedIn</a>
                                             
                                             
                                             

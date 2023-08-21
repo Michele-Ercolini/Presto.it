@@ -1,31 +1,44 @@
 <footer class="bg-dark text-center text-white">
     <div class="container p-4">
         <!-- Section: Social media -->
-        {{-- <section class="my-4">
+        <section class="my-4">
             
             <!-- Facebook -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://www.facebook.com/" target="blank" role="button"><i class="fab fa-facebook-f"></i></a>
 
             <!-- Twitter -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://twitter.com" target="blank" role="button"><i class="fab fa-twitter"></i></a>
 
             <!-- Google -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-google"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://google.com" target="blank" role="button"><i class="fab fa-google"></i></a>
 
             <!-- Instagram -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://www.instagram.com/" target="blank" role="button"><i class="fab fa-instagram"></i></a>
 
             <!-- Linkedin -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://linkedin.com" target="blank" role="button"><i class="fab fa-linkedin-in"></i></a>
 
             <!-- Github -->
-            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="#!" role="button"><i class="fab fa-github"></i></a>
+            <a class="btn btn1 btn-outline-light btn-floating mx-2" href="https://github.com/Hackademy-83/Presto_gruppo_03_CyborgTech" target="blank" role="button"><i class="fab fa-github"></i></a>
             
             
             
-        </section> --}}
+        </section>
         <!-- Section: Social media -->
         
+        {{-- Section Search --}}
+
+        <form class="search-form" action="{{route('announcements.search')}}" method="GET">
+            <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
+            <br>
+            <div class="text-center my-4">
+                <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">Cerca</button>
+            </div>
+        </form>
+
+        {{-- End - Section Search --}}
+
+
         <!-- Section: Form -->
         {{-- <section class="">
             <form action="">
@@ -50,7 +63,7 @@
         <!-- Section: Text -->
         <section class="mb-4">
             <p>
-                Presto.it, la realtà che ha stupito milioni di americani ora è finalmente arrivata nel nostro paese. Qualsiasi tipo di annuncio a portata di mano, basta un click!
+                Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Qualsiasi tipo di annuncio a portata di mano, basta un click e puoi accedere ad ogni tipo di prodotto; case, alberi,auto e fogli di giornale, tutto quello che vuoi!
             </p>
         </section>
         <!-- Section: Text -->
