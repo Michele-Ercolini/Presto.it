@@ -26,4 +26,8 @@ class PublicController extends Controller
         /* $announcements=Announcement::where('is_accepted', true)->orderBy('created_at', 'DESC'); */
         return view ('category.show', compact('category'));
     }
+
+    public function lavora(){
+        return view ('user.lavora');
+    }
 }

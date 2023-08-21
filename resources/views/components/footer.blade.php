@@ -71,7 +71,8 @@
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Lavora con noi</h5>
+                    <a href={{route('user_lavora')}}><h5 class="text-uppercase">Lavora con noi</h5></a>
+                    
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

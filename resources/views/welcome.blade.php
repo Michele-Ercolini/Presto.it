@@ -11,12 +11,21 @@
                         <button type="submit" class="btn1 btn search-button btn-outline-dark ">Cerca</button>
                     </span>
                 </form>
+                @if (session('access.denied'))
+                    <div class="alert alert-danger">
+                        {{ session('access.denied') }}
+                    </div>
+                @endif
+                @if (session('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
             </div>
         </div>
     </header>
-    
-    
     <hr class="border border-dark border-3 opacity-80 m-0">
+
     <div class="container-fluid paragraph-container my-3">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
@@ -54,6 +63,7 @@
     {{-- Fine Cards Annunci --}}
     <hr class="border border-dark border-3 opacity-80 m-0">
 
+    <h1 class="paragrafo mt-5 text-center">Il Sito</h1>
 
     <section class="container-fluid marginSection">
         <div class="row justify-content-center align-items-center">

@@ -24,6 +24,9 @@ Route::get('/user/profile', [PublicController::class, 'profile'])->name('user_pr
 // Rotta per la vista di ogni categoria
 Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->name('category_show');
 
+// Rotta Lavora con noi
+Route::get('/user/Lavora-con-noi', [PublicController::class, 'lavora'])->middleware('auth')->name('user_lavora');
+
 
 
 /* ROTTA ANNOUNCEMENT */
@@ -42,13 +45,19 @@ Route::get('/annoucenment/show/{announcement}', [AnnouncementController::class, 
 /* ROTTA REVISOR */
 
 //Rotta Revisore
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor_index');
 
 //Rotta Accetta annuncio
-Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor_accept_announcement');
+Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor_accept_announcement');
 
 //Rotta Rifiuta annuncio
-Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor_reject_announcement');
+Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
+
+//Rotta Richiedi di diventare revisore
+Route::get('richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become_revisor');
+
+//Rotta utente revisore
+Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->middleware('auth')->name('make_revisor');
 
 
 

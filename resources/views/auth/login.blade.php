@@ -21,7 +21,7 @@
                     <audio src="/media/Suono.mp3" id="track"></audio>
     
                     <div class="mb-3">
-                        <p>Non sei ancora loggato?   <br><a href="{{route('register')}}">Che aspetti!</a></p></br>
+                        <p>Non sei ancora registrato?   <br><a href="{{route('register')}}">Che aspetti!</a></p></br>
                     </div>
     
                     <script>
@@ -41,7 +41,6 @@
     
             </div>
         </div>
-    </div>
     </header>
 
 </x-layout>

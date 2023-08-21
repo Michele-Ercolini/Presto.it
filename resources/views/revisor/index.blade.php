@@ -1,15 +1,15 @@
 <x-layout>
     {{-- <x-header titoloHeader="Revisor"/> --}}
-    @if (session('message'))
-        <div class="alert alert-success">
-            {{ session('message') }}
-        </div>
-    @endif
     
     <section class="section container my-5 py-5">
         <div class="row justify-content-center">
             <div class="row justify-content-center">
                 <div class="col-12">
+                    @if (session('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                    @endif
                     
                         <h1 class="display-2 text-center mb-5">
                             {{$announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare'}}
