@@ -1,7 +1,7 @@
 <x-layout>
 
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center mb-5">
             
 
                 @if(Auth::user()->is_revisor)
@@ -13,7 +13,9 @@
                     <div class="col-12">
                         <h1 class="text-white display-1 text-center">Lavora con noi</h1>
                         <h3 class="text-center">Vuoi diventare un nostro Revisore?</h3>
-                        <a class="btn1 btn btn-outline-dark" href="{{route('become_revisor')}}">Clicca qui</a>
+                        <div class="text-center my-4">
+                            <a class="btn1 btn btn-outline-dark" href="{{route('become_revisor')}}">Clicca qui</a>
+                        </div>
                         {{-- al click dovrebbe sparire il bottone per evitare 300 email --}}
                     </div>                
                 @endif
