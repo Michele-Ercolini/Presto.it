@@ -28,8 +28,8 @@
 
     <div class="container-fluid paragraph-container my-3">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <h3 class="text-center paragrafo">Benvenuti nel nostro elegante negozio online!</h3>
+            <h3 class="text-center paragrafo display-3 my-3">Benvenuti nel nostro elegante negozio online!</h3>
+            <div class="col-12">
                 <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
                 <video loop autoplay muted width="100%" height="360">
                     <source src="/media/Vecchietta.mp4" type="video/mp4">

@@ -6,21 +6,21 @@
                 <h1 class="text-white display-1 text-center">Categoria {{$category->name}}</h1>
             </div>
             @forelse($category->announcements as $announcement)
-            @if($announcement->is_accepted)
-                <div class="col col-md-4">
-                    <div class="containerx">
-                        <div class="card">
-                            <div class="content">
-                                <img class="img" src="https://picsum.photos/250" height="200px" width="200px">
-                                <h2>{{$announcement->title}}</h2>
-                                
-                                <p class="text-truncate">{{$announcement->body}}</p>
-                                <a class="btn1" style="margin-bottom:50px" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                @if($announcement->is_accepted)
+                    <div class="col-12 col-md-6 col-lg-4 my-5">
+                        <div class="containerx d-flex justify-content-center">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="mb-3">{{$announcement->title}}</h2>
+                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+
+                                    <p class="text-truncate my-3">{{$announcement->body}}</p>
+                                    <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            @endif
+                @endif
             @empty
             <div class="col my-5">
                 <h2 class="text-center">Annunci non corrispondenti a questa categoria</h2>

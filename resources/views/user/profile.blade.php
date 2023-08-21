@@ -28,8 +28,8 @@
                                         @endfor
                                         
                                         <div class="btnprofile card-body d-flex justify-content-evenly">
-                                            <a style="color:black" href="#" class="mt-3 btn btn-outline-danger card-link text-decoration-none">GitHub</a>
-                                            <a style="color:black" href="#" class="mt-3 btn btn-outline-primary card-link text-decoration-none">LinkedIn</a>
+                                            <a style="color:black" href="https://github.com/Hackademy-83/Presto_gruppo_03_CyborgTech" target="blank" class="mt-3 btn btn-outline-danger card-link text-decoration-none">GitHub</a>
+                                            <a style="color:black" href="https://linkedin.com" target="blank" class="mt-3 btn btn-outline-primary card-link text-decoration-none">LinkedIn</a>
                                             
                                             
                                             
@@ -66,15 +66,15 @@
                                 <div class="row">
                                     @foreach ($announcements as $announcement)
                                     
-                                    <div class="col col-md-4 mt-5">
-                                        <div class="containerx">
+                                    <div class="col-12 col-md-6 col-lg-4 my-5">
+                                        <div class="containerx d-flex justify-content-center">
                                             <div class="card">
                                                 <div class="content">
-                                                    <img class="img" src="https://picsum.photos/250" height="200px" width="200px">
-                                                    <h2>{{$announcement->title}}</h2>
-                                                    <h3>{{$announcement->category->name}}</h3>
+                                                    <h2 class="mb-3">{{$announcement->title}}</h2>
+                                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+                                                    <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                                     <p class="text-truncate">{{$announcement->body}}</p>
-                                                    <a class="btn1" style="margin-bottom:50px" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                                    <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                                                 </div>
                                             </div>
                                         </div>
