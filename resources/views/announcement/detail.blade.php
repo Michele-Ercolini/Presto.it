@@ -1,9 +1,9 @@
-<x-layout titolo='Presto.it : Dettagli'>
+<x-layout>
     
     
-    <section class="section container">
+    <section class="section container my-5">
         <div class="row justify-content-center">
-            <div class="col col-md-8">
+            <div class="col col-md-8 my-5">
                 <div class="">
                     <div class="card">
                         <div class="content">
@@ -15,7 +15,7 @@
                             
                             
                             <!-- Slider main container -->
-                            <div class="container-fluid backcont mt-2">
+                            <div class="container-fluid backcont">
                                 <h1 class="text-center">{{ $announcement->title }}</h1>
                                 <div class="row">
                                     <div class="col-12">
