@@ -1,5 +1,7 @@
 <x-layout titolo='Presto.it : Dettagli'>
     
+
+    <h1 class="text-center" style="margin-top: 8%">Presto.it : Dettagli</h1>
     
     <section class="section container">
         <div class="row justify-content-center">
@@ -15,7 +17,7 @@
                             
                             
                             <!-- Slider main container -->
-                            <div class="container-fluid backcont mt-2">
+                            <div class="container-fluid backcont">
                                 <h1 class="text-center">{{ $announcement->title }}</h1>
                                 <div class="row">
                                     <div class="col-12">

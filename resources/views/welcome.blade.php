@@ -28,7 +28,7 @@
 
     <div class="container-fluid paragraph-container my-3">
         <div class="row justify-content-center">
-            <h3 class="text-center paragrafo display-3 my-3">Benvenuti nel nostro elegante negozio online!</h3>
+            <h3 class="text-center paragrafo display-3 my-3">Benvenuti nel nostro elegante negozio di moda!</h3>
             <div class="col-12">
                 <p class="text-center" > Scopri uno straordinario mondo di stile e tendenze con il nostro esclusivo sito e-commerce.</p>
                 <video loop autoplay muted width="100%" height="360">
@@ -75,7 +75,7 @@
             <div class="col-12 col-lg-5 fade-items" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Offerte Irresistibili:</strong> Cerchiamo costantemente offerte vantaggiose per farti risparmiare sui tuoi acquisti preferiti. Dai saldi stagionali alle promozioni esclusive, ti garantiamo prezzi competitivi senza compromettere la qualità dei prodotti.</p>
+                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Offerte Irresistibili:</strong> Cerchiamo costantemente offerte vantaggiose per farti risparmiare sui tuoi acquisti preferiti. Dai saldi stagionali alle promozioni esclusive, ti garantiamo capi di alta moda e accessori da collezione . Siamo la destinazione di tutto ciò che è introvabile , unisciti a noi per scoprire prodotti unici e rari che non troverai altrove.</p>
             </div>
             <div class="col-12 col-lg-4">
                 <img class="imgSection mx-auto d-flex" src="https://picsum.photos/350" alt="">
@@ -89,7 +89,7 @@
             <div class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Semplice e Sicuro Processo d'Acquisto:</strong> Il nostro processo di acquisto è progettato per essere veloce e sicuro. Scegli i prodotti che desideri, aggiungili al carrello e completa l'acquisto in pochi semplici passaggi. Utilizziamo tecnologie di crittografia avanzate per proteggere i tuoi dati personali e finanziari, garantendo una transazione senza preoccupazioni.</p>
+                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Registrati:</strong>per i clienti registarti , vantaggi esclusivi , promozioni e l'opportunità di vendere i propri prodotti creando annunci. Clicca su (Ciao Utente) per registrarti e completa il breve modulo con le tue informazioni di base.Accedi al tuo nuovo account e inizia a esplorare il mondo di prodotti di alta qualità , occasioni straordinarie e inizia a caricare i tuoi prodotti.</p>
             </div>
     
         </div>
@@ -99,7 +99,7 @@
             <div class="col-12 col-lg-5 fade-items" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Registrati:</strong>per i clienti registarti , vantaggi esclusivi , promozioni e l'opportunità di vendere i propri prodotti . Clicca sul pulsante di registrazione e completa il breve modulo con le tue informazioni di base.Riceverai una e-mail di conferma con le istruzioni per attivare il tuo account.Accedi al tuo nuovo account e inizia a esplorare il mondo di prodotti di alta qualità , occasioni straordinarie e inizia a caricare i tuoi prodotti.</p>
+                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">Unisciti alla nostra squadra:</strong>Consulta la nostra sezione lavora con noi.Unisciti alla nostra squadra come revisor e aiutaci a plasmare l'esperienza dei nostri clienti. Entra nel mondo dietro le quinte dell'e-commerce, metti alla prova i tuoi occhi attenti ai dettagli e contribuisci a garantire la qualità dei nostri prodotti. </p>
             </div>
             <div class="col-12 col-lg-4">
                 <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">
