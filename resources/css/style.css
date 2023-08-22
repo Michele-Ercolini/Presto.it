@@ -502,6 +502,8 @@ a.nav-link.dropdown-toggle.show::after{
 .aFooter:hover{
     color: red;
 }
-
+.message{
+    float:left;
+}
 
 
