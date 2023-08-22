@@ -5,7 +5,7 @@
             <div class="col-12 col-md-3">
                 
                 {{-- inizio form --}}
-                <form class="custom-form " method="POST" action="{{route('register')}}" style="padding-top: 0px; padding-bottom: 0px ">
+                <form data-aos="zoom-out-up" class="custom-form " method="POST" action="{{route('register')}}" style="padding-top: 0px; padding-bottom: 0px; margin-top:70%">
                     <div>
                         <p class=" text-white text-center" style="font-size: 50px">Register</p>  
                     </div>  
