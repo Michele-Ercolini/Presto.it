@@ -1,5 +1,7 @@
 <x-layout>
     
+
+    <h1 class="text-center" style="margin-top: 8%">Presto.it : Dettagli</h1>
     
     <section class="section container my-5">
         <div class="row justify-content-center">
