@@ -1,11 +1,11 @@
-<x-layout titolo='Presto.it : Dettagli'>
+<x-layout>
     
 
     <h1 class="text-center" style="margin-top: 8%">Presto.it : Dettagli</h1>
     
-    <section class="section container">
+    <section class="section container my-5">
         <div class="row justify-content-center">
-            <div class="col col-md-8">
+            <div class="col col-md-8 my-5">
                 <div class="">
                     <div class="card">
                         <div class="content">
