@@ -38,21 +38,27 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="swiper mySwiper">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
+                                            @if(count($announcement_to_check->images)>0)
+                                                <div class="swiper-wrapper">
+                                                    @foreach($announcement_to_check->images as $image)
+                                                        <div class="swiper-slide">
+                                                            <img class="imgSection immaginiCarousel" src="{{Storage::url($image->path)}}" class="img-fluid p-3 rounded" alt="..."/>
+                                                        </div>
+                                                    @endforeach
                                                 </div>
-                                                <div class="swiper-slide">
-                                                    <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
+                                            @else
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
+                                                    </div>
                                                 </div>
-                                                <div class="swiper-slide">
-                                                    <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img class="imgSection immaginiCarousel" src="https://picsum.photos/250" />
-                                                </div>
-                                                
-                                            </div>
+                                            @endif
                                         <div class="swiper-pagination"></div>
                                     </div>
                                         
