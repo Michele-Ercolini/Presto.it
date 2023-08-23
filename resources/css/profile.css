@@ -117,8 +117,8 @@
  }
 
 .formClass{
-    width: 40vw;
-    /* height: 80vh; */
+    width: 60vw;
+    
     box-shadow:20px 20px 50px rgba(0,0,0,0.5); 
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
