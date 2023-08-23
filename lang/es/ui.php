@@ -15,4 +15,5 @@ return[
     'articolo3'=>'consulte nuestra sección trabaja con nosotros. Únase a nuestro equipo como revisor y ayúdenos a dar forma a la experiencia de nuestros clientes. Ingrese al mundo detrás de escena del comercio electrónico, ponga a prueba su buen ojo para los detalles y ayude a garantizar la calidad de nuestros productos.',
     'counter1'=>'Ventas diarias',
     'counter2'=>"Las visitas de hoy",
+   
 ];
