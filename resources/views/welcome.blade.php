@@ -55,7 +55,7 @@
                                 <img class="imgSection img-fluid" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                 <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                 <p class="text-truncate">{{$announcement->body}}</p>
-                                <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
     {{-- Fine Cards Annunci --}}
     <hr class="border border-dark border-3 opacity-80 m-0">
 
-    <h1 class="paragrafo mt-5 text-center">Il Sito</h1>
+    <h1 class="paragrafo mt-5 text-center">{{__('ui.sito')}}</h1>
 
     <section class="container-fluid marginSection">
         <div class="row justify-content-center align-items-center">

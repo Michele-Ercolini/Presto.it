@@ -63,7 +63,7 @@ class CreateAnnouncement extends Component
                 dispatch(new ResizeImage($newImage->path , 250 , 200));
 			}
 
-            File::deleteDirectory(storage_path('/app/livewire-tmp'));
+            // File::deleteDirectory(storage_path('/app/livewire-tmp'));
 		}
         
         session()->flash('message','Articolo inserito con successo, sarà pubblicato dopo la revisione');

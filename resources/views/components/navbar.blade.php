@@ -32,15 +32,15 @@
               <!--Utente Autenticato-->
               @auth
               <li class="nav-item">
-                <a class="nav-link" href="{{route('announcement_create')}}">Crea Annuncio</a>
+                <a class="nav-link" href="{{route('announcement_create')}}">{{__('ui.creaAnnuncio')}}</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      Ciao {{Auth::user()->name}}
+                      {{__('ui.saluto')}} {{Auth::user()->name}}
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{route('user_profile')}}" class="dropdown-item">Profilo</a></li>
+                    <li><a href="{{route('user_profile')}}" class="dropdown-item">{{__('ui.profilo')}}</a></li>
 
                     @if(Auth::user()->is_revisor)
                       <li>
@@ -54,7 +54,7 @@
                       </li>
                     @endif
                     <li><hr class="dropdown-divider"></li>
-                    <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"> Esci</i></a></li>
+                    <li><a href="" class="dropdown-item" onclick="event.preventDefault();document.querySelector('#form-logout').submit();"><i class="fa-solid fa-person-through-window fa-bounce fa-lg" style="color: #000000;"> {{__('ui.esci')}}</i></a></li>
                   </ul>
                   <form id="form-logout" action="{{route('logout')}}" method="POST">
                       @csrf
@@ -72,12 +72,12 @@
                   <ul class="dropdown-menu dropdown-content">
                       <li>
                           <a href="{{route('register')}}" class="dropdown-item">
-                              Iscriviti
+                              {{__('ui.registrati')}}
                           </a>
                       </li>
                       <li>
                           <a href="{{route('login')}}" class="dropdown-item">
-                              Accedi
+                              {{__('ui.accedi')}}
                           </a>
                       </li>
                   </ul>
