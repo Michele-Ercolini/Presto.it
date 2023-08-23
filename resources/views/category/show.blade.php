@@ -12,13 +12,7 @@
                 </div>
             </div>
         
-        <div class="row ">
-            <div class="categorie col-12 d-flex justify-content-between">
-                @foreach ($categories as $categoria)
-                    <a class="cat" href="{{route('category_show', compact('category'))}}">{{$categoria->name}}</a>
-                @endforeach
-            </div>
-        </div>
+        <x-categories_bar></x-categories_bar>
         <div class="row">
             
             @forelse($category->announcements as $announcement)
