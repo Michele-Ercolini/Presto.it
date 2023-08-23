@@ -5,6 +5,7 @@
             <div class="col-12 justify-content-center mb-5">
                 <h1 class="title-shadow paragrafo2 text-center text-white display-1">Presto.it</h1>
                 <form class="search-form" action="{{route('announcements.search')}}" method="GET">
+                    @csrf
                     <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
                     <br>
                     <div class="text-center my-4">
