@@ -1,22 +1,5 @@
 <?php
 return[
-<<<<<<< HEAD
-    'annunci'=>'Annoucementes',
-    'profilo'=>'Hello,User',
-    'categorie'=>'Categories',
-    'cerca'=>'search',
-    'introduzione'=>'Welcome to our elegant fashion shop!',
-    'semi-introduzione'=>'Discover an extraordinary world of style and trends with our exclusive e-commerce site.',
-    'nostri-annunci'=>'Our most recent Announcements',
-    'titolo1'=>'Irresistible Offers:',
-    'descrizione1'=>'We are constantly looking for advantageous offers to let you save on your favorite purchases. From seasonal sales to exclusive promotions, we guarantee you high fashion garments and collectible accessories. We are the destination for all that is unobtainable, join us to discover unique and rare products that you will not find anywhere else.',
-    'articolo2'=>'for customers to register, exclusive benefits, promotions and the opportunity to sell their products by creating ads. Click on (Hello User) to register and complete the short form with your basic information. Log in to your new account and start exploring the world of high quality products, extraordinary bargains and start uploading your products.',
-    'titolo2'=>'Register:',
-    'titolo3'=>'Join our team:',
-    'articolo3'=>'Check out our work with us section. Join our team as a reviewer and help us shape our customers experience. Enter the behind-the-scenes world of e-commerce, test your keen eye for detail and help ensure the quality of our products.',
-    'counter1'=>'Daily sales',
-    'counter2'=>"Today's visits",
-=======
     'annunci'=>'Anuncios',
     'profilo'=>'Hola usuario/a',
     'categorie'=>'Categorías',
@@ -32,5 +15,4 @@ return[
     'articolo3'=>'consulte nuestra sección trabaja con nosotros. Únase a nuestro equipo como revisor y ayúdenos a dar forma a la experiencia de nuestros clientes. Ingrese al mundo detrás de escena del comercio electrónico, ponga a prueba su buen ojo para los detalles y ayude a garantizar la calidad de nuestros productos.',
     'counter1'=>'Ventas diarias',
     'counter2'=>"Las visitas de hoy",
->>>>>>> 55b06fa3d70de0b72ac46fc8f4b1cc848c40bf27
 ];
