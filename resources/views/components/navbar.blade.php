@@ -19,10 +19,10 @@
                     <span class="visually-hidden">Toggle Dropdown</span>
                   <ul class="dropdown-menu">
                     @foreach ($categories as $category)
+                    <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
                     @endforeach
                   </ul>
                 </div>
