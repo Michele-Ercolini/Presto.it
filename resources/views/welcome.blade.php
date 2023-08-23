@@ -52,7 +52,7 @@
                         <div class="card">
                             <div class="content">
                                 <h2 class="mb-3">{{$announcement->title}}</h2>
-                                <img class="imgSection img-fluid" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
+                                <img class="imgSection img-fluid" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                 <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                 <p class="text-truncate">{{$announcement->body}}</p>
                                 <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>

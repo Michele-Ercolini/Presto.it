@@ -2,11 +2,13 @@
     
     <x-header titoloHeader="Tutti gli Annunci"/>
     
-    <div class="container my-5">
+    <div class="container my-5 ">
         <div class="row ">
-            <div class="col-12 d-flex justify-content-between">
+            <div class="categorie col-12 d-flex justify-content-between">
                 @foreach ($categories as $category)
-                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+                <span class="borderCat">
+                 <a class="cat " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
+                 </span>
                 @endforeach 
             </div>
         </div>
