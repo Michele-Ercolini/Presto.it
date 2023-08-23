@@ -23,7 +23,7 @@
                                 <img class="imgSection img-fluid" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}" style="width: 250px; height: 200px">
                                 <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                 <p class="text-truncate">{{$announcement->body}}</p>
-                                <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>
                             </div>
                         </div>
                     </div>
