@@ -28,7 +28,9 @@
                             <div class="card">
                                 <div class="content">
                                     <h2 class="mb-3">{{$announcement->title}}</h2>
-                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200">
+                                    <img class="imgSection img-fluid"
+                                    {{-- src="https://picsum.photos/250/200"> --}}
+                                    src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
 
                                     <p class="text-truncate my-3">{{$announcement->body}}</p>
                                     <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
