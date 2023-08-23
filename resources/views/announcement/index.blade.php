@@ -16,14 +16,14 @@
         <div class="col-12 col-md-8 offset-md-2">
             <div class="categorie d-flex flex-wrap justify-content-between">
                 @foreach ($categories as $category)
-                <span class="borderCat">
-                <a class="cat   " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
-                </span>
+                    <span class="borderCat">
+                        <a class="cat   " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
+                    </span>
                 @endforeach 
             </div>
         </div>
         <div class="row">
-
+            
             @forelse($announcements as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 my-5">
                     <div class="containerx d-flex justify-content-center">
