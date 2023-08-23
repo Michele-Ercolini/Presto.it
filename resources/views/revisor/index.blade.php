@@ -49,13 +49,13 @@
                                             @else
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement_to_check->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement_to_check->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement_to_check->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                 </div>
                                             @endif
