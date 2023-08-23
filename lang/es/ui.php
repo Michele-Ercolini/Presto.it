@@ -29,6 +29,8 @@ return[
     'vediPiù'=>'Para saber mas',
     'creaAnnuncio'=>'Crear anuncio',
     'saluto'=>'Hola',
-    'profilo'=>'Perfil',
+    'profilo1'=>'Perfil',
     'esci'=>'Sales',
+    'insoddisfatto'=>'Aún no estás satisfecho? ¡Mira nuestras categorías!',
+    'tuttiannunci'=>'Todos les annunses',
 ];

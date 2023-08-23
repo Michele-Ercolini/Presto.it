@@ -29,6 +29,8 @@ return[
     'vediPiù'=>'Per saperne di più',
     'creaAnnuncio'=>'Crea annuncio',
     'saluto'=>'Ciao',
-    'profilo'=>'Profilo',
+    'profilo1'=>'Profilo',
     'esci'=>'Esci',
+    'insoddisfatto'=>'Non sei ancora soddisfatto? Consulta le nostre categorie!',
+
 ];
