@@ -7,21 +7,21 @@
                 
                 {{-- inizio form --}}
                 <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}" style="padding-top: 0px; padding-bottom: 0px ">
-                    <p class="mt-5 text-white text-center" style="font-size: 50px">Login</p>
+                    <p class="mt-5 text-white text-center" style="font-size: 50px">{{__('ui.accedi')}}</p>
                     @csrf
                     <div class="mb-3">
-                        <label class="formLabel" for="userEmail" class="form-label">Email address</label>
+                        <label class="formLabel" for="userEmail" class="form-label">{{__('ui.email')}}</label>
                         <input class="formInput text-white" type="email"  id="userEmail" name="email">
                     </div>
                     <div class="mb-3">
                         <label class="formLabel" for="userPassword" class="form-label">Password</label>
                         <input class="formInput text-white" type="password"  id="userPassword" name="password">
                     </div>
-                    <button id="buttonLogin" type="submit" class="btn btn1 btn-dark mb-3">Login</button>
+                    <button id="buttonLogin" type="submit" class="btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
                     <audio src="/media/Suono.mp3" id="track"></audio>
     
                     <div class="mb-3">
-                        <p>Non sei ancora registrato?   <br><a href="{{route('register')}}">Che aspetti!</a></p></br>
+                        <p>{{__('ui.pLogin')}}   <br><a href="{{route('register')}}">{{__('ui.linklog')}}</a></p></br>
                     </div>
     
                     <script>
