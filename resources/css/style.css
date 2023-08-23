@@ -505,15 +505,6 @@ a.nav-link.dropdown-toggle.show::after{
 .message{
     float:left;
 }
-<<<<<<< HEAD
-
-
-.imgPreview{
-    height: 20vh;
-    width: auto;
-    background-repeat: no-repeat;
-}
-=======
 .categorie{
     border:black solid 2px;
     padding:10px;
@@ -534,4 +525,3 @@ a.nav-link.dropdown-toggle.show::after{
     border: black solid 1px;
    
 } */
->>>>>>> 7f5b75e38dd1304befbe84e30af20d54b1d91325
