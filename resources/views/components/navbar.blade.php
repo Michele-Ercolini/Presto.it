@@ -10,16 +10,16 @@
             <li class="nav-item">
               <a class="nav-link display-8" aria-current="page" href="{{route('homepage')}}">Home</a>
             </li>
-            <span>
-              <span>
-                <li class="nav-item">
+            <div>
+              <span class="mx-0 px-0 nav-item">
+                
                   <a class="nav-link" href="{{route('announcement_index')}}">{{__('ui.annunci')}}</a>
-                </li>
+                
               </span>
-              <span>
-                <li class="nav-item dropdown">
-                  <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false"></button>
+              <span class="mx-0 px-0 nav-item">
+                <li class="nav-item dropdown mx-0 px-0">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false"></a>
                   <ul class="dropdown-menu">
                     @foreach ($categories as $category)
                     <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
@@ -30,7 +30,7 @@
                   </ul>
                 </li>
               </span>
-            </span>
+            </div>
             <!--Utente Autenticato-->
             @auth
             <li class="nav-item">
