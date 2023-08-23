@@ -3,8 +3,15 @@
     <x-header titoloHeader="Tutti gli Annunci"/>
     
     <div class="container my-5">
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-between">
+                @foreach ($categories as $category)
+                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+                @endforeach 
+            </div>
+        </div>
         <div class="row">
-            
+
             @forelse($announcements as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 my-5">
                     <div class="containerx d-flex justify-content-center">
