@@ -12,8 +12,8 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Categorie
+                aria-expanded="false">{{__('ui.categorie')}}
+               
               </a>
               <ul class="dropdown-menu">
                 @foreach ($categories as $category)
@@ -24,7 +24,7 @@
                 @endforeach
               </ul>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
+                <a class="nav-link" href="{{route('announcement_index')}}">{{__ ('ui.annunci')}}</a>
               </li>
             </li>
               <!--Utente Autenticato-->
@@ -65,7 +65,7 @@
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      Ciao Utente
+                      {{__('ui.profilo')}}
                   </a>
                   <ul class="dropdown-menu dropdown-content">
                       <li>
@@ -81,7 +81,23 @@
                   </ul>
               </li>
               @endauth
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="/media/mondo.png" width="32" height="32">
+                </a>
+                <ul class="dropdown-menu dropdown-content">
+              <li class="nav-item">
+                <x-_locale lang='it'/>IT
+              </li>
+              <li class="nav-item">
+                <x-_locale lang='en'/>EN
+              </li>
+              <li class="nav-item">
+                <x-_locale lang='es'/>ES
+              </li>
             </ul>
+          </li>
             <!--Fine Utente NON Autenticato-->
           
             </div>
