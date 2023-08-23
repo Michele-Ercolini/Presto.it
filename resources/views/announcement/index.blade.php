@@ -1,13 +1,23 @@
 <x-layout titolo='I NOSTRI ANNUNCI'>
     
     <x-header titoloHeader="Tutti gli Annunci"/>
+
+    <div class="container mt-3 ">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>{{__('ui.insoddisfatto')}}</h3>
+            </div>
+        </div>
+    </div>
+
+
     
     <div class="container my-5 ">
-        <div class="row ">
-            <div class="categorie col-12 d-flex justify-content-between">
+        <div class="col-12 col-md-8 offset-md-2">
+            <div class="categorie d-flex flex-wrap justify-content-between">
                 @foreach ($categories as $category)
                 <span class="borderCat">
-                 <a class="cat " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
+                 <a class="cat   " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
                  </span>
                 @endforeach 
             </div>

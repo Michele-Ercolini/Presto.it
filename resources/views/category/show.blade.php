@@ -6,10 +6,16 @@
                 <h1 class="text-white display-1 text-center">Categoria {{$category->name}}</h1>
             </div>
         </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>{{__('ui.insoddisfatto')}}</h3>
+                </div>
+            </div>
+        
         <div class="row ">
-            <div class="col-12 d-flex justify-content-between">
+            <div class="categorie col-12 d-flex justify-content-between">
                 @foreach ($categories as $category)
-                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+                <a class="cat" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
                 @endforeach 
             </div>
         </div>
