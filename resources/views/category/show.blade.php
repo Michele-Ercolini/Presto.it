@@ -5,6 +5,15 @@
             <div class="col-12 my-5">
                 <h1 class="text-white display-1 text-center">Categoria {{$category->name}}</h1>
             </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-between">
+                @foreach ($categories as $category)
+                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+                @endforeach 
+            </div>
+        </div>
+        <div class="row">
             @forelse($category->announcements as $announcement)
                 @if($announcement->is_accepted)
                     <div class="col-12 col-md-6 col-lg-4 my-5">

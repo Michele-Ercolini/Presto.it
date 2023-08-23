@@ -10,22 +10,24 @@
               <li class="nav-item">
                 <a class="nav-link display-8" aria-current="page" href="{{route('homepage')}}">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">{{__('ui.categorie')}}
-               
-              </a>
-              <ul class="dropdown-menu">
-                @foreach ($categories as $category)
-                <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                @endforeach
-              </ul>
+
               <li class="nav-item">
-                <a class="nav-link" href="{{route('announcement_index')}}">{{__ ('ui.annunci')}}</a>
+                <div class="btn-group">
+                  <a class="nav-link" href="{{route('announcement_index')}}">{{__('ui.annunci')}}</a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"></a>
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  <ul class="dropdown-menu">
+                    @foreach ($categories as $category)
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
+                    @endforeach
+                  </ul>
+                </div>
               </li>
+
             </li>
               <!--Utente Autenticato-->
               @auth
