@@ -7,8 +7,8 @@
             <div class="categorie col-12 d-flex justify-content-between">
                 @foreach ($categories as $category)
                 <span class="borderCat">
-                 <a class="cat " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
-                 </span>
+                <a class="cat " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
+                </span>
                 @endforeach 
             </div>
         </div>

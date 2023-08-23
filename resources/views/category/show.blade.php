@@ -8,12 +8,14 @@
         </div>
         <div class="row ">
             <div class="col-12 d-flex justify-content-between">
-                @foreach ($categories as $category)
-                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
-                @endforeach 
+                @foreach ($categories as $categoria)
+                <a class="" href="{{route('category_show', compact('category'))}}">{{$categoria->name}}</a>
+                @endforeach
+                {{-- @dd($category->name) --}}
             </div>
         </div>
         <div class="row">
+            
             @forelse($category->announcements as $announcement)
                 @if($announcement->is_accepted)
                     <div class="col-12 col-md-6 col-lg-4 my-5">
