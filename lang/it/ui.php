@@ -4,7 +4,7 @@ return[
     'profilo'=>'Ciao utente',
     'categorie'=>'Categorie',
     'cerca'=>'Cerca',
-    'introduzione'=>'Benvenuto nel nostro legante negozio online!',
+    'introduzione'=>'Benvenuto nel nostro elegante negozio online!',
     'semi-introduzione'=>'Scopri il nostro straordinario mondo di stile e tendenza con il nostro esclusivo sito e-commerce ',
     'nostri-annunci'=>'I nostri annunci più recenti',
     'titolo1'=>'Irresistibili offerte:',

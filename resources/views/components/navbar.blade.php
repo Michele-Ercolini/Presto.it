@@ -20,9 +20,11 @@
                   <ul class="dropdown-menu">
                     @foreach ($categories as $category)
                     <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
+                    @if(!$loop->last)
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    @endif
                     @endforeach
                   </ul>
                 </div>

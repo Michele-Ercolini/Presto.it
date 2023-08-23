@@ -1,4 +1,4 @@
-<div>
+<div style="margin-top: 5%" class="formClass">
     <form class="custom-form2" wire:submit.prevent="announcementStore">
         @if (session('message'))
             <div class="alert alert-success">

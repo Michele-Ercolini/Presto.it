@@ -17,8 +17,8 @@
             <div class="categorie d-flex flex-wrap justify-content-between">
                 @foreach ($categories as $category)
                 <span class="borderCat">
-                 <a class="cat   " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
-                 </span>
+                <a class="cat   " href="{{route('category_show', compact('category'))}}">{{$category->name}}</a><tr>
+                </span>
                 @endforeach 
             </div>
         </div>
