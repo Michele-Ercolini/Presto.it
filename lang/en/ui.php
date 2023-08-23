@@ -29,6 +29,9 @@ return[
     'vediPiù'=>'Read more',
     'creaAnnuncio'=>'Create announcement',
     'saluto'=>'Hello',
-    'profilo'=>'Profile',
+    'profilo1'=>'Profile',
     'esci'=>'Exit',
+    'insoddisfatto'=>'not satisfied yet? check out our categories!',
+    'tuttiannunci'=>'All announcementes',
+    
 ];
