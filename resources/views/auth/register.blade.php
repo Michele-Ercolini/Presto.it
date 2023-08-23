@@ -7,11 +7,11 @@
                 {{-- inizio form --}}
                 <form data-aos="zoom-out-up" class="custom-form " method="POST" action="{{route('register')}}" style="padding-top: 0px; padding-bottom: 0px; margin-top:70%">
                     <div>
-                        <p class=" text-white text-center" style="font-size: 50px">Register</p>  
+                        <p class=" text-white text-center" style="font-size: 50px">{{__('ui.registrati')}}</p>  
                     </div>  
                     @csrf
                     <div class="mb-3">
-                        <label class="formLabel" for="userName" class="form-label">Nome Utente</label>
+                        <label class="formLabel" for="userName" class="form-label">{{__('ui.nomeUtente')}}</label>
                         <input class="formInput text-white" type="text"  id="userName" name="name">
                     </div>
                     <div class="mb-3">
@@ -23,10 +23,10 @@
                         <input class="formInput text-white" type="password"  id="userPassword" name="password">
                     </div>
                     <div class="mb-3">
-                        <label class="formLabel" for="userPassword" class="form-label">Conferma Password</label>
+                        <label class="formLabel" for="userPassword" class="form-label">{{__('ui.confermaPsw')}}</label>
                         <input class="formInput text-white" type="password"  id="userPassword" name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn1 btn-dark mb-3">Registrati</button>
+                    <button type="submit" class="btn btn1 btn-dark mb-3">{{__('ui.registrati')}}</button>
                 </form>
                 {{-- fine form --}}
     
