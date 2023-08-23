@@ -18,7 +18,7 @@ return[
     'sito'=>"Il sito",
     'footer1'=>'Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Qualsiasi tipo di annuncio a portata di mano, basta un click e puoi accedere ad ogni tipo di prodotto; case, alberi,auto e fogli di giornale, tutto quello che vuoi!',
     'lavora'=>'lavora con noi',
-    'lavora1'=>'lavoracon voi',
+    'lavora1'=>'lavora con voi',
     'accedi'=>'Accedi',
     'registrati'=>'Registrati',
     'email'=>'Indirizzo e-mail',
@@ -29,6 +29,8 @@ return[
     'vediPiù'=>'Per saperne di più',
     'creaAnnuncio'=>'Crea annuncio',
     'saluto'=>'Ciao',
-    'profilo'=>'Profilo',
+    'profilo1'=>'Profilo',
     'esci'=>'Esci',
+    'insoddisfatto'=>'Non sei ancora soddisfatto? Consulta le nostre categorie!',
+
 ];

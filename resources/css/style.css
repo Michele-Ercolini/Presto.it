@@ -8,7 +8,7 @@ body{
     background-color:  var(--grigio-chiaro);
 }
 .paragrafo2{color: var(--grigio-chiaro);}
-p{
+p,a{
     font-family: 'Kanit', sans-serif;
 }
 h1,h2,h3{
@@ -505,5 +505,33 @@ a.nav-link.dropdown-toggle.show::after{
 .message{
     float:left;
 }
+.categorie{
+    border:grey solid 2px;
+    padding:10px;
+    
+   
+    
+}
+.cat{
+    text-decoration: none;
+    color:black;
+    
+}
+.cat:hover{
+    color:white;
+    
+}
+/* .borderCat{
+    border-right: black solid 3px;
+   
+}  */
 
-
+@media screen and (max-width:1200px){
+    
+    .cat{
+        margin-top:5px;
+    }
+}
+.card:hoover{
+    transition: 0.5s;
+}

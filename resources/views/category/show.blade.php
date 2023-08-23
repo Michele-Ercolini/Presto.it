@@ -6,14 +6,21 @@
                 <h1 class="text-white display-1 text-center">Categoria {{$category->name}}</h1>
             </div>
         </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>{{__('ui.insoddisfatto')}}</h3>
+                </div>
+            </div>
+        
         <div class="row ">
-            <div class="col-12 d-flex justify-content-between">
-                @foreach ($categories as $category)
-                <a class="" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a>
+            <div class="categorie col-12 d-flex justify-content-between">
+                @foreach ($categories as $categoria)
+                <a class="cat" href="{{route('category_show', compact('category'))}}">{{$categoria->name}}</a>
                 @endforeach 
             </div>
         </div>
         <div class="row">
+            
             @forelse($category->announcements as $announcement)
                 @if($announcement->is_accepted)
                     <div class="col-12 col-md-6 col-lg-4 my-5">
@@ -21,7 +28,7 @@
                             <div class="card">
                                 <div class="content">
                                     <h2 class="mb-3">{{$announcement->title}}</h2>
-                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200" style="width: 250px; height: 200px">
+                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200">
 
                                     <p class="text-truncate my-3">{{$announcement->body}}</p>
                                     <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
