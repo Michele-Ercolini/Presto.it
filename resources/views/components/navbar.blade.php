@@ -72,12 +72,12 @@
                   <ul class="dropdown-menu dropdown-content">
                       <li>
                           <a href="{{route('register')}}" class="dropdown-item">
-                              Iscriviti
+                              {{__('ui.registrati')}}
                           </a>
                       </li>
                       <li>
                           <a href="{{route('login')}}" class="dropdown-item">
-                              Accedi
+                              {{__('ui.accedi')}}
                           </a>
                       </li>
                   </ul>

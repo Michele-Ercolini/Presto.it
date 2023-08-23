@@ -32,7 +32,7 @@
             <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
             <br>
             <div class="text-center my-4">
-                <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">Cerca</button>
+                <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">{{__('ui.cerca')}}</button>
             </div>
         </form>
 
@@ -63,7 +63,7 @@
         <!-- Section: Text -->
         <section class="mb-4">
             <p>
-                Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Qualsiasi tipo di annuncio a portata di mano, basta un click e puoi accedere ad ogni tipo di prodotto; case, alberi,auto e fogli di giornale, tutto quello che vuoi!
+                {{__('ui.footer1')}}
             </p>
         </section>
         <!-- Section: Text -->
@@ -80,12 +80,12 @@
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a class="aFooter" href={{route('user_lavora')}}><h5 class="text-uppercase" >Lavora con noi</h5></a>
+                    <a class="aFooter" href={{route('user_lavora')}}><h5 class="text-uppercase" >{{__('ui.lavora')}}</h5></a>
                     
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Lavora con voi</h5>
+                    <h5 class="text-uppercase">{{__('ui.lavora1')}}</h5>
                     
                 </div>
             </div>
