@@ -90,7 +90,7 @@
                     aria-expanded="false">
                     <img src="/media/mondogriglia.png" width="32" height="32">
                 </a>
-                <ul class="dropdown-menu dropdown-content">
+                <ul class="dropdown-menu dropdown-content dropdown-menu-end">
               <li class="nav-item">
                 <x-_locale lang='it'/>IT
               </li>
