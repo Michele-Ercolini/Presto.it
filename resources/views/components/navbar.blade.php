@@ -88,7 +88,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    <img src="/media/mondo.png" width="32" height="32">
+                    <img src="/media/mondogriglia.png" width="32" height="32">
                 </a>
                 <ul class="dropdown-menu dropdown-content">
               <li class="nav-item">
