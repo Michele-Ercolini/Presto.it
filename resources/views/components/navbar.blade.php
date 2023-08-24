@@ -1,4 +1,4 @@
-    <!-- Inizio Navbar -->
+ <!-- Inizio Navbar -->
     <nav id="navId" class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid d-flex  navcustom">
           
@@ -69,7 +69,7 @@
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      {{__('ui.profilo')}}
+                      {{__('ui.profilo1')}}
                   </a>
                   <ul class="dropdown-menu dropdown-content">
                       <li>
@@ -88,9 +88,9 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    <img src="/media/mondo.png" width="32" height="32">
+                    <img src="/media/mondogriglia.png" width="32" height="32">
                 </a>
-                <ul class="dropdown-menu dropdown-content">
+                <ul class="dropdown-menu dropdown-content dropdown-menu-end">
               <li class="nav-item">
                 <x-_locale lang='it'/>IT
               </li>

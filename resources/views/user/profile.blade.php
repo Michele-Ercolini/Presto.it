@@ -57,15 +57,17 @@
                         </aside>
                         <div class="col-12 col-md-9">
                             <h3 class="text-center my-5">{{Auth::user()->name}}</h3>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
+                            <p class="lorem">Titolo del Profilo: "Appassionato di Tecnologia cerca Affari Imperdibili"
+
+                                Descrizione:
+                                Ciao a tutti! Sono un appassionato di tecnologia con un occhio attento per gli affari imperdibili. Se stai cercando le migliori offerte su dispositivi elettronici, gadget all'avanguardia e accessori hi-tech, sei nel posto giusto.
+                                
+                                La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente. Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
                             <hr>
                             <section class="container">
                                 <div class="row">
                                     @foreach ($announcements as $announcement)
-                                    
+                                    @if($announcement->is_accepted)
                                     <div class="col-12 col-md-6 col-lg-4 my-5">
                                         <div class="containerx d-flex justify-content-center">
                                             <div class="card">
@@ -82,7 +84,7 @@
                                         </div>
                                     </div>
                                     
-                                    
+                                    @endif
                                     @endforeach
                                 </div>
                             </section>

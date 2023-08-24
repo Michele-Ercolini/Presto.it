@@ -27,6 +27,11 @@ Route::get('/category/{category}', [PublicController::class, 'categoryShow'])->n
 // Rotta Lavora con noi
 Route::get('/user/Lavora-con-noi', [PublicController::class, 'lavora'])->middleware('auth')->name('user_lavora');
 
+//Rotta Search
+Route::get('/ricerca/annuncio', [PublicController::class, 'searchAnnouncements'])->name('announcements.search');
+
+// Change Languages
+Route::post('/lingua/{lang}', [PublicController::class,'setLanguage'])->name('setLanguage');
 
 
 /* ROTTA ANNOUNCEMENT */
@@ -58,9 +63,3 @@ Route::get('richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->m
 
 //Rotta utente revisore
 Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->middleware('auth')->name('make_revisor');
-
-//Rotta Search
-Route::get('/ricerca/annuncio', [PublicController::class, 'searchAnnouncements'])->name('announcements.search');
-
-// Change Languages
-Route::post('/lingua/{lang}', [PublicController::class,'setLanguage'])->name('setLanguage');

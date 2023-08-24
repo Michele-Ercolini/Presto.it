@@ -12,13 +12,7 @@
                 </div>
             </div>
         
-        <div class="row ">
-            <div class="categorie col-12 d-flex justify-content-between">
-                @foreach ($categories as $categoria)
-                <a class="cat" href="{{route('category_show', compact('category'))}}">{{$categoria->name}}</a>
-                @endforeach 
-            </div>
-        </div>
+        <x-categories_bar></x-categories_bar>
         <div class="row">
             
             @forelse($category->announcements as $announcement)
@@ -28,7 +22,9 @@
                             <div class="card">
                                 <div class="content">
                                     <h2 class="mb-3">{{$announcement->title}}</h2>
-                                    <img class="imgSection img-fluid" src="https://picsum.photos/250/200">
+                                    <img class="imgSection img-fluid"
+                                    {{-- src="https://picsum.photos/250/200"> --}}
+                                    src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
 
                                     <p class="text-truncate my-3">{{$announcement->body}}</p>
                                     <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
