@@ -32,15 +32,18 @@ class CreateAnnouncement extends Component
         'temporary_images.*' => 'image|max:2048'
     ];
 
-    protected $messages = [
-        'required' => 'Il campo :attribute è obbligatorio',
-        'min' => 'Il campo è troppo corto',
-        'temporary_images.required' => 'L\'immagine è richiesta',
-        'temporary_images.*.image' => 'I file devono essere immagini',
-        'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2Mb',
-        'images.image' => 'Il file deve essere un\'immagine',
-        'image.max' => 'L\'immagine dev\'essere massimo di 2Mb'
-    ];
+    // protected $messages = [
+    //     'required' => 'Il campo :attribute è obbligatorio',
+    //     'min' => 'Il campo è troppo corto',
+    //     'temporary_images.required' => 'L\'immagine è richiesta',
+    //     'temporary_images.*.image' => 'I file devono essere immagini',
+    //     'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2Mb',
+    //     'images.image' => 'Il file deve essere un\'immagine',
+    //     'images.max' => 'L\'immagine dev\'essere massimo di 2Mb',
+    //     'images.mimes' => 'ciao',
+    //     'temporary_images.mimes' => 'ciao'
+        
+    // ];
 
     public function announcementStore(){
         $this->validate();
@@ -90,7 +93,7 @@ class CreateAnnouncement extends Component
 
     public function updatedTemporaryImages()
 	{
-		if ($this->validate(['temporary_images.*'=>'image|max:2048',])) {
+		if ($this->validate(['temporary_images.*'=>'image',])) {
 		    foreach ($this->temporary_images as $image) 
 			{
 				$this->images[] = $image;
