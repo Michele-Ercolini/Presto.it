@@ -16,7 +16,7 @@ return[
     'counter1'=>'Ventas diarias',
     'counter2'=>"Las visitas de hoy",
     'sito'=>"El sitio",
-    'footer1'=>'Presto.it, la realidad que asombró a millones de estadounidenses finalmente ha llegado a nuestro país. Cualquier tipo de anuncio a tu alcance, con solo un clic podrás acceder a cualquier tipo de producto; casas, árboles, coches y periódicos, ¡lo que quieras!',
+    'footer1'=>'Presto.it, la realidad que asombró a millones de estadounidenses finalmente ha llegado a nuestro país. Busca entre miles de productos de alta costura y coleccionables: relojes, sastrería y todas nuestras colecciones.',
     'lavora'=>'Trabaja con nosotros',
     'lavora1'=>'Trabajar contigo',
     'accedi'=>'Acceso',

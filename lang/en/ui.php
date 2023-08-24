@@ -16,7 +16,7 @@ return[
     'counter1'=>'Daily sales',
     'counter2'=>"Today's visits",
     'sito'=>"The website",
-    'footer1'=>'Presto.it, the reality that amazed millions of Americans has now finally arrived in our country. Any type of ad at your fingertips, just one click and you can access any type of product; houses, trees, cars and newspapers, whatever you want!',
+    'footer1'=>'Presto.it, the reality that amazed millions of Americans has now finally arrived in our country. Search among thousands of high fashion products and collectibles: watches, tailoring and all our collections',
     'lavora'=>'work whit us',
     'lavora1'=>'work with you',
     'accedi'=>'Login',

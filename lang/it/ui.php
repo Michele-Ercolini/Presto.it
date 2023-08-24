@@ -16,7 +16,7 @@ return[
     'counter1'=>'Vendite giornaliere',
     'counter2'=>"Visite odierne",
     'sito'=>"Il sito",
-    'footer1'=>'Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Qualsiasi tipo di annuncio a portata di mano, basta un click e puoi accedere ad ogni tipo di prodotto; case, alberi,auto e fogli di giornale, tutto quello che vuoi!',
+    'footer1'=>'Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Cerca tra migliaia di prodotti di alta moda e prodotti da collezione : orologi , capi sartoriali e tutte le nostre collezioni',
     'lavora'=>'lavora con noi',
     'lavora1'=>'lavora con voi',
     'accedi'=>'Accedi',
