@@ -38,8 +38,8 @@
 
 
         <div class="mb-3">
-            <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.') is-invalid @enderror"placeholder="img">
-            @error('temporary_images.')
+            <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="img">
+            @error('temporary_images.*')
                 <p class="text-danger mt-2">{{$message}}</p>
             @enderror
         </div>
