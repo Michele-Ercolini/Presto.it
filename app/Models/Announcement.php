@@ -4,12 +4,8 @@ namespace App\Models;
 
 use App\Models\Category;
 use Laravel\Scout\Searchable;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-=======
-use App\Models\Category;
->>>>>>> 645647863728563c571c836f8386ac8bb2264620
 
 class Announcement extends Model
 {
