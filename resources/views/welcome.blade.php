@@ -1,7 +1,7 @@
 <x-layout>
     
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
-        <div class="row">
+        <div class="row ">
             <div class="col-12 justify-content-center mb-5">
                 <h1 class="title-shadow paragrafo2 text-center text-white display-1">Presto.it</h1>
                 <form class="search-form" action="{{route('announcements.search')}}" method="GET">
@@ -27,23 +27,45 @@
     </header>
     <hr class="border border-dark border-3 opacity-80 m-0">
 
-    <div class="container-fluid paragraph-container my-3">
+    <div class="container-fluid paragraph-container bg-dark ">
         <div class="row justify-content-center">
-            <h3 class="text-center paragrafo display-3 my-3">{{__('ui.introduzione')}}</h3>
-            <div class="col-12">
-                <p class="text-center" >{{__('ui.semi-introduzione')}}</p>
-                <video loop autoplay muted width="100%" height="360">
-                    <source src="/media/Vecchietta.mp4" type="video/mp4">
+            <h3 style="color:#db9b20" class="text-center paragrafo display-3 my-3">{{__('ui.introduzione')}}</h3>
+            <div class="col-md-4 my-3">
+                    <div class="containerx d-flex justify-content-center">
+                        <div class="card">
+                            <div class="content">
+                                <h2 class="mb-3 text-uppercase title-shadow"></h2>
+                                <h3 class="paragrafo text-uppercase title-shadow" class=" text-uppercase my-3"></h3>
+                                <p class="text-truncate text-uppercase title-shadow" class=" text-uppercase"></p>
+                                
+                            </div>
+                        </div>
+                </div>            </div>
+            <div class="col-md-4 ">
+                <p style=""class="text-center " >{{__('ui.semi-introduzione')}}</p>
+                <video loop autoplay muted width="500px;" height="500px;">
+                    <source src="/media/VideoGioggio.mp4" type="video/mp4">
                 </video>
-
-            
             </div>
-        </div>
+            <div class="col-md-4 my-3 ">
+                
+                    <div class="containerx d-flex justify-content-center">
+                        <div class="card">
+                            <div class="content">
+                                <h2 class="mb-3 text-uppercase title-shadow">Dove siamo:</h2>
+                                <a src="" style="background-color: #db9b20" class=" text-uppercase title-shadow text-uppercase ">Milano,via Garofali 43</a>
+                                <a src=""  style="background-color: #db9b20;" class="text-uppercase title-shadow text-uppercase" >Torino,via crisanzio 89</a>
+                                <p class="text-truncate text-uppercase title-shadow" class="text-uppercase"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
     </div>
-    
+    </div>
     {{-- Cards Annunci --}}
     <div class="container">
-        <h3 class="text-center paragrafo display-3">{{__('ui.nostri-annunci')}}</h3>
+        <h3 class="text-center paragrafo display-3 ">{{__('ui.nostri-annunci')}}</h3>
         <div class="row">
             
             @foreach($announcements as $announcement)
@@ -52,7 +74,7 @@
                     <div class="containerx d-flex justify-content-center">
                         <div class="card">
                             <div class="content">
-                                <h2 class="mb-3">{{$announcement->title}}</h2>
+                                <h2 class="mb-3 text-uppercase">{{$announcement->title}}</h2>
                                 <img class="imgSection img-fluid"
                                 {{-- src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}"> --}}
                                 src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">

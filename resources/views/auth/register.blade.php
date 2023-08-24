@@ -26,7 +26,7 @@
                         <label class="formLabel" for="userPassword" class="form-label">{{__('ui.confermaPsw')}}</label>
                         <input class="formInput text-white" type="password"  id="userPassword" name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn1 btn-dark mb-3">{{__('ui.registrati')}}</button>
+                    <button type="submit" class="bb btn btn1 btn-dark mb-3">{{__('ui.registrati')}}</button>
                 </form>
                 {{-- fine form --}}
     

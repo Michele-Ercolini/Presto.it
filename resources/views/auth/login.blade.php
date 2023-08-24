@@ -17,10 +17,10 @@
                         <label class="formLabel" for="userPassword" class="form-label">Password</label>
                         <input class="formInput text-white" type="password"  id="userPassword" name="password">
                     </div>
-                    <button id="buttonLogin" type="submit" class="btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
+                    <button id="buttonLogin" type="submit" class="bb btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
                     <audio src="/media/Suono.mp3" id="track"></audio>
     
-                    <div class="mb-3">
+                    <div class="php artisan servemb-3">
                         <p>{{__('ui.pLogin')}}   <br><a href="{{route('register')}}">{{__('ui.linklog')}}</a></p></br>
                     </div>
     

@@ -133,5 +133,15 @@
     backdrop-filter: blur(5px);
 }
 
+.bb{
+    float:right;
+}
+.custom-form{
+    height: 530px;
+}
+
+.buttonLogin{
+    float:right;
+}
 
 

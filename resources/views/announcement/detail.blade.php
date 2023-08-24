@@ -18,7 +18,7 @@
                             
                             <!-- Slider main container -->
                             <div class="container-fluid backcont">
-                                <h1 class="text-center">{{ $announcement->title }}</h1>
+                                <h1  style="color:white" class="text-center text-uppercase title-shadow">{{ $announcement->title }}</h1>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="swiper mySwiper">
@@ -33,13 +33,13 @@
                                             @else
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="title-shadow imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="title-shadow imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <img class="imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
+                                                        <img class="title-shadow imgSection immaginiCarousel" src="{{!$announcement->images()->get()->isEmpty() ? $anouncement->images()->first()->getUrl(400,300) : 'https://picsum.photos/250/200'}}" />
                                                     </div>
                                                 </div>
                                             @endif
@@ -52,12 +52,12 @@
                                 {{-- Fine Carosello --}}
                                 
                                 
-                                <h2 class="text-center">{{ $announcement->title }}</h2>
-                                <h3 class="text-center">{{ $announcement->category->name }}</h3>
-                                <p class="lead text-center">{{ $announcement->price }}€</p>
-                                <p class="text-truncate text-center"> {{ $announcement->body }}</p>
-                                <address class="text-center">Pubblicato da: {{$announcement->user->name}}</address>
-                                <a class="button text-center  btn1 btn btn-outline-dark" href="{{ route('announcement_index') }}">Torna Indietro</a>
+                                <h2 style="color:white" class="text-center title-shadow text-uppercase">{{ $announcement->title }}</h2>
+                                <h3  style="color:white" class="text-center title-shadow text-uppercase">{{ $announcement->category->name }}</h3>
+                                <p  style="color:white"  class="lead text-center title-shadow text-uppercase">{{ $announcement->price }}€</p>
+                                <p  style="color:white" class="text-truncate text-center title-shadow text-uppercase"> {{ $announcement->body }}</p>
+                                <p class="text-center text-uppercase title-shadow"><span style="color:black">Pubblicato da:</span> <span style="color:white">{{$announcement->user->name}}</span></p>
+                                <a  style="color:white" class="button text-center  btn1 btn btn-outline-dark" href="{{ route('announcement_index') }}">Torna Indietro</a>
                         </div>
                     </div>
                 </div>
