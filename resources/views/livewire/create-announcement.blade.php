@@ -1,9 +1,9 @@
-<div style="margin-top: 5%" class="formClass">
-    <form class="custom-form2" wire:submit.prevent="announcementStore">
+<div style="background-color:  #db9b20; margin-top: 5%" class="formClass">
+    <form style="background-color:  #db9b20" class="custom-form2" wire:submit.prevent="announcementStore">
         
 
         <div class="mb-3 display-9">
-            <label class="display-9"for="announcementTitle" class="form-label">Titolo Annuncio</label>
+            <label class="display-9 text-uppercase "for="announcementTitle" class="form-label">Titolo Annuncio</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="announcementTitle"
                 wire:model="title">
             @error('title')
@@ -11,7 +11,7 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="announcementNumber" class="form-label">Prezzo</label>
+            <label for="announcementNumber " class="text-uppercase form-label">Prezzo</label>
             <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="announcementNumber"
                 wire:model="price">
             @error('price')
@@ -19,7 +19,7 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="announcementBody" class="form-label">Descrivi il tuo Annuncio</label>
+            <label for="announcementBody " class="text-uppercase form-label">Descrivi il tuo Annuncio</label>
             <textarea id="announcementBody" cols="30" rows="5" class="form-control @error('body') is-invalid @enderror"
                 wire:model="body"></textarea>
             @error('body')
@@ -27,18 +27,18 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="category">Categoria</label>
+            <label for="category " class="text-uppercase">Categoria</label>
             <select wire:model.defer="category" id="category" class="form-control">
-                <option style="background-color: #9b9b9c" value="">Scegli la Categoria</option>
+                <option style="background-color:  #edbf67;" value="">Scegli la Categoria</option>
                 @foreach ($categories as $category)
-                    <option style="background-color: #9b9b9c" value="{{$category->id}}">{{$category->name}}</option>
+                    <option style="background-color:  #edbf67; value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
         </div>
 
 
         <div class="mb-3">
-            <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="img">
+            <input  wire:model="temporary_images" type="file" name="images" multiple  class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="img">
             @error('temporary_images.*')
                 <p class="text-danger mt-2">{{$message}}</p>
             @enderror

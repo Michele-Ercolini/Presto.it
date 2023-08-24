@@ -5,9 +5,9 @@
             <div class="col-12 col-md-3">
                 
                 {{-- inizio form --}}
-                <form data-aos="zoom-out-up" class="custom-form " method="POST" action="{{route('register')}}" style="padding-top: 0px; padding-bottom: 0px; margin-top:70%">
+                <form data-aos="zoom-out-up" class="custom-form " method="POST" action="{{route('register')}}" style="background-color:#db9b20;padding-top: 0px; padding-bottom: 0px; margin-top:70%">
                     <div>
-                        <p class=" text-white text-center" style="font-size: 50px">{{__('ui.registrati')}}</p>  
+                        <p class="title-shadow text-dark   text-center" style="color:dark; font-size: 50px">{{__('ui.registrati')}}</p>  
                     </div>  
                     @csrf
                     <div class="mb-3">

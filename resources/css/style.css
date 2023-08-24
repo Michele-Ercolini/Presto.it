@@ -398,7 +398,7 @@ h1,h2,h3{
     z-index:1;
 }
 
-.containerx .card .content p{
+.containerx .card .content h5{
     font-size: 1em;
     color:black;
     font-weight: 150;
@@ -412,7 +412,7 @@ h1,h2,h3{
     padding:8px 20px;
     margin-top: 15px;
     background: #fff;
-    color:#000;
+    color:black;
     border-radius: 20px;
     text-decoration:none;
     font-weight:500 ;
@@ -467,6 +467,7 @@ a.nav-link.dropdown-toggle.show::after{
 }
 .welcomebtn{
     margin-bottom:30px;
+    background-color: #db9b20;
 }
 
 .page-link{
@@ -519,7 +520,7 @@ a.nav-link.dropdown-toggle.show::after{
 }
 .cat{
     text-decoration: none;
-    color:var(--grigio-chiaro);
+    color:#952932;
     
 }
 .cat:hover{
@@ -540,3 +541,12 @@ a.nav-link.dropdown-toggle.show::after{
 .card:hoover{
     transition: 0.5s;
 }
+.color1{
+    color: #db9b20;}
+.color2{
+   color: #edbf67;
+}
+.color3{
+    color:#952932
+}
+

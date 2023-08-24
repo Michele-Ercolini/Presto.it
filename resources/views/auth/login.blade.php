@@ -6,8 +6,8 @@
                 
                 
                 {{-- inizio form --}}
-                <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}" style="padding-top: 0px; padding-bottom: 0px ">
-                    <p class="mt-5 text-white text-center" style="font-size: 50px">{{__('ui.accedi')}}</p>
+                <form data-aos="zoom-out-up" class="custom-form" method="POST" action="{{route('login')}}" style="padding-top: 0px; padding-bottom: 0px; background-color:#db9b20; ">
+                    <p class="mt-5  title-shadow text-center" style="color:dark; font-size: 50px">{{__('ui.accedi')}}</p>
                     @csrf
                     <div class="mb-3">
                         <label class="formLabel" for="userEmail" class="form-label">{{__('ui.email')}}</label>
@@ -21,7 +21,7 @@
                     <audio src="/media/Suono.mp3" id="track"></audio>
     
                     <div class="php artisan servemb-3">
-                        <p>{{__('ui.pLogin')}}   <br><a href="{{route('register')}}">{{__('ui.linklog')}}</a></p></br>
+                        <p style="color:whitesmoke">{{__('ui.pLogin')}}   <br><a style="text-decoration:none; color:black;"href="{{route('register')}}">{{__('ui.linklog')}}</a></p></br>
                     </div>
     
                     <script>
