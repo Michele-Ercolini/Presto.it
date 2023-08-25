@@ -6,12 +6,12 @@
 
                 @if(Auth::user()->is_revisor)
                     <div class="col-12 mb-5">
-                        <h1 class="text-white display-1 text-center">Ciao {{Auth::user()->name}}</h1>
+                        <h1 class="color2 title-shadow display-1 text-center">Ciao {{Auth::user()->name}}</h1>
                         <h3 class="text-center mb-5">Sei già un nostro Revisore</h3>
                     </div>
                 @else
                     <div class="col-12">
-                        <h1 class="text-white display-1 text-center">Lavora con noi</h1>
+                        <h1 class="color2 title-shadow display-1 text-center">Lavora con noi</h1>
                         <h3 class="text-center">Vuoi diventare un nostro Revisore?</h3>
                         <div class="text-center my-4">
                             <a class="btn1 btn btn-outline-dark" href="{{route('become_revisor')}}">Clicca qui</a>
