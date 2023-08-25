@@ -26,7 +26,7 @@
                                                 <div  class="swiper-wrapper">
                                                     @foreach($announcement->images as $image)
                                                         <div class="swiper-slide @if($loop->first)active @endif">
-                                                            <img class="imgSection immaginiCarousel" src="{{Storage::url($image->path)}}" class="img-fluid p-3 rounded" alt="..."/>
+                                                            <img class="imgSection immaginiCarousel" src="{{$image->getUrl(250, 200)}}" class="img-fluid p-3 rounded" alt="..."/>
                                                         </div>
                                                     @endforeach
                                                 </div>
