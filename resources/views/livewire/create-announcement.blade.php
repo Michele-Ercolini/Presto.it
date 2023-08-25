@@ -31,7 +31,7 @@
             <select wire:model.defer="category" id="category" class="form-control">
                 <option style="background-color:  #edbf67;" value="">Scegli la Categoria</option>
                 @foreach ($categories as $category)
-                    <option style="background-color:  #edbf67; value="{{$category->id}}">{{$category->name}}</option>
+                    <option style="background-color:  #edbf67;" value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
         </div>
