@@ -103,6 +103,7 @@
                                         </form>
                                     </div>
                                     <!--Google Intelligence-->
+                                    @if($image)
                                     <div class="col-md-3 border-end">
                                         <h5 class="tc-accent mt-3">Tags</h5>
                                         <div class="p-2">
@@ -124,6 +125,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endif
                         </div>
                     </div>
                 </div>

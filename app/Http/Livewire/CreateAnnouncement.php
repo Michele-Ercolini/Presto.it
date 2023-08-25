@@ -30,8 +30,8 @@ class CreateAnnouncement extends Component
         'price' => 'required|numeric',
         'category' => 'required',
         'body' => 'required|min:10',
-        'images.*' => 'image|max:2048',
-        'temporary_images.*' => 'image|max:2048'
+        'images.*' => 'image|max:2048|required',
+        'temporary_images.*' => 'image|max:2048|required'
     ];
 
     // protected $messages = [
