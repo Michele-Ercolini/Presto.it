@@ -51,9 +51,9 @@
                             </div>
                         </div>
                 </div>            </div>
-            <div class="col-md-4 ">
+            <div class="col-lg-4 ">
                 <p style="color:#db9b20"class="text-center " >{{__('ui.semi-introduzione')}}</p>
-                <video loop autoplay muted width="500px;" height="500px;">
+                <video loop autoplay muted class="VideoAbito" >
                     <source src="/media/VideoGioggio.mp4" type="video/mp4">
                 </video>
             </div>
@@ -113,7 +113,7 @@
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p style="color:black" class="text-center lh-lg "><strong class="lh-lg fs-3" style="color:#952932">{{__('ui.titolo1')}}</strong> {{__('ui.descrizione1')}}</p>
+                <p style="color:black" class="text-center lh-lg "><strong class="lh-lg fs-3" style="color:#952932">{{__('ui.titolo1')}}</strong><br> {{__('ui.descrizione1')}}</p>
             </div>
             <div class="col-12 col-lg-4">
                 <img class="imgSection mx-auto d-flex" src="https://picsum.photos/350" alt="">
@@ -127,7 +127,7 @@
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo2')}}</strong>{{__('ui.articolo2')}}</p>
+                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo2')}}</strong><br>{{__('ui.articolo2')}}</p>
             </div>
     
         </div>
@@ -137,7 +137,7 @@
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo3')}}</strong>{{__('ui.articolo3')}}</p>
+                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo3')}}</strong><br>{{__('ui.articolo3')}}</p>
             </div>
             <div class="col-12 col-lg-4">
                 <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">
