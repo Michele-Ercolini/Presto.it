@@ -89,8 +89,7 @@
                             <div class="content">
                                 <h2 class="mb-3 text-uppercase">{{$announcement->title}}</h2>
                                 <img class="imgSection img-fluid"
-                                {{-- src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}"> --}}
-                                src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
+                                src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                 <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                 <p class="text-uppercase text-truncate">{{$announcement->body}}</p>
                                 <a class="welcomebtn" style="color:#952932; background-color:#db9b20;" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>

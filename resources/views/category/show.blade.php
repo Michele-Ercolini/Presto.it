@@ -23,9 +23,7 @@
                                 <div class="content">
                                     <h2 class="mb-3 title-shadow text-uppercase">{{$announcement->title}}</h2>
                                     <img class="imgSection img-fluid"
-                                    {{-- src="https://picsum.photos/250/200"> --}}
-                                    src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
-
+                                    src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                     <p class="text-truncate title-shadow text-uppercase my-3">{{$announcement->body}}</p>
                                     <a style="background-color:#db9b20; color:#952932;"class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                                 </div>
