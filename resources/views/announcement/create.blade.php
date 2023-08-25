@@ -11,7 +11,7 @@
         
     </header> --}}
     <div style="height: 100px"></div>
-    <h1 class="color1 text-center title-shadow">Crea il tuo annuncio</h1>
+    <h1 class="text-dark text-center title-shadow">Crea il tuo annuncio</h1>
     <div class="col-12 d-flex justify-content-center">
         
         <livewire:create-announcement />
