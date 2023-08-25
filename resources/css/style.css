@@ -419,14 +419,19 @@ h1,h2,h3{
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.5);
     
 }
+
+/* .containerx .card .content p{
+    max-width: 300px;
+} */
+
 .img{
     border-radius: 15%;
     
 }
 .imgSection{
     border-radius:15%;
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
+    height: 250px; */
 }
 
 @media (max-width: 400px) {

@@ -43,7 +43,7 @@
                                                 @if (count($announcement_to_check->images) > 0)
                                                     <div class="swiper-wrapper">
                                                         @foreach ($announcement_to_check->images as $image)
-                                                            <div class="swiper-slide">
+                                                            <div class="swiper-slide @if($loop->first)active @endif">
                                                                 <img class="imgSection immaginiCarousel"
                                                                     src="{{ Storage::url($image->path) }}"
                                                                     class="img-fluid p-3 rounded" alt="..." />
