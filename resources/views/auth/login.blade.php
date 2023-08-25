@@ -11,11 +11,11 @@
                     @csrf
                     <div class="mb-3">
                         <label class="formLabel" for="userEmail" class="form-label">{{__('ui.email')}}</label>
-                        <input class="formInput text-white" type="email"  id="userEmail" name="email">
+                        <input class="bg-dark formInput text-white" type="email"  id="userEmail" name="email">
                     </div>
                     <div class="mb-3">
                         <label class="formLabel" for="userPassword" class="form-label">Password</label>
-                        <input class="formInput text-white" type="password"  id="userPassword" name="password">
+                        <input class="bg-dark formInput text-white" type="password"  id="userPassword" name="password">
                     </div>
                     <button id="buttonLogin" type="submit" class="bb btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
                     <audio src="/media/Suono.mp3" id="track"></audio>
