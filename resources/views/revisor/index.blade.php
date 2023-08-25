@@ -103,26 +103,26 @@
                                         </form>
                                     </div>
                                     <!--Google Intelligence-->
-                                    <div class="col-md-3 border-end">
-                                        <h5 class="tc-accent mt-3">Tags</h5>
-                                        <div class="p-2">
-                                            @if ($image->labels)
+                                    @if (isset($image->labels))
+                                        <div class="col-md-3 border-end">
+                                            <h5 class="tc-accent mt-3">Tags</h5>
+                                            <div class="p-2">
                                                 @foreach ($image->labels as $label)
-                                                    <p class="d-inline">{{$label}}</p>
+                                                    <p class="d-inline">{{ $label }}</p>
                                                 @endforeach
-                                            @endif
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12 my-5">
-                                        <div class="card-body text-center">
-                                        <h5 class="tc-accent">Revisione Immagini</h5>
-                                            <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                                            <p>Satira: <span class="{{$image->spoof}}"></span></p>
-                                            <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                                            <p>Violenza: <span class="{{$image->violent}}"></span></p>
-                                            <p>Contenuto Ammiccante: <span class="{{$image->racy}}"></span></p>
+                                        <div class="col-md-12 my-5">
+                                            <div class="card-body text-center">
+                                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                                <p>Adulti: <span class="{{ $image->adult }}"></span></p>
+                                                <p>Satira: <span class="{{ $image->spoof }}"></span></p>
+                                                <p>Medicina: <span class="{{ $image->medical }}"></span></p>
+                                                <p>Violenza: <span class="{{ $image->violence }}"></span></p>
+                                                <p>Contenuto Ammiccante: <span class="{{ $image->racy }}"></span></p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    @endif
                                 </div>
                         </div>
                     </div>
