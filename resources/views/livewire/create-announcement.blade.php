@@ -1,8 +1,9 @@
 <div style="background-color:  #db9b20; margin-top: 5%" class="formClass">
+   
     <form style="background-color:  #db9b20" class="custom-form2" wire:submit.prevent="announcementStore">
-        
+        <h1 class="title-form text-dark text-center title-shadow ">Crea il tuo annuncio</h1>
 
-        <div class="mb-3 display-9">
+        <div class="display-9">
             <label class="display-9 text-uppercase "for="announcementTitle" class="form-label">Titolo Annuncio</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="announcementTitle"
                 wire:model="title">
@@ -47,9 +48,10 @@
             <div class="row">
                 <div class="col-12">
                     <p>Photo preview:</p>
-                    <div class="row border border-4 border-dark rounded py-4">
+                    <div class="preview row border border-4 border-dark rounded py-4">
                     @foreach ($images as $key => $image)
                         <div class="col my-3">
+                            
                             <div class="imgPreview mx-auto rounded" style="background-image: url({{$image->temporaryUrl()}});"></div>
                             <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella</button>
                         </div>

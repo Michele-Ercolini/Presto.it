@@ -14,15 +14,15 @@
 
     
     <div style="height: 100px"></div>
-    <h1 class="text-dark text-center title-shadow">Crea il tuo annuncio</h1>
+    
     <div class="col-12 d-flex justify-content-center">
-        <div class="col-md-4 d-flex align-items-center justify-content-center">
-            <img src="/media/fashon3.png" alt="Fashion" style="width: 500px; height: 850px;">
+        <div class=" col-md-4 d-flex align-items-center justify-content-center">
+            <img class="fashon3" src="/media/fashon3.png" alt="Fashion" >
         </div>
         
         <livewire:create-announcement />
-        <div class="col-md-4 d-flex align-items-center justify-content-center">
-            <img src="/media/fashon2.png" alt="Fashion" style="width: 500px; height: 850px;">
+        <div class=" col-md-4 d-flex align-items-center justify-content-center">
+            <img class="fashon3" src="/media/fashon2.png" alt="Fashion" >
         </div>
     </div>
     

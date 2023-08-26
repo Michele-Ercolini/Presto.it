@@ -19,7 +19,7 @@
                                         @foreach($announcements->take(3) as $announcement)
                                         <li class="list-group-item d-flex justify-content-between">
                                             <span style="font-family: 'Orbitron', sans-serif;">{{$announcement->title}}</span>
-                                            <span><a href="{{route('announcement_detail', compact('announcement'))}}" class="btnP  btn btn-outline-danger">Show</a></span>
+                                            <span><a href="{{route('announcement_detail', compact('announcement'))}}" style="padding:15px;"class="btnP  btn btn-outline-danger">Show</a></span>
                                         </li>
                                         @endforeach
                                         

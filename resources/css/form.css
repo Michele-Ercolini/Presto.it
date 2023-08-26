@@ -75,8 +75,18 @@
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.5);
     
-} */
+}  */
 
 form.custom-form.aos-init.aos-animate{
     padding: 10;
+}
+.title-form{
+    margin-bottom:80px;
+}
+
+@media screen and (max-width:1500px){
+    .fashon3{
+     display: none;
+    }
+    
 }
