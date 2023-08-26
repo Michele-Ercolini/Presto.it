@@ -29,8 +29,8 @@
 
     <div class="container-fluid paragraph-container bg-dark">
         <div class="row justify-content-center">
-            <h3 style="color:#db9b20" class="text-center paragrafo display-3 my-3">{{__('ui.introduzione')}}</h3>
-            <h4 style="color:#db9b20"class="text-center " >{{__('ui.semi-introduzione')}}</h4>
+            <h3 style="color:#db9b20" class="text-center title-shadow paragrafo display-3 my-3">{{__('ui.introduzione')}}</h3>
+            <h4 style="color:#db9b20"class="text-center title-shadow " >{{__('ui.semi-introduzione')}}</h4>
             <div class="col-md-4 my-3">
                 <div class="containerx d-flex justify-content-center">
                     <div class="card">

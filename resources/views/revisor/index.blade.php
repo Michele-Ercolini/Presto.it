@@ -11,7 +11,7 @@
                         </div>
                     @endif
 
-                    <h1 class="display-2 text-center mb-5">
+                    <h1 class="display-2 title-shadow text-center mb-5">
                         {{ $announcement_to_check ? 'Annuncio da revisionare' : 'Non ci sono annunci da revisionare' }}
 
                     </h1>
