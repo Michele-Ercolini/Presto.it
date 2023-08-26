@@ -1,7 +1,7 @@
 <?php
 return[
     'annunci'=>'Annunci',
-    'profilo'=>'Ciao utente',
+    'profilo'=>'Profilo',
     'categorie'=>'Categorie',
     'cerca'=>'Cerca',
     'introduzione'=>'Benvenuto nel nostro elegante negozio online!',
@@ -29,8 +29,8 @@ return[
     'vediPiù'=>'Per saperne di più',
     'creaAnnuncio'=>'Crea annuncio',
     'saluto'=>'Ciao',
-    'profilo1'=>'Profilo',
+    'profilo1'=>'Ciao utente',
     'esci'=>'Esci',
     'insoddisfatto'=>'Non sei ancora soddisfatto? Consulta le nostre categorie!',
-
+    'tuttiannunci'=>'Tutti gli annunci',
 ];

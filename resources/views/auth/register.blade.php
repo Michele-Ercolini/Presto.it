@@ -13,6 +13,7 @@
                     <div class="mb-3">
                         <label class="formLabel" for="userName" class="form-label">{{__('ui.nomeUtente')}}</label>
                         <input class="bg-dark formInput text-white" type="text"  id="userName" name="name">
+                        
                     </div>
                     <div class="mb-3">
                         <label class="formLabel" for="userEmail" class="form-label">Email</label>

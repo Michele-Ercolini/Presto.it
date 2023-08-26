@@ -17,7 +17,7 @@
                         <label class="formLabel" for="userPassword" class="form-label">Password</label>
                         <input class="bg-dark formInput text-white" type="password"  id="userPassword" name="password">
                     </div>
-                    <button id="buttonLogin" type="submit" class="bb btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
+                    <button id="buttonLogin" type="submit" style="margin-top: 80px" class="bb btn btn1 btn-dark mb-3">{{__('ui.accedi')}}</button>
                     <audio src="/media/Suono.mp3" id="track"></audio>
     
                     <div class="php artisan servemb-3">

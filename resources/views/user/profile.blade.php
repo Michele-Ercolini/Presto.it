@@ -56,19 +56,19 @@
                             
                         </aside>
                         <div class="col-12 col-md-9">
-                            <h3 class="text-center my-5">{{Auth::user()->name}}</h3>
-                            <p class="lorem">Titolo del Profilo: "Appassionato di Tecnologia cerca Affari Imperdibili"
+                            <h3 class="text-center my-5 lorem">{{Auth::user()->name}}</h3>
+                            <p class="lorem text-center"><strong>Titolo del Profilo:</strong><br> "Appassionato di Tecnologia cerca Affari Imperdibili"
 
-                                Descrizione:
-                                Ciao a tutti! Sono un appassionato di tecnologia con un occhio attento per gli affari imperdibili. Se stai cercando le migliori offerte su dispositivi elettronici, gadget all'avanguardia e accessori hi-tech, sei nel posto giusto.
+                                <br><strong>Descrizione:</strong><br>
+                                Ciao a tutti! Sono un appassionato di tecnologia con un occhio attento per gli affari imperdibili. Se stai cercando le migliori offerte su dispositivi elettronici, gadget all'avanguardia e accessori hi-tech, sei nel posto giusto.<br>
                                 
-                                La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente. Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
-                            <hr>
+                                La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente.<br> Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
+                            </p>
                             <section class="container">
                                 <div class="row">
                                     @foreach ($announcements as $announcement)
                                     @if($announcement->is_accepted)
-                                    <div class="col-12 col-md-6 col-lg-4 my-5">
+                                    <div class="col-12 col-md-6 my-5">
                                         <div class="containerx d-flex justify-content-center">
                                             <div class="card">
                                                 <div class="content">

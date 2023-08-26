@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4 ">
                 <p style="color:#db9b20"class="text-center " >{{__('ui.semi-introduzione')}}</p>
-                <video loop autoplay muted width="500px;" height="500px;">
+                <video loop autoplay muted class="VideoAbito" >
                     <source src="/media/VideoGioggio.mp4" type="video/mp4">
                 </video>
             </div>

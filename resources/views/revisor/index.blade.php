@@ -124,8 +124,9 @@
                                                 <p>Contenuto Ammiccante: <span class="{{ $image->racy }}"></span></p>
                                             </div>
                                         </div>
-                                    @endif
+                                    
                                 </div>
+                                @endif
                         </div>
                     </div>
                 </div>
