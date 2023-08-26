@@ -420,9 +420,9 @@ h1,h2,h3{
     
 }
 
-/* .containerx .card .content p{
+.containerx .card .content p{
     max-width: 300px;
-} */
+}
 
 .img{
     border-radius: 15%;
