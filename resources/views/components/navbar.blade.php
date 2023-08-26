@@ -46,13 +46,13 @@
 
                     @if(Auth::user()->is_revisor)
                       <li>
-                        <a href="{{route('revisor_index')}}" class="dropdown-item position-relative">
+                        <a href="{{route('revisor_index')}}"  class="dropdown-item  position-relative ">
                           Revisor
                           @if(App\Models\Announcement::toBeRevisionedCount() > 0)
-                            <span style="" class="revisor start-100 translate-middle badge btn1 bg-dark rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span  class="visually-hidden">unread messages</span>
+                            <span  class="revisor   badge btn1 bg-dark position-absolute  rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span  class="visually-hidden">unread messages</span>
                             </span>
                           @endif
-                          </a>
+                        </a>
                       </li>
                     @endif
                     <li><hr class="dropdown-divider"></li>

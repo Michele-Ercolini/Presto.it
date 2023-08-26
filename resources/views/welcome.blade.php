@@ -30,6 +30,7 @@
     <div class="container-fluid paragraph-container bg-dark">
         <div class="row justify-content-center">
             <h3 style="color:#db9b20" class="text-center paragrafo display-3 my-3">{{__('ui.introduzione')}}</h3>
+            <h4 style="color:#db9b20"class="text-center " >{{__('ui.semi-introduzione')}}</h4>
             <div class="col-md-4 my-3">
                 <div class="containerx d-flex justify-content-center">
                     <div class="card">
@@ -49,10 +50,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 ">
-                <p style="color:#db9b20"class="text-center " >{{__('ui.semi-introduzione')}}</p>
-                <video loop autoplay muted class="VideoAbito" >
-                    <source src="/media/VideoGioggio.mp4" type="video/mp4">
+            <div class="col-md-4 my-3 ">
+                <video loop autoplay muted height="500px" width="500px" class="VideoAbito" >
+                    <source  src="/media/VideoGioggio.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="col-md-4 my-3 ">
