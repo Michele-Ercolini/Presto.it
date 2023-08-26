@@ -38,7 +38,7 @@
 
 
         <div class="mb-3">
-            <input  wire:model="temporary_images" type="file" name="images" multiple  class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="img">
+            <input  wire:model="temporary_images" type="file" name="images" multiple  class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img"/>
             @error('temporary_images.*')
                 <p class="text-danger mt-2">{{$message}}</p>
             @enderror
@@ -58,8 +58,8 @@
                 </div>
             </div>
         @endif
-<button type="submit" class="btn btn-dark mb-3">Carica</button>
-@if (session('message'))
+        <button type="submit" class="btn btn-dark mb-3">Carica</button>
+        @if (session('message'))
             <div class="alert alert-success">
                 {{ session('message') }}
             </div>

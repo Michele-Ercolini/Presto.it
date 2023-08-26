@@ -32,6 +32,7 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     background-color: whitesmoke;
+    
 }
 
 .formInput[type="text"],
@@ -41,12 +42,13 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: whitesmoke;
+   
+    
 }
 
 .formInput[type="submit"] {
     background-color: whitesmoke;
-    color: var(--white-smoke);
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
