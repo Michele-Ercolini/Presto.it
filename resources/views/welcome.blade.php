@@ -78,7 +78,7 @@
     </div>
     {{-- Cards Annunci --}}
     <div class="container">
-        <h3 class="text-center title-shadow color1 paragrafo display-3 ">{{__('ui.nostri-annunci')}}</h3>
+        <h3 class="text-center title-shadow color1 paragrafo display-3 mt-5">{{__('ui.nostri-annunci')}}</h3>
         <div class="row">
             
             @foreach($announcements as $announcement)
@@ -127,7 +127,7 @@
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo2')}}</strong><br>{{__('ui.articolo2')}}</p>
+                <p style="color:black" class=" text-center lh-lg "><strong class=" lh-lg fs-3" style="color:#952932">{{__('ui.titolo2')}}</strong><br>{{__('ui.articolo2')}}</p>
             </div>
     
         </div>
@@ -137,7 +137,7 @@
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <p class="paragrafo text-center lh-lg "><strong class="text-dark lh-lg fs-3">{{__('ui.titolo3')}}</strong><br>{{__('ui.articolo3')}}</p>
+                <p style="color:black" class=" text-center lh-lg "><strong class=" lh-lg fs-3" style="color:#952932">{{__('ui.titolo3')}}</strong><br>{{__('ui.articolo3')}}</p>
             </div>
             <div class="col-12 col-lg-4">
                 <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">

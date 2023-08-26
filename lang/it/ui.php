@@ -16,7 +16,7 @@ return[
     'counter1'=>'Vendite giornaliere',
     'counter2'=>"Visite odierne",
     'sito'=>"Il sito",
-    'footer1'=>'Presto.it, la realtà che ha stupito miglioni di americani ora è finalmente arrivata nel nostro paese. Cerca tra migliaia di prodotti di alta moda e prodotti da collezione : orologi , capi sartoriali e tutte le nostre collezioni',
+    'footer1'=>'Presto.it, la realtà che ha stupito milioni di americani ora è finalmente arrivata nel nostro paese. Cerca tra migliaia di prodotti di alta moda e prodotti da collezione : orologi , capi sartoriali e tutte le nostre collezioni',
     'lavora'=>'lavora con noi',
     'lavora1'=>'lavora con voi',
     'accedi'=>'Accedi',
