@@ -49,7 +49,7 @@
                         <a href="{{route('revisor_index')}}" class="dropdown-item position-relative">
                           Revisor
                           @if(App\Models\Announcement::toBeRevisionedCount() > 0)
-                            <span class="revisor  start-100 translate-middle badge btn1 bg-dark rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
+                            <span style="" class="revisor start-100 translate-middle badge btn1 bg-dark rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span  class="visually-hidden">unread messages</span>
                             </span>
                           @endif
                           </a>

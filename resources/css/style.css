@@ -444,7 +444,29 @@ h1,h2,h3{
     margin-left:310px;
     color:#db9b20
 }
-
+.fashon3{
+    height:650px ;
+    width:650px ;
+}
+@media screen and (max-width:1500px){
+    .form-label{
+        width: 200px;
+    }
+    .form-control{
+        width: 250px;
+    }
+    .fashon3{
+        display: none;
+       }
+}
+@media screen and (max-width:900px){
+    .form-label{
+        width: 200px;
+    }
+    .form-control{
+        width: 250px;
+    }
+}
 @media screen and (max-width:600px){
     .form-label{
         width: 200px;
@@ -453,6 +475,25 @@ h1,h2,h3{
         width: 250px;
     }
 }
+@media screen and (max-width:500px){
+    .form-label{
+        width: 200px;
+    }
+    .form-control{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .form-label{
+        width: 200px;
+    }
+    .form-control{
+        width: 250px;
+    }
+}
+
+
 .dropdown-menu{
     background-color:var(--grigio-chiaro) ;
 }
