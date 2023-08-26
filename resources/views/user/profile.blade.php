@@ -19,7 +19,7 @@
                                         @foreach($announcements->take(3) as $announcement)
                                         <li class="list-group-item d-flex justify-content-between">
                                             <span style="font-family: 'Orbitron', sans-serif;">{{$announcement->title}}</span>
-                                            <span><a href="{{route('announcement_detail', compact('announcement'))}}" style="padding:15px;"class="btnP  btn btn-outline-danger">Show</a></span>
+                                            <span><a href="{{route('announcement_detail', compact('announcement'))}}" class="btnP  btn btn-outline-danger">Show</a></span>
                                         </li>
                                         @endforeach
                                         
@@ -78,7 +78,7 @@
                                                     src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
                                                     <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                                     <p class="text-truncate">{{$announcement->body}}</p>
-                                                    <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                                    <a style="background-color:#db9b20;" class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -92,7 +92,7 @@
                                 src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                 <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                 <p class="text-uppercase text-truncate">{{$announcement->body}}</p>
-                                <a class="welcomebtn" style="color:#952932; background-color:#db9b20;" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>
+                                <a class="welcomebtn" style="color:black; background-color:#db9b20;" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>
                             </div>
                         </div>
                     </div>

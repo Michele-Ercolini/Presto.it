@@ -436,8 +436,8 @@ h1,h2,h3{
 
 @media (max-width: 400px) {
     .imgSection {
-      width: 80%;
-      height: 80%;
+      width: 50%;
+      height: 50%;
     }
   }
 .button{
