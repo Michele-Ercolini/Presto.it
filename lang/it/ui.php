@@ -32,5 +32,5 @@ return[
     'profilo1'=>'Ciao utente',
     'esci'=>'Esci',
     'insoddisfatto'=>'Non sei ancora soddisfatto? Consulta le nostre categorie!',
-
+    'tuttiannunci'=>'Tutti gli annunci',
 ];
