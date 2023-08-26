@@ -1,6 +1,21 @@
-<x-layout titolo='I NOSTRI ANNUNCI'>
+<x-layout>
     
-    <x-header titoloHeader="Tutti gli Annunci"/>
+    <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
+        <div class="row ">
+            <div class="col-12 mb-5">
+                <h1 class="title-shadow paragrafo2 text-center text-white display-1">Tutti gli Annunci</h1>
+                <form class="search-form text-center" action="{{route('announcements.search')}}" method="GET">
+                    @csrf
+                    <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
+                    <br>
+                    <div class="text-center my-4">
+                        <button type="submit" class="btn1 paragrafo2 btn search-button btn-dark ">{{__('ui.cerca')}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <hr class="border border-dark border-3 opacity-80 m-0">
 
     <div class="container mt-3 ">
         <div class="row">
@@ -13,7 +28,7 @@
 
     
     <div class="container my-5 ">
-        <div class="col-12 col-md-8 offset-md-2">
+        {{-- <div class="col-12 col-md-8 offset-md-2">
             <div class="categorie d-flex flex-wrap justify-content-between">
                 @foreach ($categories as $category)
                     <span class="borderCat color2">
@@ -21,7 +36,10 @@
                     </span>
                 @endforeach 
             </div>
-        </div>
+        </div> --}}
+
+        <x-categories_bar></x-categories_bar>
+
         <div class="row">
             
             @forelse($announcements as $announcement)
@@ -39,7 +57,7 @@
                     </div>
                 </div>
             @empty
-                <div class="col-12">
+                <div class="col-12 my-3">
                     <div class="alert alert-warning py-3 shadow">
                         <p class="lead">Non ci sono annunci per questa ricerca</p>
                     </div>
