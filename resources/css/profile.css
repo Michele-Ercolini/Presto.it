@@ -12,6 +12,13 @@
 .cardP:hover{
     height: 450px;
 }
+
+@media (max-width: 469px) {
+    .cardP{
+        width: 100%;
+    }
+   
+  }
 .imgprofile{
     position:absolute;
     width: 130px;
@@ -82,6 +89,24 @@
 .lorem{
     margin-left:100px;
 }
+
+@media (max-width: 1500px) {
+    .lorem{
+        margin-left:200px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .lorem{
+        margin-left:300px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .lorem{
+        margin-left:0px;
+    }
+  }
 .search-form .search-input{
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
