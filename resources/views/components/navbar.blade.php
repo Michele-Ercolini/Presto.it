@@ -1,4 +1,4 @@
-    <!-- Inizio Navbar -->
+ <!-- Inizio Navbar -->
     <nav id="navId" class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid d-flex  navcustom">
           
@@ -46,13 +46,13 @@
 
                     @if(Auth::user()->is_revisor)
                       <li>
-                        <a href="{{route('revisor_index')}}" class="dropdown-item position-relative">
+                        <a href="{{route('revisor_index')}}"  class="dropdown-item  position-relative ">
                           Revisor
                           @if(App\Models\Announcement::toBeRevisionedCount() > 0)
-                            <span class="revisor  start-100 translate-middle badge btn1 bg-dark rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span>
+                            <span  class="revisor   badge btn1 bg-dark position-absolute  rounded-pill ">{{App\Models\Announcement::toBeRevisionedCount()}}<span  class="visually-hidden">unread messages</span>
                             </span>
                           @endif
-                          </a>
+                        </a>
                       </li>
                     @endif
                     <li><hr class="dropdown-divider"></li>
@@ -69,7 +69,7 @@
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      {{__('ui.profilo')}}
+                      {{__('ui.profilo1')}}
                   </a>
                   <ul class="dropdown-menu dropdown-content">
                       <li>
@@ -88,9 +88,9 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    <img src="/media/mondo.png" width="32" height="32">
+                    <img src="/media/mondogriglia.png" width="32" height="32">
                 </a>
-                <ul class="dropdown-menu dropdown-content">
+                <ul class="dropdown-menu dropdown-content dropdown-menu-end">
               <li class="nav-item">
                 <x-_locale lang='it'/>IT
               </li>

@@ -2,6 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\RemoveFaces;
 use Livewire\Component;
 use App\Models\Category;
 use App\Jobs\ResizeImage;
@@ -28,19 +31,22 @@ class CreateAnnouncement extends Component
         'price' => 'required|numeric',
         'category' => 'required',
         'body' => 'required|min:10',
-        'images.*' => 'image|max:2048',
-        'temporary_images.*' => 'image|max:2048'
+        'images.*' => 'image|max:2048|required',
+        'temporary_images.*' => 'image|max:2048|required'
     ];
 
-    protected $messages = [
-        'required' => 'Il campo :attribute è obbligatorio',
-        'min' => 'Il campo è troppo corto',
-        'temporary_images.required' => 'L\'immagine è richiesta',
-        'temporary_images.*.image' => 'I file devono essere immagini',
-        'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2Mb',
-        'images.image' => 'Il file deve essere un\'immagine',
-        'image.max' => 'L\'immagine dev\'essere massimo di 2Mb'
-    ];
+    // protected $messages = [
+    //     'required' => 'Il campo :attribute è obbligatorio',
+    //     'min' => 'Il campo è troppo corto',
+    //     'temporary_images.required' => 'L\'immagine è richiesta',
+    //     'temporary_images.*.image' => 'I file devono essere immagini',
+    //     'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 2Mb',
+    //     'images.image' => 'Il file deve essere un\'immagine',
+    //     'images.max' => 'L\'immagine dev\'essere massimo di 2Mb',
+    //     'images.mimes' => 'ciao',
+    //     'temporary_images.mimes' => 'ciao'
+        
+    // ];
 
     public function announcementStore(){
         $this->validate();
@@ -60,7 +66,11 @@ class CreateAnnouncement extends Component
                 $newFileName = "announcements/{$this->announcement->id}";
                 $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
-                dispatch(new ResizeImage($newImage->path , 250 , 200));
+                RemoveFaces::withChain([
+                    new ResizeImage($newImage->path , 250 , 200),
+                    new GoogleVisionSafeSearch($newImage->id),
+                    new GoogleVisionLabelImage($newImage->id)
+                ])->dispatch($newImage->id);
 			}
 
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
@@ -90,7 +100,7 @@ class CreateAnnouncement extends Component
 
     public function updatedTemporaryImages()
 	{
-		if ($this->validate(['temporary_images.*'=>'image|max:2048',])) {
+		if ($this->validate(['temporary_images.*'=>'image',])) {
 		    foreach ($this->temporary_images as $image) 
 			{
 				$this->images[] = $image;

@@ -1,15 +1,19 @@
 /* Inizio Carousel */
 
 .backcont{
-    background-color: var(--grigio-chiaro);
+    background-color:#db9b20 ;
     padding: 50px;
     background-image: url(./Media/img_repeat.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 15%;
     box-shadow:20px 20px 50px rgba(0,0,0,0.5); 
+  
+    
     
 }
+
+
 
 
     /* border-radius: 15px;
@@ -19,6 +23,8 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+   
+  
   }
 
   .swiper-slide {
@@ -44,6 +50,7 @@
 }
 .section{
   margin-bottom:50px;
+  border-radius:50%;
 }
 
 

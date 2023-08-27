@@ -12,6 +12,13 @@
 .cardP:hover{
     height: 450px;
 }
+
+@media (max-width: 469px) {
+    .cardP{
+        width: 100%;
+    }
+   
+  }
 .imgprofile{
     position:absolute;
     width: 130px;
@@ -82,6 +89,24 @@
 .lorem{
     margin-left:100px;
 }
+
+@media (max-width: 1500px) {
+    .lorem{
+        margin-left:200px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .lorem{
+        margin-left:300px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .lorem{
+        margin-left:0px;
+    }
+  }
 .search-form .search-input{
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
@@ -114,12 +139,14 @@
     height: 250px;
     width: 250px;
     background-repeat: no-repeat;
+    background-size: cover;
+
  }
 
 .formClass{
     width: 40vw;
     /* height: 80vh; */
-    box-shadow:20px 20px 50px rgba(0,0,0,0.5); 
+    box-shadow:20px 20px 50px var(--white-smoke); 
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
@@ -131,5 +158,18 @@
     backdrop-filter: blur(5px);
 }
 
+.bb{
+    float:right;
+}
+.custom-form{
+    height: 530px;
+}
 
+.buttonLogin{
+    float:right;
+}
 
+.revisor{
+   padding:5px;
+
+}

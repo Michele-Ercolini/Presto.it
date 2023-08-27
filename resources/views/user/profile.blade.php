@@ -56,17 +56,19 @@
                             
                         </aside>
                         <div class="col-12 col-md-9">
-                            <h3 class="text-center my-5">{{Auth::user()->name}}</h3>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni veniam eveniet sequi nemo nam provident saepe cum quae quasi incidunt eum modi, sit quos natus iure nihil nesciunt error!</p>
-                            <hr>
+                            <h3 class="text-center my-5 lorem">{{Auth::user()->name}}</h3>
+                            <p class="lorem text-center"><strong>Titolo del Profilo:</strong><br> "Appassionato di Tecnologia cerca Affari Imperdibili"
+
+                                <br><strong>Descrizione:</strong><br>
+                                Ciao a tutti! Sono un appassionato di tecnologia con un occhio attento per gli affari imperdibili. Se stai cercando le migliori offerte su dispositivi elettronici, gadget all'avanguardia e accessori hi-tech, sei nel posto giusto.<br>
+                                
+                                La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente.<br> Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
+                            </p>
                             <section class="container">
                                 <div class="row">
                                     @foreach ($announcements as $announcement)
-                                    
-                                    <div class="col-12 col-md-6 col-lg-4 my-5">
+                                    @if($announcement->is_accepted)
+                                    <div class="col-12 col-md-6 my-5">
                                         <div class="containerx d-flex justify-content-center">
                                             <div class="card">
                                                 <div class="content">
@@ -76,13 +78,13 @@
                                                     src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
                                                     <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                                     <p class="text-truncate">{{$announcement->body}}</p>
-                                                    <a class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
+                                                    <a style="background-color:#db9b20;" class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     
-                                    
+                                    @endif
                                     @endforeach
                                 </div>
                             </section>

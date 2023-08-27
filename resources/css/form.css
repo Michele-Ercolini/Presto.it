@@ -5,7 +5,7 @@
     
     margin: 0 auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.19);
+    background-color:#db9b20;
     border-radius: 16px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -21,6 +21,7 @@
 .formLabel {
     display: block;
     margin-bottom: 5px;
+    color:aliceblue;
 }
 
 .formInput[type="text"],
@@ -30,7 +31,8 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #4c4f4e;
+    background-color: whitesmoke;
+    
 }
 
 .formInput[type="text"],
@@ -40,12 +42,13 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #4c4f4e;
+   
+    
 }
 
 .formInput[type="submit"] {
-    background-color: #4c4f4e;
-    color: var(--white-smoke);
+    background-color: whitesmoke;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
@@ -53,7 +56,7 @@
 }
 
 .formInput[type="submit"]:hover {
-    background-color: #4c4f4e;
+    background-color: whitesmoke;
 }
 
 /* .custom-form2{
@@ -72,8 +75,18 @@
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.5);
     
-} */
+}  */
 
 form.custom-form.aos-init.aos-animate{
     padding: 10;
+}
+.title-form{
+    margin-bottom:80px;
+}
+
+@media screen and (max-width:1500px){
+    .fashon3{
+     display: none;
+    }
+    
 }
