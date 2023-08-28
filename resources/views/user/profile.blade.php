@@ -75,7 +75,7 @@
                                                     <h2 class="mb-3">{{$announcement->title}}</h2>
                                                     <img class="imgSection img-fluid"
                                                     {{-- src="https://picsum.photos/250/200" style="width: 250px; height: 200px"> --}}
-                                                    src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "https://picsum.photos/250/200"}}">
+                                                    src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250, 200) : "https://picsum.photos/250/200"}}">
                                                     <h3 class="paragrafo my-3">{{$announcement->category->name}}</h3>
                                                     <p class="text-truncate">{{$announcement->body}}</p>
                                                     <a style="background-color:#db9b20;" class="welcomebtn" href="{{route('announcement_detail', compact('announcement'))}}">Read more</a>

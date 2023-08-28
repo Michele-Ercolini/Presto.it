@@ -559,7 +559,7 @@ a.nav-link.dropdown-toggle.show::after{
 .categorie{
     border:var(--grigio-scuro) solid 2px;
     padding:10px;
-    background-color: #edbf67;
+    background-color: #edbf67; 
     
    
     
