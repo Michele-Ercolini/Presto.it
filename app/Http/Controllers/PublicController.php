@@ -18,7 +18,7 @@ class PublicController extends Controller
     }
 
     public function profile(){
-        $announcements = Announcement::where('user_id', Auth::id())->orderBy('created_at', 'DESC')->get();
+        $announcements = Announcement::where('user_id', Auth::id())->where('is_accepted', true)->orderBy('created_at', 'DESC')->get();
         return view('user.profile', compact('announcements'));
     }
 
