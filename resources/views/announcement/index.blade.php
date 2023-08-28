@@ -60,7 +60,7 @@
                                 <h2 class="mb-3 text-uppercase title-shadow">{{$announcement->title}}</h2>
                                 <img  class="imgSection text-uppercase img-fluid" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250,200) : "https://picsum.photos/250/200"}}">
                                 <h3 class="paragrafo color3 text-uppercase title-shadow text-uppercase my-3">{{$announcement->category->name}}</h3>
-                                <h5 class="text-truncate text-uppercase title-shadow">{{$announcement->body}}</h5>
+                                <p class="text-truncate text-uppercase title-shadow">{{$announcement->body}}</p>
                                 <a style="background-color:#db9b20;" class="welcomebtn  text-uppercase title-shadow" href="{{route('announcement_detail', compact('announcement'))}}">{{__('ui.vediPiù')}}</a>
                             </div>
                         </div>

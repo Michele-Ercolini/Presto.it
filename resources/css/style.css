@@ -421,8 +421,10 @@ h1,h2,h3,h4{
 }
 
 .containerx .card .content p{
-    max-width: 300px;
+    max-width: 270px;
 }
+
+
 
 .img{
     border-radius: 15%;
@@ -457,7 +459,13 @@ h1,h2,h3,h4{
     }
     .fashon3{
         display: none;
-       }
+    }
+    
+}
+@media screen and (min-width:990px) and (max-width:1200px){
+    .containerx .card .content p{
+        max-width: 200px;
+    }
 }
 @media screen and (max-width:900px){
     .form-label{
@@ -466,6 +474,7 @@ h1,h2,h3,h4{
     .form-control{
         width: 250px;
     }
+    
 }
 @media screen and (max-width:600px){
     .form-label{
