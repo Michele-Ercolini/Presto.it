@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 my-3 ">
+            <div class="col-lg-4">
                 <video loop autoplay muted height="500px" width="500px" class="VideoAbito" >
                     <source  src="/media/VideoGioggio.mp4" type="video/mp4">
                 </video>
