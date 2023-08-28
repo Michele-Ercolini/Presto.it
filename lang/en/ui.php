@@ -1,7 +1,7 @@
 <?php
 return[
-    'title1'=>'All Annoucementes',
-    'annunci'=>'Annoucementes',
+    'title1'=>'All Announcements',
+    'annunci'=>'Announcements',
     'profilo'=>'Profile',
     'categorie'=>'Categories',
     'cerca'=>'search',
@@ -33,8 +33,8 @@ return[
     'profilo1'=>'Hello User',
     'esci'=>'Exit',
     'insoddisfatto'=>'Not satisfied yet? Check out our categories!',
-    'tuttiannunci'=>'All announcementes',
-    'crea'=>'Create annauncement',
+    'tuttiannunci'=>'All announcements',
+    'crea'=>'Create Announcement',
     'creaTitolo'=>'Title',
     'creaPrezzo'=>'Price',
     'creaDescri'=>'Describe your ad',
