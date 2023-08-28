@@ -124,7 +124,7 @@
     
         <div class="row justify-content-center align-items-center my-5">
             <div  class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex"  src="https://picsum.photos/351" alt="">
+                <img class="imgSection mx-auto d-flex"  src="./media/clothes.jpg" style="width:350px;height:350px;" alt="">
             </div>
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex"  src="https://picsum.photos/350" alt="">
+                <img class="imgSection mx-auto d-flex"  src="./media/job.jpg" style="width:350px;height:350px;" alt="">
             </div>
         </div>
 
