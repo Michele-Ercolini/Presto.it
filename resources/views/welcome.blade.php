@@ -118,13 +118,13 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" style="width: 500px; height:200px;" src="/media/specialOffer.png" alt="">
+                <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">
             </div>
         </div>
     
         <div class="row justify-content-center align-items-center my-5">
             <div  class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" style="width: 600px; height:400px;" src="/media/signUp.png" alt="">
+                <img class="imgSection mx-auto d-flex"  src="https://picsum.photos/351" alt="">
             </div>
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" style="width: 500px; height:300px;" src="/media/LavoraConNoi.jpeg" alt="">
+                <img class="imgSection mx-auto d-flex"  src="https://picsum.photos/350" alt="">
             </div>
         </div>
 
