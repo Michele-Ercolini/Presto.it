@@ -19,7 +19,16 @@
                     <span class="visually-hidden">Toggle Dropdown</span>
                   <ul class="dropdown-menu">
                     @foreach ($categories as $category)
-                    <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">{{$category->name}}</a></li>
+                    
+                    <li><a class="dropdown-item" href="{{route('category_show', compact('category'))}}">
+                      @if(App::isLocale('it'))
+                      {{$category->name}}
+                      @elseif(App::isLocale('en'))
+                      {{$category->lang_en}}
+                      @elseif(App::isLocale('es'))
+                      {{$category->lang_es}}
+                      @endif
+                    </a></li>
                       @if(!$loop->last)
                         <li>
                           <hr class="dropdown-divider">
