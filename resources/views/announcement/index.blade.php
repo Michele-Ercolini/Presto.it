@@ -3,7 +3,7 @@
     <header class="container-fluid bgimg d-flex align-items-center justify-content-center">
         <div class="row ">
             <div class="col-12 mb-5">
-                <h1 class="title-shadow paragrafo2 text-center text-white display-1">Tutti gli Annunci</h1>
+                <h1 class="title-shadow paragrafo2 text-center text-white display-1">{{__('ui.title1')}}</h1>
                 <form class="search-form text-center" action="{{route('announcements.search')}}" method="GET">
                     @csrf
                     <input type="search" name="searched" class="text-center search-input" placeholder="Cerca prodotti...">
