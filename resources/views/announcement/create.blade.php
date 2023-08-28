@@ -21,8 +21,9 @@
         </div>
         
         <livewire:create-announcement />
+        
         <div class=" col-md-4 d-flex align-items-center justify-content-center">
-            <img class="fashon3" src="/media/fashon2.png" alt="Fashion" >
+            <img class="fashon3" src="/media/fashon2.png" height="700px" width="700px" alt="Fashion" >
         </div>
     </div>
     
