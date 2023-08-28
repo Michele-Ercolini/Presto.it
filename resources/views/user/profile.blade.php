@@ -7,7 +7,7 @@
                     
                     <div class="cardP profile ">
                         <div class="imgprofile">
-                            <img src="https://picsum.photos/200"  alt="immagine profilo">
+                            <img src="/media/Profile2.jpeg"  alt="immagine profilo">
                         </div>
                         <div class="content">
                             <div class="details">

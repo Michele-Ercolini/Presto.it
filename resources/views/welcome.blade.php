@@ -118,13 +118,13 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" src="https://picsum.photos/350" alt="">
+                <img class="imgSection mx-auto d-flex" style="width: 500px; height:200px;" src="/media/specialOffer.png" alt="">
             </div>
         </div>
     
         <div class="row justify-content-center align-items-center my-5">
             <div  class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" src="https://picsum.photos/351" alt="">
+                <img class="imgSection mx-auto d-flex" style="width: 600px; height:400px;" src="/media/signUp.png" alt="">
             </div>
             <div style="background-color: #edbf67;" class="col-12 col-lg-5 fade-items" data-aos="fade-left"
                 data-aos-offset="300"
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">
+                <img class="imgSection mx-auto d-flex" style="width: 500px; height:300px;" src="/media/LavoraConNoi.jpeg" alt="">
             </div>
         </div>
 
@@ -163,10 +163,10 @@
         <div class="col-12 col-md-6">
             <h2 class="my-5">{{__('ui.counter1')}}</h2>
             <p class="fs-1 text-bold ff-title" id="primoNumero" >0</p>
-            <img class="rounded-circle immaginitonde my-5  border border-4 p-2 border-dark" src="https://picsum.photos/352" alt="">
+            <img class="rounded-circle immaginitonde my-5  border border-4 p-2 border-dark" src="/media/Vendite.jpeg" alt="">
         </div>
         <div class="col-12 col-md-6 ff-title">
-            <img class="rounded-circle immaginitonde my-5 border border-4 p-2 border-dark" src="https://picsum.photos/352" alt="">
+            <img class="rounded-circle immaginitonde my-5 border border-4 p-2 border-dark" src="/media/Visite.png" alt="">
             <h2 class="my-5">{{__('ui.counter2')}}</h2>
             <p class="fs-1 text-bold" id="secondoNumero">0</p>
             
