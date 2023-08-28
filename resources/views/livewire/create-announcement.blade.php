@@ -3,7 +3,7 @@
     <form style="background-color:  #db9b20" class="custom-form2" wire:submit.prevent="announcementStore">
         <h1 class="title-form text-dark text-center title-shadow ">Crea il tuo annuncio</h1>
 
-        <div class="display-9">
+        <div class="display-9 mb-3 px-3">
             <label class="display-9 text-uppercase "for="announcementTitle" class="form-label">Titolo Annuncio</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="announcementTitle"
                 wire:model="title">
@@ -11,7 +11,7 @@
                 <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
-        <div class="mb-3">
+        <div class="mb-3 px-3">
             <label for="announcementNumber " class="text-uppercase form-label">Prezzo</label>
             <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="announcementNumber"
                 wire:model="price">
@@ -19,7 +19,7 @@
                 <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
-        <div class="mb-3">
+        <div class="mb-3 px-3">
             <label for="announcementBody " class="text-uppercase form-label">Descrivi il tuo Annuncio</label>
             <textarea id="announcementBody" cols="30" rows="5" class="form-control @error('body') is-invalid @enderror"
                 wire:model="body"></textarea>
@@ -27,7 +27,7 @@
                 <p class="text-danger">{{ $message }}</p>
             @enderror
         </div>
-        <div class="mb-3">
+        <div class="mb-3 px-3">
             <label for="category " class="text-uppercase">Categoria</label>
             <select wire:model.defer="category" id="category" class="form-control">
                 <option style="background-color:  #edbf67;" value="">Scegli la Categoria</option>
@@ -38,7 +38,7 @@
         </div>
 
 
-        <div class="mb-3">
+        <div class="mb-3 px-3">
             <input  wire:model="temporary_images" type="file" name="images" multiple  class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img"/>
             @error('temporary_images.*')
                 <p class="text-danger mt-2">{{$message}}</p>
@@ -47,7 +47,7 @@
         @if (!empty($images))
             <div class="row">
                 <div class="col-12">
-                    <p>Photo preview:</p>
+                    <p class="mb-3 px-3">Photo preview:</p>
                     <div class="preview row border border-4 border-dark rounded py-4">
                     @foreach ($images as $key => $image)
                         <div class="col my-3">
@@ -60,11 +60,15 @@
                 </div>
             </div>
         @endif
-        <button type="submit" class="btn btn-dark mb-3">Carica</button>
-        @if (session('message'))
-            <div class="alert alert-success">
-                {{ session('message') }}
+        <div class="d-flex justify-content-end">
+            <div class="mx-3">
+                <button type="submit" class="btn btn-dark my-3">Carica</button>
+                @if (session('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
             </div>
-        @endif
+        </div>
     </form>
 </div>
