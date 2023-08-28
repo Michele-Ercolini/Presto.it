@@ -144,9 +144,9 @@
  }
 
 .formClass{
-    width: 40vw;
+    /* width: 40vw; */
     /* height: 80vh; */
-    box-shadow:20px 20px 50px var(--white-smoke); 
+    box-shadow:20px 20px 50px black; 
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
