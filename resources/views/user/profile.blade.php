@@ -19,7 +19,7 @@
                                         @foreach($announcements->take(3) as $announcement)
                                         <div class="row">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                <span class="align-items-center" style="font-family: 'Orbitron', sans-serif;">
+                                                <span class="align-items-center " style="font-family: 'Orbitron', sans-serif;">
                                                     {{-- @if($announcement->is_accepted) --}}
                                                     {{$announcement->title}}
                                                     {{-- @else
@@ -91,7 +91,7 @@
                                                 <div class="containerx d-flex justify-content-center">
                                                     <div class="card">
                                                         <div class="content">
-                                                            <h2 class="mb-3">{{$announcement->title}}</h2>
+                                                            <h2 class="mb-3 text-uppercase">{{$announcement->title}}</h2>
                                                             <img class="imgSection img-fluid"
                                                             {{-- src="https://picsum.photos/250/200" style="width: 250px; height: 200px"> --}}
                                                             src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(250, 200) : "https://picsum.photos/250/200"}}">
