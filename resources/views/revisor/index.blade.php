@@ -83,30 +83,27 @@
                                     <address class="text-center title-shadow text-uppercase">Pubblicato da:
                                         {{ $announcement_to_check->user->name }}</address>
 
-                                    <div  class="d-flex ">
+                                    <div class="d-flex ">
                                         
-                                        <a   class="btn1 btn btn-outline-dark"
+                                        <a  style="margin-right:450px;" class="btn1 btn btn-outline-dark"
                                             href="{{ route('announcement_index') }}">Torna Indietro</a>
-                                        </div>
-
-                                        <div class="d-flex justify-content-end">
+                                           
                                             <form
                                             action="{{ route('revisor_reject_announcement', ['announcement' => $announcement_to_check]) }}"
                                             method="POST" style="margin-right:10px;">
                                             @csrf
                                             @method('PATCH')
-                                            <button type="submit" class="btnrev btn btn1 btn-outline-danger">Rifiuta</button>
+                                            <button type="submit" class="btn btn1 btn-outline-danger">Rifiuta</button>
                                         </form>
                                             <form 
                                             class="" action="{{ route('revisor_accept_announcement', ['announcement' => $announcement_to_check]) }}"
                                              method="POST">
                                              @csrf
                                              @method('PATCH')
-                                             <button type="submit" class="btnrev btn btn1 btn-outline-success">Accetta</button>
+                                             <button type="submit" class="btn btn1 btn-outline-success">Accetta</button>
                                          </form>
-                                    </div>     
                                        
-                                    
+                                    </div>
                                     <!--Google Intelligence-->
                                     @if (isset($image->labels))
                                         <div class="col-md-3 border-end">
