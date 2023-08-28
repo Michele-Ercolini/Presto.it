@@ -123,7 +123,6 @@
                 </div>
             </div>
         </div>
-                @endif
             </div>
     </section>
 </x-layout>
