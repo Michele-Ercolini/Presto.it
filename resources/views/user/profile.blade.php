@@ -18,13 +18,13 @@
                                 
                                 @foreach($announcements->take(3) as $announcement)
                                     <li class="list-group-item d-flex justify-content-between">
-                                        <span style="font-family: 'Orbitron', sans-serif;">{{$announcement->title}}</span>
+                                        <span style="font-family: 'Orbitron', sans-serif; margin-bottom:20px;">{{$announcement->title}}</span>
                                         <span><a href="{{route('announcement_detail', compact('announcement'))}}" class="btnP  btn btn-outline-danger">Show</a></span>
                                     </li>
                                 @endforeach
                                 
                                 @for ($i = 0; $i < 3 - $announcements->count(); $i++) 
-                                    <li class="list-group-item lead">empty</li>
+                                    <li  class="my-2 list-group-item lead">empty</li>
                                 @endfor
                                 
                                 <div class="btnprofile card-body d-flex justify-content-evenly">
