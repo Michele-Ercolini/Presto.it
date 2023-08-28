@@ -17,6 +17,16 @@
     </header>
     <hr class="border border-dark border-3 opacity-80 m-0">
 
+    <div>
+
+    @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
+    </div>
+
+
     <div class="container mt-3 ">
         <div class="row">
             <div class="col-12 text-center">
