@@ -551,8 +551,9 @@ a.nav-link.dropdown-toggle.show::after{
 }
 
 .aFooter:hover{
-    color: red;
+    transition: 10s;
 }
+
 .message{
     float:left;
 }

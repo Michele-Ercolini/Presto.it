@@ -1,5 +1,6 @@
 <?php
 return[
+    'title1'=>'Todos los anuncios',
     'annunci'=>'Anuncios',
     'profilo'=>'Perfil',
     'categorie'=>'Categorías',
@@ -33,4 +34,12 @@ return[
     'esci'=>'Sales',
     'insoddisfatto'=>'Aún no estás satisfecho? ¡Mira nuestras categorías!',
     'tuttiannunci'=>'Todos les annunses',
+    'crea'=>'Crear anuncio',
+    'creaTitolo'=>'Titolo',
+    'creaPrezzo'=>'Precio',
+    'creaDescri'=>'Describe tu anuncio',
+    'creaCategoria'=>'Categories',
+    'scegli'=>'elige tu categories',
+    'btnCrea'=>'Creados'
+
 ];
