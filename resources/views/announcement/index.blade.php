@@ -27,7 +27,7 @@
 
 
     
-    <div class="container my-5 ">
+    <div class="container my-5">
         {{-- <div class="col-12 col-md-8 offset-md-2">
             <div class="categorie d-flex flex-wrap justify-content-between">
                 @foreach ($categories as $category)
