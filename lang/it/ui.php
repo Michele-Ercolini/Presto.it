@@ -5,7 +5,7 @@ return[
     'categorie'=>'Categorie',
     'cerca'=>'Cerca',
     'introduzione'=>'Benvenuto nel nostro elegante negozio online!',
-    'semi-introduzione'=>'Scopri il nostro straordinario mondo di stile e tendenza con il nostro esclusivo sito e-commerce ',
+    'semi-introduzione'=>'Scopri il nostro straordinario mondo di stile e tendenza con il nostro esclusivo sito e-commerce di alta moda!!! ',
     'nostri-annunci'=>'I nostri annunci più recenti',
     'titolo1'=>'Offerte irresistibili:',
     'descrizione1'=>'Cerchiamo constantemente offerte vantaggiose per farti risparmiare sui tuoi acquisti preferiti. Dai saldi stagionali alle promozioni esclusive, ti garantiamo capi di alta moda e accessori da collezione. Siamo la destinazione di tutto ciò che è introvabile, unisciti a noi per scoprire prodotti unici e rari che non troverai altrove.',
