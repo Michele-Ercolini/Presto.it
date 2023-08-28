@@ -5,7 +5,7 @@ return[
     'categorie'=>'Categorías',
     'cerca'=>'Buscar',
     'introduzione'=>'¡Bienvenido a nuestra elegante tienda de moda!',
-    'semi-introduzione'=>'Descubra un extraordinario mundo de estilo y tendencias con nuestro exclusivo sitio de comercio electrónico.',
+    'semi-introduzione'=>'Descubra un extraordinario mundo de estilo y tendencias con nuestro exclusivo sitio de comercio electrónico alta moda!!!',
     'nostri-annunci'=>'Nuestros anuncios más recientes',
     'titolo1'=>'Ofertas irresistibles',
     'descrizione1'=>' Buscamos constantemente ofertas ventajosas que te permitan ahorrar en tus compras favoritas. Desde rebajas de temporada hasta promociones exclusivas, te garantizamos prendas de alta costura y accesorios coleccionables. Somos el destino para todo lo que es inalcanzable, únase a nosotros para descubrir productos únicos y raros que no encontrará en ningún otro lugar.',

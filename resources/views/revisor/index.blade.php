@@ -71,14 +71,13 @@
                                     <h3 class="text-center title-shadow text-uppercase">{{ $announcement_to_check->category->name }}</h3>
                                     <p class="lead text-center title-shadow text-uppercase">{{ $announcement_to_check->price }}€</p>
                                     <p class="text-truncate text-center title-shadow text-uppercase"> {{ $announcement_to_check->body }}</p>
-                                    <address class="text-center title-shadow text-uppercase">Pubblicato da:
-                                        {{ $announcement_to_check->user->name }}</address>
+                                    <address class="text-center title-shadow text-uppercase">Pubblicato da:{{ $announcement_to_check->user->name }}</address>
 
                                     <div class="row justify-content-between">
-                                        <div class="col-12 col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex">
+                                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-6 d-flex px-0">
                                             <a class="btn1 btn btn-outline-dark" href="{{ route('announcement_index') }}">Torna Indietro</a>
                                         </div>
-                                        <div class="col-12 col-xl-3 col-lg-4 col-md-5 col-sm-5 d-flex">
+                                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-6 d-flex px-0">
                                             <form action="{{ route('revisor_reject_announcement', ['announcement' => $announcement_to_check]) }}"
                                                 method="POST" style="margin-right:10px;">
                                                 @csrf
@@ -96,33 +95,35 @@
 
                                     <!--Google Intelligence-->
                                     @if (isset($image->labels))
-                                    <div class="container">
+
                                         <div class="row">
-                                            <div class="col-12 col-md-4 border-end">
-                                                <h5 class="tc-accent mt-3">Tags</h5>
+                                            <div class="col-12 col-md-4 border-end border-dark mt-5">
+                                                <h5 class="tc-accent text-center">Tags</h5>
                                                 <div class="p-2">
                                                     @foreach ($image->labels as $label)
                                                         <p class="d-inline">{{ $label }}</p>
                                                     @endforeach
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-8 my-5">
-                                                <h5 class="tc-accent">Revisione Immagini</h5>
-                                                <p>Adulti: <span class="{{ $image->adult }}"></span></p>
-                                                <p>Satira: <span class="{{ $image->spoof }}"></span></p>
-                                                <p>Medicina: <span class="{{ $image->medical }}"></span></p>
-                                                <p>Violenza: <span class="{{ $image->violence }}"></span></p>
-                                                <p>Contenuto Ammiccante: <span class="{{ $image->racy }}"></span></p>
+                                            <div class="col-12 col-md-8 mt-5">
+                                                <h5 class="tc-accent text-center">Revisione Immagini</h5>
+                                                <div class="p-2">
+                                                    <p>Adulti: <span class="{{ $image->adult }}"></span></p>
+                                                    <p>Satira: <span class="{{ $image->spoof }}"></span></p>
+                                                    <p>Medicina: <span class="{{ $image->medical }}"></span></p>
+                                                    <p>Violenza: <span class="{{ $image->violence }}"></span></p>
+                                                    <p>Contenuto Ammiccante: <span class="{{ $image->racy }}"></span></p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    
+                                    @endif
                                 </div>
-                                @endif
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            </div>
     </section>
 </x-layout>

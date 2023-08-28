@@ -5,7 +5,7 @@ return[
     'categorie'=>'Categories',
     'cerca'=>'search',
     'introduzione'=>'Welcome to our elegant fashion shop!',
-    'semi-introduzione'=>'Discover an extraordinary world of style and trends with our exclusive e-commerce site.',
+    'semi-introduzione'=>'Discover an extraordinary world of style and trends with our exclusive e-commerce high fashion site!!!',
     'nostri-annunci'=>'Our most recent Announcements',
     'titolo1'=>'Irresistible Offers',
     'descrizione1'=>'We are constantly looking for advantageous offers to let you save on your favorite purchases. From seasonal sales to exclusive promotions, we guarantee you high fashion garments and collectible accessories. We are the destination for all that is unobtainable, join us to discover unique and rare products that you will not find anywhere else.',
