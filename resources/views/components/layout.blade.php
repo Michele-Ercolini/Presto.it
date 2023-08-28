@@ -18,7 +18,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Swiper css -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <title>Document</title>
+    <title>FashionPresto</title>
     @livewireStyles
     @vite('resources/css/app.css')
 </head>
