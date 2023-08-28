@@ -554,10 +554,10 @@ a.nav-link.dropdown-toggle.show::after{
 
 }
 
-.aFooter{
+/* .aFooter{
     text-decoration: none;
     color: #fff;
-}
+} */
 
 .aFooter:hover{
     transition: 10s;

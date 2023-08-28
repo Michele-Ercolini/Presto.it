@@ -19,13 +19,13 @@
                         {{-- al click dovrebbe sparire il bottone per evitare 300 email --}}
                     </div>                
                 @endif
-                    
-                @if (session('message'))
-                    <div class="alert alert-success">
-                        {{ session('message') }}
-                    </div>
-                @endif
-
+                <div class="col-12 col-md-6 mb-5">    
+                    @if (session('message'))
+                        <div class="alert alert-success text-center">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+                </div>
             </div>
         </div>
     </header>

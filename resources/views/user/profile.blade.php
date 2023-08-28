@@ -74,14 +74,15 @@
                                     </div> 
                                     
                                 </aside>
-                                <div class="col-12 col-md-9">
+                                <div class="col-12 col-md-8 me-5">
                                     <h3 class="text-center my-5 lorem">{{Auth::user()->name}}</h3>
-                                    <p class="lorem text-center"><strong>Titolo del Profilo:</strong><br> "Appassionato di Tecnologia cerca Affari Imperdibili"
+                                    <p class="lorem "><strong>Titolo del Profilo:</strong><br> "Appassionato di Tecnologia cerca Affari Imperdibili"
                                         
                                         <br><strong>Descrizione:</strong><br>
                                         Ciao a tutti! Sono un appassionato di tecnologia con un occhio attento per gli affari imperdibili. Se stai cercando le migliori offerte su dispositivi elettronici, gadget all'avanguardia e accessori hi-tech, sei nel posto giusto.<br>
                                         
-                                        La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente.<br> Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
+                                        La mia passione per la tecnologia mi ha spinto a diventare un esperto nel cercare le occasioni più vantaggiose sul mercato. Conosco le caratteristiche tecniche dei prodotti più recenti e so riconoscere quando un'affare è davvero conveniente.<br> 
+                                        Sono sempre alla ricerca di dispositivi di alta qualità a prezzi accessibili e non perdo mai l'opportunità di condividere le mie scoperte con la community.</p>
                                     </p>
                                     <section class="container">
                                         <div class="row">

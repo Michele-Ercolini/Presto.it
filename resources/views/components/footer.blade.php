@@ -71,23 +71,19 @@
         <!-- Section: Links -->
         <section class="">
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 style="color:#db9b20" class="text-uppercase">@copyright</h5>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                     <h5 style="color:#db9b20" class="text-uppercase">CyborgTech</h5>
-                    
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <a style="color:#db9b20"  class="aFooter" href={{route('user_lavora')}}><h5 class="text-uppercase" >{{__('ui.lavora')}}</h5></a>
-                    
-                    
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <a style="color:#db9b20"  class="aFooter link-offset-2" href={{route('user_lavora')}}><h5 class="text-uppercase" >{{__('ui.lavora')}}</h5></a>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 style="color:#db9b20" class="text-uppercase">@copyright</h5>
+                </div>
+                
+                {{-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 style="color:#db9b20"  class="text-uppercase">{{__('ui.lavora1')}}</h5>
-                    
-                </div>
+                </div> --}}
             </div>
         </section>
         <!-- Section: Links -->

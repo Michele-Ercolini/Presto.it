@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <img class="imgSection mx-auto d-flex" src="https://picsum.photos/352" alt="">
+                <img class="imgSection mx-auto d-flex" loading="lazy" src="./media/Shopping.jpg" style="width:350px;height:350px;" alt="">
             </div>
         </div>
     
