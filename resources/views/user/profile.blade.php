@@ -86,7 +86,7 @@
                                     <section class="container">
                                         <div class="row">
                                             @foreach ($announcements as $announcement)
-                                            @if($announcement->is_accepted)
+                                            
                                             <div class="col-12 col-md-6 my-5">
                                                 <div class="containerx d-flex justify-content-center">
                                                     <div class="card">
@@ -103,12 +103,16 @@
                                                 </div>
                                             </div>
                                             
-                                            @endif
+                                            
                                             @endforeach
                                         </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-2">
+                                                {{$announcements->links()}}
+                                            </div>
+                                        </div>
+                                        </div>
                                     </section>
-                                </div>
-                                
                             </div>
                         </section>
                     </x-layout>
