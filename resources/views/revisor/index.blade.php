@@ -45,7 +45,7 @@
                                                         @foreach ($announcement_to_check->images as $image)
                                                             <div class="swiper-slide @if($loop->first)active @endif">
                                                                 <img class="imgSection immaginiCarousel"
-                                                                    src="{{ Storage::url($image->path) }}"
+                                                                    src="{{$image->getUrl(250, 200)}}"
                                                                     class="img-fluid p-3 rounded" alt="..." />
                                                             </div>
                                                         @endforeach

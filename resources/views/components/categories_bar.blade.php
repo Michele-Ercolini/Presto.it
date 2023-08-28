@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<div class="row ">
-    <div class="categorie col-12 justify-content-center align-items-center">
-=======
 <div class="row">
     <div class="categorie categoriePa col-12">
->>>>>>> 304629bd0a332e8cbfd2ac2c5382bc39a38c99ee
         {{-- @dd($categories) --}}
         @foreach ($categories as $category)
             <a class="cat" href="{{route('category_show', compact('category'))}}"> | {{$category->name}} | - </a>
